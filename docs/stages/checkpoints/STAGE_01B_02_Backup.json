@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-16",
+  "source_commit": "3576c20ac1170edf2683cc0793346db1ce03d814",
+  "archives": [
+    {
+      "file": "Shashlik_Stage00_Documents.zip",
+      "bytes": 13893,
+      "sha256": "b62d75ccb8e9d0258b6ca8845a8dd2881cc5f0fff001b716a2feb9e112d7abc3",
+      "crc": "PASS",
+      "entries": 7
+    },
+    {
+      "file": "Shashlik_Stage01_Audit_Source.zip",
+      "bytes": 209186464,
+      "sha256": "5ba4a7abc8d8cce0c462d1fef6de4953f861b8003950da5e655726addb54035a",
+      "crc": "PASS",
+      "entries": 288
+    },
+    {
+      "file": "Shashlik_Stage01B_PBR_02_Source.zip",
+      "bytes": 391284102,
+      "sha256": "238c4585980a58faa6c050c542e2b7a93a7b68d21ba0bdd3f128df13c222a91b",
+      "crc": "PASS",
+      "entries": 374
+    },
+    {
+      "file": "Shashlik_Stage01B_PBR_02_Review.zip",
+      "bytes": 22728344,
+      "sha256": "9aa12545e5a5a8e23b5d51e4dec4c25b5909b700a4010e4b208dbb4fc70450d6",
+      "crc": "PASS",
+      "entries": 26
+    }
+  ],
+  "source_checkpoint_import": {
+    "status": "PASS",
+    "exit_code": 0,
+    "started_without_godot_cache": true
+  },
+  "source_checkpoint_forward_self_test": {
+    "status": "SELF_TEST_04_PASS",
+    "failures": 0,
+    "exit_code": 0,
+    "renderer": "Forward+ software Vulkan"
+  },
+  "capture_source_dependencies_match_extracted_project": true,
+  "all_13_resource_checksums_match_extracted_project": true
+}
