@@ -1,0 +1,15 @@
+# Godot's rebuildable import cache.
+/game/.godot/
+
+# Godot extracts these images from the tracked Refined_*.glb files.
+# Original Real_*.png images and deliberately authored import settings stay versioned.
+/game/assets/characters/Refined_*_*.png*
+
+# Local exports, captures and working data; keep release archives outside source history.
+/artifacts/
+/exports/
+/scratch/
+*.tmp
+*.log
+__pycache__/
+*.pyc
