@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://main.tscn" id="1_main"]
+[ext_resource type="Script" path="res://scripts/quality_preview.gd" id="2_quality"]
+
+[node name="QualityPreview" instance=ExtResource("1_main")]
+
+[node name="QualityProfile" type="Node" parent="."]
+script = ExtResource("2_quality")

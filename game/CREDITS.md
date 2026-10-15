@@ -36,7 +36,7 @@ Artorias_Anatomical.glb — собственная параметрическа�
 
 Poly Haven, CC0:
 - Forest Ground 04 — Rob Tuytel и Rico Cilliers: https://polyhaven.com/a/forest_ground_04.
-- Wood Table 001 — Poly Haven: https://polyhaven.com/a/wood_table_001; персональный автор в сохранённом пакете не установлен.
+- Wood Table 001 — Dimitrios Savva (фотография), Rico Cilliers (обработка): https://polyhaven.com/a/wood_table_001; авторство уточнено по API Poly Haven 16 октября 2026 года.
 - Rusty Metal 04 — Amal Kumar: https://polyhaven.com/a/rusty_metal_04.
 - Bark Brown 01 — Rob Tuytel: https://polyhaven.com/a/bark_brown_01.
 - Общая лицензия: https://polyhaven.com/license.
@@ -58,3 +58,18 @@ Etirwer (Looped) — Kistol, CC0: https://opengameart.org/content/etirwer. Ги�
 Пользовательский ориентир: https://thumbs.dreamstime.com/z/young-man-sitting-bench-playing-acoustic-guitar-city-park-103771816.jpg. Веб-инструмент не смог открыть эту ссылку; не считать её просмотренной в текущем чате.
 
 Материал Classical Guitar Academy, автор EPECZEK: https://www.classicalguitaracademy.co.uk/left-hand-position-and-technique/. Использованы изложенные принципы расслабленного локтя, небольшого пространства под ладонью и естественных контактов большого пальца/кончиков пальцев. Изображения/текст источника в проекте не распространяются. Скачаны и визуально просмотрены фото IMG_3653-1-1.jpg и IMG_3627-1-1.jpg (руки, локоть, опора инструмента). Просмотр фотографий не равнозначен просмотру реального видео исполнения.
+
+
+## Опытный профиль локации, 16 октября 2026
+
+Новые неизменённые фотографические карты Poly Haven, CC0-1.0, используются только в `quality_preview.tscn` и профиле `graphics_quality.gd`:
+
+- Wood Table Worn — Dimitrios Savva (фотография), Rico Cilliers (обработка): https://polyhaven.com/a/wood_table_worn.
+- Forest Ground 04 — Rob Tuytel (фотография и обработка), Rico Cilliers (уточнения): https://polyhaven.com/a/forest_ground_04.
+- Leafy Grass — Charlotte Baglioni: https://polyhaven.com/a/leafy_grass.
+- Rock 05 — Rob Tuytel: https://polyhaven.com/a/rock_05.
+- Kloofendal 48d Partly Cloudy (Pure Sky) — Greg Zaal (исходник), Jarod Guest (небо): https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky.
+
+Лицензия: https://polyhaven.com/license. 12 карт 4096×4096 и HDRI 2048×1024. Точные URL, авторы, размеры и SHA-256: `assets/textures/quality/RESOURCE_MANIFEST.json`. Данные карты не перерисовывались и не увеличивались; меняются проекция, физический масштаб и параметры материала. Собственная геометрия камней, травы, ветвей и береговой полосы доработана для прежних объектов. Исходный SVG листвы сохранён, его использование не подтверждает ботаническую точность берёз.
+
+Wood Planks Grey, Wood Table 001 4K и Grass Ground получены для исследования, но не включены в этот новый набор. ambientCG изучен как каталог кандидатов, его ресурсы в проект не встроены. Код Blender и его бинарник в игру не включены; это отдельный инструмент разработки.
