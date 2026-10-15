@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-16",
+  "game_source_commit": "ecda2612b0080e67ec300d2a7f5d4af8b551876a",
+  "renderer": "Forward+ / Mesa llvmpipe software Vulkan",
+  "capture_exit_codes": {
+    "baseline": 0,
+    "study": 0,
+    "vulkan_gameplay_self_test": 0,
+    "study_1440p": 0
+  },
+  "same_cameras": true,
+  "same_resolution": "1280x720",
+  "actor_transforms_stable": true,
+  "gameplay_self_test": "SELF_TEST_04_PASS; failures=0",
+  "files": [
+    {
+      "path": "baseline/alina.png",
+      "bytes": 1698696,
+      "sha256": "e42f9f8be35b92b53c086660a6233a77913947c6aa1b6187d4c5d0b1baefd8df"
+    },
+    {
+      "path": "baseline/capture-metadata.json",
+      "bytes": 1587,
+      "sha256": "178beb63998216f5e40daa06aeb773aeccb968c552c7adacc4483561a3902025"
+    },
+    {
+      "path": "baseline/grill.png",
+      "bytes": 1696009,
+      "sha256": "f25949e7674b66d8249446c4646388e8d7cef0a2867f782775cd9bf1250f07f3"
+    },
+    {
+      "path": "baseline/overview.png",
+      "bytes": 1501752,
+      "sha256": "d3084528bd552c375cdab008f940a13456a57a02d9da19bf7b1747bcffa098ce"
+    },
+    {
+      "path": "baseline/pond.png",
+      "bytes": 1173596,
+      "sha256": "089dd3f524e38fbdcd653baa7c923117f4221fc2831f61beb20f094fcdbeffca"
+    },
+    {
+      "path": "baseline/table.png",
+      "bytes": 1308048,
+      "sha256": "e58894a883a4c48a49f0a891e5dc3c4e9886b4326f4ff5fceb458d9a1ae53a78"
+    },
+    {
+      "path": "baseline.txt",
+      "bytes": 425,
+      "sha256": "85721df08e4d172782e29108472cf7e363708777d15ecf1392bdc3f3af81f7b9"
+    },
+    {
+      "path": "blender-source-check.txt",
+      "bytes": 202,
+      "sha256": "f914a5c1f47774b63d9d0c9645c8d66db8637779ccc4f36a986b71c1573d4d6a"
+    },
+    {
+      "path": "checked-self-test.txt",
+      "bytes": 526,
+      "sha256": "93cc3c16294c366be986d6ffacbbf2ea006991f1c81b39f0a6972c679fb3cac1"
+    },
+    {
+      "path": "human-alpha-audit.json",
+      "bytes": 4510,
+      "sha256": "3c1ceb3520252e406190d26e93b777402f7348e345809f7238401852db0a9def"
+    },
+    {
+      "path": "human-material-runtime.txt",
+      "bytes": 1309,
+      "sha256": "135cbbaaaf73f9db9be84690efaa498bf8b799283a02548119175a1eb938e3f1"
+    },
+    {
+      "path": "resource-verify.txt",
+      "bytes": 476,
+      "sha256": "3edb1487afc1b382ed45715e2bdf589e2fc7287daf9a86cb4c1400b57bfd5261"
+    },
+    {
+      "path": "setup-verification.json",
+      "bytes": 412,
+      "sha256": "2cec431c7542953a63e2ec7a3cab8ebac82702af8b571adfc43a0b8c61f2a5bf"
+    },
+    {
+      "path": "study/alina.png",
+      "bytes": 1782894,
+      "sha256": "c929739408c97ee6b27f6b5fa3560420814fac65c709b657f030790cc135f2ae"
+    },
+    {
+      "path": "study/capture-metadata.json",
+      "bytes": 2634,
+      "sha256": "735203b1270a6940679ee913fb0df22221e77d9f6e38ea0110d05fb42bf9f9d6"
+    },
+    {
+      "path": "study/grill.png",
+      "bytes": 1849452,
+      "sha256": "5dbcc529e1b5a77cd0f24a5ea9c9e5adef23686e20ed4a7021f621d8bfacff76"
+    },
+    {
+      "path": "study/overview.png",
+      "bytes": 1800986,
+      "sha256": "0f142e7c1e55b4dd97cb14288ac48eed2f0d0c212de8ccc5080381dba3a08a9f"
+    },
+    {
+      "path": "study/pond.png",
+      "bytes": 1618980,
+      "sha256": "221c7022e0b3c8e908eb24273e01e76d225dd20b70aba1814b456d7d81f20413"
+    },
+    {
+      "path": "study/table.png",
+      "bytes": 1350366,
+      "sha256": "ce5aaf34a50434f27a417e8d548d4b2a0b02635816b0234be5d308acdb3a307a"
+    },
+    {
+      "path": "study-1440/capture-metadata.json",
+      "bytes": 1551,
+      "sha256": "a94a01b4501292aa7c94bf6ceb6942a84522a9af544bd1824c3d019b234d9f38"
+    },
+    {
+      "path": "study-1440/overview.png",
+      "bytes": 6935643,
+      "sha256": "1c479c25f075d76f6d2eccac96c7a274881579374766d08a051a5955130e2c77"
+    },
+    {
+      "path": "study-1440.txt",
+      "bytes": 502,
+      "sha256": "2b035fdda9ab55b9d68fd50361b7ae172473fad1c34a0b8e0c5cd26ce17cd92b"
+    },
+    {
+      "path": "study.txt",
+      "bytes": 606,
+      "sha256": "a1e3ed7b4c55bda792f756cdc92013d953ad8aa20db60782de08c2488ca45d39"
+    }
+  ],
+  "overview_1440p": "2560x1440, native renderer output; not an upscale"
+}

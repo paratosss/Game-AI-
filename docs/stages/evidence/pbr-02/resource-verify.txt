@@ -1,0 +1,13 @@
+Verified wood_table_worn_diff_4k.jpg
+Verified wood_table_worn_nor_gl_4k.jpg
+Verified wood_table_worn_rough_4k.jpg
+Verified forest_ground_04_diff_4k.jpg
+Verified forest_ground_04_nor_gl_4k.jpg
+Verified forest_ground_04_rough_4k.jpg
+Verified rock_05_diff_4k.jpg
+Verified rock_05_nor_gl_4k.jpg
+Verified rock_05_rough_4k.jpg
+Verified kloofendal_48d_partly_cloudy_puresky_2k.hdr
+Verified leafy_grass_diff_4k.jpg
+Verified leafy_grass_nor_gl_4k.jpg
+Verified leafy_grass_rough_4k.jpg

@@ -1,0 +1,21 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+Алина Human.body transparency=4 depth_draw=0 casts=1
+Алина Human.eyebrow001 transparency=4 depth_draw=0 casts=1
+Алина Human.eyelashes01 transparency=4 depth_draw=0 casts=1
+Алина Human.female_casualsuit01 transparency=4 depth_draw=0 casts=1
+Алина Human.high-poly transparency=4 depth_draw=0 casts=1
+Алина Human.long01 transparency=4 depth_draw=0 casts=1
+Алина Human.shoes05 transparency=4 depth_draw=0 casts=1
+Круглик Human.body transparency=4 depth_draw=0 casts=1
+Круглик Human.eyebrow001 transparency=4 depth_draw=0 casts=1
+Круглик Human.high-poly transparency=4 depth_draw=0 casts=1
+Круглик Human.male_casualsuit04 transparency=4 depth_draw=0 casts=1
+Круглик Human.shoes05 transparency=4 depth_draw=0 casts=1
+Круглик Human.short01 transparency=4 depth_draw=0 casts=1
+Крысюк Human.body transparency=4 depth_draw=0 casts=1
+Крысюк Human.eyebrow001 transparency=4 depth_draw=0 casts=1
+Крысюк Human.high-poly transparency=4 depth_draw=0 casts=1
+Крысюк Human.male_casualsuit01 transparency=4 depth_draw=0 casts=1
+Крысюк Human.shoes05 transparency=4 depth_draw=0 casts=1
+Крысюк Human.short02 transparency=4 depth_draw=0 casts=1

@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-16",
+  "script": "tools/cloud/setup_environment.sh",
+  "sha256": "ba8a47d1586694ae14751abe4782cee11f77a9ad2a1c0601fb25cb35e12885ee",
+  "exit_code": 0,
+  "verified": [
+    "Godot 4.5.1",
+    "project import",
+    "SELF_TEST_04_PASS failures=0",
+    "local Mesa Vulkan wrapper and dependencies",
+    "official Blender 4.5.3 SHA-256 and startup"
+  ],
+  "fresh_published_task_verified": false
+}

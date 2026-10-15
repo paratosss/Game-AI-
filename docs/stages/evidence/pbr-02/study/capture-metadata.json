@@ -1,0 +1,95 @@
+{
+  "actor_transforms_stable": true,
+  "benchmark_sha256": "3549873b0385d039a19ed5202e42c64d2de2670dbb89c151f0816bf652c38d3a",
+  "captures": [
+    {
+      "camera_position": [
+        -4.09999990463257,
+        1.89999997615814,
+        4.80000019073486
+      ],
+      "height": 720,
+      "name": "overview",
+      "target": [
+        1.0,
+        0.5,
+        -1.5
+      ],
+      "width": 1280
+    },
+    {
+      "camera_position": [
+        -3.0,
+        1.39999997615814,
+        3.90000009536743
+      ],
+      "height": 720,
+      "name": "table",
+      "target": [
+        -3.20000004768372,
+        0.879999995231628,
+        2.90000009536743
+      ],
+      "width": 1280
+    },
+    {
+      "camera_position": [
+        -1.29999995231628,
+        1.20000004768372,
+        1.25
+      ],
+      "height": 720,
+      "name": "grill",
+      "target": [
+        -2.0,
+        0.769999980926514,
+        0.0
+      ],
+      "width": 1280
+    },
+    {
+      "camera_position": [
+        0.899999976158142,
+        1.62000000476837,
+        -1.5
+      ],
+      "height": 720,
+      "name": "alina",
+      "target": [
+        0.0,
+        1.01999998092651,
+        -3.20000004768372
+      ],
+      "width": 1280
+    },
+    {
+      "camera_position": [
+        3.09999990463257,
+        1.64999997615814,
+        -2.20000004768372
+      ],
+      "height": 720,
+      "name": "pond",
+      "target": [
+        7.0,
+        0.300000011920929,
+        -6.0
+      ],
+      "width": 1280
+    }
+  ],
+  "dependencies_sha256": {
+    "res://assets/shaders/grass_quality.gdshader": "6610cd6f41147187b274868456bee2c775df92a82d04e88ec1779e345916cd89",
+    "res://assets/shaders/ground_pbr.gdshader": "906d3ea831ff89e407e55c9f157485a0cc1eb70ef38f066ecde98edee32bb1b2",
+    "res://assets/shaders/photographic_sky.gdshader": "cb7cea2853db9223c33b40ca9c37dbdc2de50f0c72eb12f13d44a077ea64ef32",
+    "res://assets/shaders/rock_pbr.gdshader": "81e519f9b71d8cffe02d3035e3c12440ed311ac5e253784942865379f97f01c8",
+    "res://assets/shaders/water_quality.gdshader": "2c172dd1933dd61348f28336bbe0374afc5dc9cc7e17b807e0994e9a8f97f646",
+    "res://assets/shaders/wood_pbr.gdshader": "67d4fd716c79f19082c0599e2110b4517f7bc70ae9d3c44f966874f69112ede2",
+    "res://assets/textures/quality/RESOURCE_MANIFEST.json": "4393f78e740201d854639a42cb3d109fe29e5112c79022491930265e3995c19c",
+    "res://scripts/graphics_quality.gd": "f39bd0c6590dd868f16926ca006d33c620fa8dc402bc6792f7b08aff7ff2d0f7",
+    "res://scripts/quality_geometry.gd": "19bbb7997eb6c3f8fd2b5843b9dc038e04890b002ead3e240269ee7e9493516f"
+  },
+  "high": false,
+  "pbr": true,
+  "renderer": "forward_plus"
+}

@@ -49,9 +49,9 @@
       "object": "Ресурсы",
       "requirement": "Сравнение качественных моделей и реальных референсов",
       "status": "в работе",
-      "finding": "Доступные архивы изучены; новые внешние источники ещё не получены",
-      "evidence": "game/CREDITS.md; docs/GRAPHICS_TARGET_RU.md",
-      "next_action": "Сравнить новые ресурсы после восстановления доступа"
+      "finding": "Сравнены исходные карты трёх материалов дерева и двух травяных покрытий; выбор моделей людей и собаки остаётся открытым",
+      "evidence": "docs/stages/STAGE_01B_02_PBR_Location_RU.md; docs/stages/evidence/pbr-02/",
+      "next_action": "Продолжить сравнение моделей и реальных анатомических/двигательных референсов"
     },
     {
       "id": "RES-02",
@@ -59,19 +59,19 @@
       "object": "Ресурсы",
       "requirement": "Источники, лицензии и история изменений",
       "status": "в работе",
-      "finding": "Реестр в CREDITS есть; независимая повторная проверка всех источников не завершена",
-      "evidence": "game/CREDITS.md",
-      "next_action": "Вести реестр ресурсов с фактическим статусом загрузки"
+      "finding": "У новых 13 файлов Poly Haven записаны авторы, лицензия CC0, URL, API MD5 и локальный SHA-256",
+      "evidence": "docs/stages/STAGE_01B_02_PBR_Location_RU.md; docs/stages/evidence/pbr-02/",
+      "next_action": "Продолжить проверку источников при работе с персонажами"
     },
     {
       "id": "RES-03",
       "tz_sections": "4",
       "object": "Текстуры",
       "requirement": "Детальные исходники и корректные PBR-карты",
-      "status": "требуется переделка",
-      "finding": "Окружение 1K; люди преимущественно 2K, часть normal одежды 4K",
-      "evidence": "character-textures.json; assets/textures",
-      "next_action": "Получить настоящие детальные источники и проверить видимую пользу"
+      "status": "в работе",
+      "finding": "Встроены 12 настоящих карт 4K и HDRI 2K в отдельный профиль; прочие материалы и качество геометрии ещё не доведены",
+      "evidence": "docs/stages/STAGE_01B_02_PBR_Location_RU.md; docs/stages/evidence/pbr-02/",
+      "next_action": "Оценивать видимую пользу и согласованность, не закрывать ТЗ размером текстур"
     },
     {
       "id": "RES-04",
@@ -79,9 +79,9 @@
       "object": "Инструменты",
       "requirement": "Безопасное редактирование исходных моделей",
       "status": "в работе",
-      "finding": "Blender 4.3.2 старее сохранённых .blend; оригиналы не пересохранены",
-      "evidence": "docs/ENVIRONMENT_SETUP.md",
-      "next_action": "Установить совместимый Blender из официального источника"
+      "finding": "Официальный Blender 4.5.3 проверен по SHA-256, установщик повторён, исходный Alina_Animated.blend открыт без пересохранения",
+      "evidence": "docs/stages/STAGE_01B_02_PBR_Location_RU.md; docs/stages/evidence/pbr-02/",
+      "next_action": "Изменять копию и проверить экспорт геометрии, скелета, мимики и анимаций"
     },
     {
       "id": "AL-01",
@@ -358,10 +358,10 @@
       "tz_sections": "11",
       "object": "Мебель",
       "requirement": "Древесина, направление волокон и микрорельеф",
-      "status": "требуется переделка",
-      "finding": "Normal дерева загружается, но исходный wood.gdshader его не применяет; волокна ориентированы поперёк досок",
-      "evidence": "scripts/world.gd:shader; assets/shaders/wood.gdshader",
-      "next_action": "Проверить отдельный исправленный материал в раннем образце"
+      "status": "в работе",
+      "finding": "В образце применены карты Wood Table Worn 4K, физический масштаб и normal map; торцы и конструкция требуют отдельной работы",
+      "evidence": "docs/stages/STAGE_01B_02_PBR_Location_RU.md; docs/stages/evidence/pbr-02/",
+      "next_action": "Проверить более подходящий вид износа и реальные торцевые поверхности"
     },
     {
       "id": "PROP-03",
@@ -408,40 +408,40 @@
       "tz_sections": "11",
       "object": "Земля",
       "requirement": "Детализация, рельеф и уменьшение повторяемости",
-      "status": "требуется переделка",
-      "finding": "Один 1K набор, плоская игровая поверхность и окрашивание шумом",
-      "evidence": "assets/shaders/ground.gdshader; portraits/location-overview.png",
-      "next_action": "Качественные источники, масштаб и неоднородность покрытия"
+      "status": "в работе",
+      "finding": "Испытаны Forest Ground 04 и Leafy Grass 4K с физическим масштабом; базовый рельеф остаётся плоским",
+      "evidence": "docs/stages/STAGE_01B_02_PBR_Location_RU.md; docs/stages/evidence/pbr-02/",
+      "next_action": "Переработать геометрию и переход к дальнему плану"
     },
     {
       "id": "ENV-02",
       "tz_sections": "11",
       "object": "Трава",
       "requirement": "Форма, распределение и освещение",
-      "status": "требуется переделка",
-      "finding": "6500 экземпляров одного пучка; нормали принудительно направлены вверх",
-      "evidence": "scripts/world.gd:grass; assets/shaders/grass.gdshader",
-      "next_action": "Переработать геометрию, распределение и материал"
+      "status": "в работе",
+      "finding": "В реальном Vulkan-рендере 34 827 пучков изогнутой травы в 9 областях; проходы и край пруда исключены",
+      "evidence": "docs/stages/STAGE_01B_02_PBR_Location_RU.md; docs/stages/evidence/pbr-02/",
+      "next_action": "Оценить естественное распределение, тени и производительность на целевом ПК"
     },
     {
       "id": "ENV-03",
       "tz_sections": "11",
       "object": "Берёзы",
       "requirement": "Стволы, ветви, листва и цельный силуэт",
-      "status": "требуется переделка",
-      "finding": "Процедурные ветви, SVG-листва; 13091 ближний экземпляр листвы",
-      "evidence": "scene-inventory.json; scripts/nature.gd",
-      "next_action": "Сравнить более убедительную геометрию и листовые ресурсы"
+      "status": "в работе",
+      "finding": "Изменены кроны 19 ближних и 85 дальних берёз, добавлены дальние ветви; 2 прибрежных дерева перенесены с коллизиями; исходная SVG-листва пока сохранена",
+      "evidence": "docs/stages/STAGE_01B_02_PBR_Location_RU.md; docs/stages/evidence/pbr-02/",
+      "next_action": "Довести строение, вид коры и листьев по реальным берёзовым референсам"
     },
     {
       "id": "ENV-04",
       "tz_sections": "11",
       "object": "Пруд",
       "requirement": "Вода, берег и согласованность поверхности",
-      "status": "требуется переделка",
-      "finding": "Пруд — цилиндр с непрозрачным шейдером; код нормали требует исправления",
-      "evidence": "scripts/world.gd:build; assets/shaders/water.gdshader",
-      "next_action": "Проверить отражения, правильные нормали и береговую геометрию"
+      "status": "в работе",
+      "finding": "У воды исправлена нормаль волн и сглажен контур, берег стал неровным, изменена группировка прежних камней; дна/глубины пока нет",
+      "evidence": "docs/stages/STAGE_01B_02_PBR_Location_RU.md; docs/stages/evidence/pbr-02/",
+      "next_action": "Проработать полноценную береговую геометрию, дно и отражения"
     },
     {
       "id": "ENV-05",
@@ -458,10 +458,10 @@
       "tz_sections": "11",
       "object": "Свет",
       "requirement": "Согласованные свет, тени, экспозиция и цвет",
-      "status": "требуется переделка",
-      "finding": "Исходный профиль Compatibility; получен диагностический кадр Forward+ с тенями",
-      "evidence": "forward-with-shadows.png; scripts/world.gd",
-      "next_action": "Подготовить и независимо оценить ранний высокий профиль"
+      "status": "в работе",
+      "finding": "Проверен отдельный профиль с фотографическим HDRI, согласованным направлением солнца и новым светом; первый пересвеченный вариант отклонён",
+      "evidence": "docs/stages/STAGE_01B_02_PBR_Location_RU.md; docs/stages/evidence/pbr-02/",
+      "next_action": "Продолжить оценку света на улучшенных моделях, коже и металле"
     },
     {
       "id": "LIGHT-02",
@@ -469,9 +469,9 @@
       "object": "Рендер",
       "requirement": "Forward+, отражения и непрямой свет",
       "status": "в работе",
-      "finding": "Vulkan работает в программном режиме; кадры ещё не доказывают скорость интерактивного запуска",
-      "evidence": "forward-with-shadows.log; docs/TARGET_PC_RU.md",
-      "next_action": "Проверить отдельный профиль и затем сборку на RTX 5080"
+      "finding": "Получены 5 окончательных кадров Forward+ 720p и пройден игровой self-test с реальным Vulkan; FPS RTX 5080 не измерен",
+      "evidence": "docs/stages/STAGE_01B_02_PBR_Location_RU.md; docs/stages/evidence/pbr-02/",
+      "next_action": "Проверить пользовательскую Windows-сборку и определить бюджет качества"
     },
     {
       "id": "VERIFY-01",
@@ -513,5 +513,6 @@
       "evidence": "docs/stages/STAGE_00_Backup_and_Quality_RU.md; Git ac186d5",
       "next_action": "Фиксировать и отправлять последующие отчёты и версии"
     }
-  ]
+  ],
+  "updated_date": "2026-10-16"
 }

@@ -1,0 +1,192 @@
+[
+  {
+    "model": "Refined_Alina.glb",
+    "material": "Human.body",
+    "mode": "BLEND",
+    "base_factor": null,
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "opaque_fraction": 1.0,
+    "zero_fraction": 0.0
+  },
+  {
+    "model": "Refined_Alina.glb",
+    "material": "Human.eyebrow001",
+    "mode": "BLEND",
+    "base_factor": null,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "opaque_fraction": 7.62939453125e-06,
+    "zero_fraction": 0.877471923828125
+  },
+  {
+    "model": "Refined_Alina.glb",
+    "material": "Human.eyelashes01",
+    "mode": "BLEND",
+    "base_factor": null,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "opaque_fraction": 0.04093170166015625,
+    "zero_fraction": 0.83477783203125
+  },
+  {
+    "model": "Refined_Alina.glb",
+    "material": "Human.female_casualsuit01",
+    "mode": "BLEND",
+    "base_factor": null,
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "opaque_fraction": 1.0,
+    "zero_fraction": 0.0
+  },
+  {
+    "model": "Refined_Alina.glb",
+    "material": "Human.high-poly",
+    "mode": "BLEND",
+    "base_factor": null,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "opaque_fraction": 0.9873332977294922,
+    "zero_fraction": 0.012624740600585938
+  },
+  {
+    "model": "Refined_Alina.glb",
+    "material": "Human.long01",
+    "mode": "BLEND",
+    "base_factor": null,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "opaque_fraction": 0.5609631538391113,
+    "zero_fraction": 0.1900629997253418
+  },
+  {
+    "model": "Refined_Alina.glb",
+    "material": "Human.shoes05",
+    "mode": "BLEND",
+    "base_factor": null,
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "opaque_fraction": 1.0,
+    "zero_fraction": 0.0
+  },
+  {
+    "model": "Refined_Kruglik.glb",
+    "material": "Human.body",
+    "mode": "BLEND",
+    "base_factor": null,
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "opaque_fraction": 1.0,
+    "zero_fraction": 0.0
+  },
+  {
+    "model": "Refined_Kruglik.glb",
+    "material": "Human.eyebrow001",
+    "mode": "BLEND",
+    "base_factor": null,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "opaque_fraction": 7.62939453125e-06,
+    "zero_fraction": 0.877471923828125
+  },
+  {
+    "model": "Refined_Kruglik.glb",
+    "material": "Human.high-poly",
+    "mode": "BLEND",
+    "base_factor": null,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "opaque_fraction": 0.9873332977294922,
+    "zero_fraction": 0.012624740600585938
+  },
+  {
+    "model": "Refined_Kruglik.glb",
+    "material": "Human.male_casualsuit04",
+    "mode": "BLEND",
+    "base_factor": null,
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "opaque_fraction": 1.0,
+    "zero_fraction": 0.0
+  },
+  {
+    "model": "Refined_Kruglik.glb",
+    "material": "Human.shoes05",
+    "mode": "BLEND",
+    "base_factor": null,
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "opaque_fraction": 1.0,
+    "zero_fraction": 0.0
+  },
+  {
+    "model": "Refined_Kruglik.glb",
+    "material": "Human.short01",
+    "mode": "BLEND",
+    "base_factor": null,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "opaque_fraction": 0.3871617317199707,
+    "zero_fraction": 0.38509416580200195
+  },
+  {
+    "model": "Refined_Krysyuk.glb",
+    "material": "Human.body",
+    "mode": "BLEND",
+    "base_factor": null,
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "opaque_fraction": 1.0,
+    "zero_fraction": 0.0
+  },
+  {
+    "model": "Refined_Krysyuk.glb",
+    "material": "Human.eyebrow001",
+    "mode": "BLEND",
+    "base_factor": null,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "opaque_fraction": 7.62939453125e-06,
+    "zero_fraction": 0.877471923828125
+  },
+  {
+    "model": "Refined_Krysyuk.glb",
+    "material": "Human.high-poly",
+    "mode": "BLEND",
+    "base_factor": null,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "opaque_fraction": 0.9873332977294922,
+    "zero_fraction": 0.012624740600585938
+  },
+  {
+    "model": "Refined_Krysyuk.glb",
+    "material": "Human.male_casualsuit01",
+    "mode": "BLEND",
+    "base_factor": null,
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "opaque_fraction": 1.0,
+    "zero_fraction": 0.0
+  },
+  {
+    "model": "Refined_Krysyuk.glb",
+    "material": "Human.shoes05",
+    "mode": "BLEND",
+    "base_factor": null,
+    "alpha_min": 255,
+    "alpha_max": 255,
+    "opaque_fraction": 1.0,
+    "zero_fraction": 0.0
+  },
+  {
+    "model": "Refined_Krysyuk.glb",
+    "material": "Human.short02",
+    "mode": "BLEND",
+    "base_factor": null,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "opaque_fraction": 0.37540602684020996,
+    "zero_fraction": 0.5791468620300293
+  }
+]
