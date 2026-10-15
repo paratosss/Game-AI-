@@ -1,0 +1,116 @@
+{
+  "checked_date": "2026-10-16",
+  "source_sha256": "117f525d4900b380827291661679c6e25a6467bd2340ecb780a7b6b2ca9ef50a",
+  "same_cameras_and_resolutions": true,
+  "actor_transforms_stable": true,
+  "completed_markers_present": true,
+  "process_exit_codes": "not recovered after reconnection; not asserted",
+  "renderer": "software Vulkan Forward+",
+  "files": [
+    {
+      "path": "audit/character-textures.json",
+      "bytes": 3223,
+      "sha256": "9c62768de05d23f9718f7b55deacb1cf830e9f87d216dedb4ae14e5a313ce5e3"
+    },
+    {
+      "path": "audit/scene-inventory.json",
+      "bytes": 5298,
+      "sha256": "f48b986a5a67ac2dd5271c99ad16ab059e90c784c984494f02218c04645b7b9c"
+    },
+    {
+      "path": "audit/sheets/faces.png",
+      "bytes": 2409935,
+      "sha256": "66442f21977d7b2dd4b0a9978ef4ea26bc9c1ed46ad9d244eb91298708c68e30"
+    },
+    {
+      "path": "audit/sheets/motion-keyframes.png",
+      "bytes": 2524773,
+      "sha256": "5f4b6be39f6d6d5cb21d8a5d355a775b03c256fdc6959c338c439d75727f9691"
+    },
+    {
+      "path": "audit/sheets/reactions-0.png",
+      "bytes": 1199701,
+      "sha256": "20f93093d84a05dfdc02b9a3187daf050732e3c8812a93b1d659415b41240205"
+    },
+    {
+      "path": "audit/sheets/reactions-1.png",
+      "bytes": 1306495,
+      "sha256": "5d429c2e9437b55dd6a554bbb9725831da80a0e9cbc26f69221c75ba834b59cc"
+    },
+    {
+      "path": "audit/sheets/reactions-2.png",
+      "bytes": 1318003,
+      "sha256": "cef2e8be9e05f8663cf5c0b58b9bbd07182f81b1af97ac952ba05d3d37c4e477"
+    },
+    {
+      "path": "graphics/final-baseline/alina.png",
+      "bytes": 1698696,
+      "sha256": "e42f9f8be35b92b53c086660a6233a77913947c6aa1b6187d4c5d0b1baefd8df"
+    },
+    {
+      "path": "graphics/final-baseline/capture-metadata.json",
+      "bytes": 1538,
+      "sha256": "a87c158cc8b2a3f45530d37d337c01269284dcc9df9e4e02262b11bbc40bc8cf"
+    },
+    {
+      "path": "graphics/final-baseline/grill.png",
+      "bytes": 1696009,
+      "sha256": "f25949e7674b66d8249446c4646388e8d7cef0a2867f782775cd9bf1250f07f3"
+    },
+    {
+      "path": "graphics/final-baseline/overview.png",
+      "bytes": 1501752,
+      "sha256": "d3084528bd552c375cdab008f940a13456a57a02d9da19bf7b1747bcffa098ce"
+    },
+    {
+      "path": "graphics/final-baseline/pond.png",
+      "bytes": 1173596,
+      "sha256": "089dd3f524e38fbdcd653baa7c923117f4221fc2831f61beb20f094fcdbeffca"
+    },
+    {
+      "path": "graphics/final-baseline/table.png",
+      "bytes": 1308048,
+      "sha256": "e58894a883a4c48a49f0a891e5dc3c4e9886b4326f4ff5fceb458d9a1ae53a78"
+    },
+    {
+      "path": "graphics/final-baseline.txt",
+      "bytes": 415,
+      "sha256": "c0de46f03e7445d06e43fe03cee1afc67e6b8bebe5f2a7bae228cd3966973a44"
+    },
+    {
+      "path": "graphics/final-study/alina.png",
+      "bytes": 1624678,
+      "sha256": "0ed597c21771541b067d7c66b71738150ad5f7d7ec1af71f977fc16c86b30c6c"
+    },
+    {
+      "path": "graphics/final-study/capture-metadata.json",
+      "bytes": 1537,
+      "sha256": "889a92e30157d0e203e0e120c3e2d669ba4a2fd60270ab31a4f1910e1e72384d"
+    },
+    {
+      "path": "graphics/final-study/grill.png",
+      "bytes": 1680253,
+      "sha256": "9be8335da7ac869a83032bdf523f08551c7135b0b58f4ae480642d9f175cc335"
+    },
+    {
+      "path": "graphics/final-study/overview.png",
+      "bytes": 1441403,
+      "sha256": "cd639fea42ba0992f0a097b347739ab19380e92b33835b9c8132e85f08401902"
+    },
+    {
+      "path": "graphics/final-study/pond.png",
+      "bytes": 1187178,
+      "sha256": "cd7a79954181cb1c2738fc8b9d0a5c3a735ad6fd599c3385b5267bba2f09eaa7"
+    },
+    {
+      "path": "graphics/final-study/table.png",
+      "bytes": 1199694,
+      "sha256": "3949b735aa20dc65ec38f6b62f31c2fcc83c45eda48de30a6a6b68c719dec502"
+    },
+    {
+      "path": "graphics/final-study.txt",
+      "bytes": 413,
+      "sha256": "5569b8913c8a1b08884da49881f6395298ff9a3754607ce0020d0a25f29a9176"
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "actors": [
+    {
+      "actions": [
+        "bark",
+        "cough",
+        "dislike",
+        "eat",
+        "gag",
+        "getup",
+        "guitar",
+        "happy",
+        "idle",
+        "kick",
+        "spit",
+        "walk",
+        "wave"
+      ],
+      "activity": "GUITAR",
+      "bones": 63,
+      "face_meshes": 3,
+      "name": "Алина",
+      "native_clips": [
+        "dislike",
+        "eat",
+        "getup",
+        "happy",
+        "idle",
+        "sit",
+        "sit_down",
+        "walk",
+        "wave"
+      ],
+      "position": [
+        0.0,
+        -0.00987337250262499,
+        -3.20000004768372
+      ],
+      "state": "GUITAR"
+    },
+    {
+      "actions": [
+        "bark",
+        "cough",
+        "dislike",
+        "eat",
+        "gag",
+        "getup",
+        "guitar",
+        "happy",
+        "idle",
+        "kick",
+        "spit",
+        "walk",
+        "wave"
+      ],
+      "activity": "BALL",
+      "bones": 63,
+      "face_meshes": 2,
+      "name": "Круглик",
+      "native_clips": [
+        "dislike",
+        "eat",
+        "getup",
+        "happy",
+        "idle",
+        "sit",
+        "sit_down",
+        "walk",
+        "wave"
+      ],
+      "position": [
+        3.5733335018158,
+        -0.00917839631438255,
+        3.53886866569519
+      ],
+      "state": "BALL"
+    },
+    {
+      "actions": [
+        "bark",
+        "cough",
+        "dislike",
+        "eat",
+        "gag",
+        "getup",
+        "guitar",
+        "happy",
+        "idle",
+        "kick",
+        "spit",
+        "walk",
+        "wave"
+      ],
+      "activity": "BALL",
+      "bones": 63,
+      "face_meshes": 2,
+      "name": "Крысюк",
+      "native_clips": [
+        "dislike",
+        "eat",
+        "getup",
+        "happy",
+        "idle",
+        "sit",
+        "sit_down",
+        "walk",
+        "wave"
+      ],
+      "position": [
+        6.42666530609131,
+        -0.00917129218578339,
+        2.54491400718689
+      ],
+      "state": "BALL"
+    },
+    {
+      "actions": [
+        "bark",
+        "cough",
+        "dislike",
+        "eat",
+        "gag",
+        "getup",
+        "guitar",
+        "happy",
+        "idle",
+        "kick",
+        "spit",
+        "walk",
+        "wave"
+      ],
+      "activity": "DOG",
+      "bones": 26,
+      "gait_clips": [
+        "idle",
+        "walk",
+        "run",
+        "bark"
+      ],
+      "name": "Арториас",
+      "position": [
+        4.87213230133057,
+        -0.00916029699146748,
+        2.18333435058594
+      ],
+      "state": "DOG"
+    }
+  ],
+  "grill_slots": 3,
+  "lights": 3,
+  "material_surfaces_by_type": {
+    "ShaderMaterial": 61,
+    "StandardMaterial3D": 789
+  },
+  "mesh_nodes": 850,
+  "multimeshes": [
+    {
+      "instances": 13091,
+      "node": "BirchCrowns"
+    },
+    {
+      "instances": 6500,
+      "node": "@MultiMeshInstance3D@1520"
+    },
+    {
+      "instances": 85,
+      "node": "@MultiMeshInstance3D@1521"
+    },
+    {
+      "instances": 8500,
+      "node": "@MultiMeshInstance3D@1522"
+    }
+  ],
+  "props": [
+    {
+      "kind": "skewer",
+      "position": [
+        -2.60000157356262,
+        0.849998533725739,
+        3.09999775886536
+      ]
+    },
+    {
+      "kind": "skewer",
+      "position": [
+        -2.60000157356262,
+        0.849998533725739,
+        3.23999786376953
+      ]
+    },
+    {
+      "kind": "skewer",
+      "position": [
+        -2.60000157356262,
+        0.849998533725739,
+        3.37999796867371
+      ]
+    },
+    {
+      "kind": "fan",
+      "position": [
+        -1.80000102519989,
+        0.827498376369476,
+        3.21999716758728
+      ]
+    },
+    {
+      "kind": "ball",
+      "position": [
+        4.69999980926514,
+        0.174750030040741,
+        2.79999995231628
+      ]
+    }
+  ],
+  "renderer": "gl_compatibility",
+  "static_bodies": 47,
+  "stations": [
+    {
+      "action": "food",
+      "key": "pork",
+      "position": [
+        -4.48000001907349,
+        0.860000014305115,
+        2.61999988555908
+      ],
+      "title": "Свинина"
+    },
+    {
+      "action": "food",
+      "key": "chicken",
+      "position": [
+        -3.86999988555908,
+        0.860000014305115,
+        2.61999988555908
+      ],
+      "title": "Курица"
+    },
+    {
+      "action": "food",
+      "key": "pepper",
+      "position": [
+        -3.25999999046326,
+        0.860000014305115,
+        2.61999988555908
+      ],
+      "title": "Перец"
+    },
+    {
+      "action": "food",
+      "key": "zucchini",
+      "position": [
+        -2.65000009536743,
+        0.860000014305115,
+        2.61999988555908
+      ],
+      "title": "Кабачок"
+    },
+    {
+      "action": "food",
+      "key": "mushroom",
+      "position": [
+        -2.03999996185303,
+        0.860000014305115,
+        2.61999988555908
+      ],
+      "title": "Шампиньоны"
+    },
+    {
+      "action": "marinade",
+      "key": "onion",
+      "position": [
+        -4.17999982833862,
+        0.939999997615814,
+        3.15000009536743
+      ],
+      "title": "Луковый маринад"
+    },
+    {
+      "action": "marinade",
+      "key": "kefir",
+      "position": [
+        -3.53999996185303,
+        0.939999997615814,
+        3.15000009536743
+      ],
+      "title": "Кефирный маринад"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "file": "assets/characters/Real_Alina_brown_eye.png",
+    "width": 1024,
+    "height": 1024,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/characters/Real_Alina_eyebrow001.png",
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/characters/Real_Alina_eyelashes01.png",
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/characters/Real_Alina_female_casualsuit01_diffuse.png",
+    "width": 2048,
+    "height": 2048,
+    "mode": "RGB"
+  },
+  {
+    "file": "assets/characters/Real_Alina_female_casualsuit01_normal.png",
+    "width": 4096,
+    "height": 4096,
+    "mode": "RGB"
+  },
+  {
+    "file": "assets/characters/Real_Alina_long01_diffuse.png",
+    "width": 2048,
+    "height": 2048,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/characters/Real_Alina_shoes05_diffuse.png",
+    "width": 1024,
+    "height": 1024,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/characters/Real_Alina_young_lightskinned_female_diffuse.png",
+    "width": 2048,
+    "height": 2048,
+    "mode": "RGB"
+  },
+  {
+    "file": "assets/characters/Real_Kruglik_brown_eye.png",
+    "width": 1024,
+    "height": 1024,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/characters/Real_Kruglik_eyebrow001.png",
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/characters/Real_Kruglik_eyelashes01.png",
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/characters/Real_Kruglik_male_casualsuit04_diffuse.png",
+    "width": 2048,
+    "height": 2048,
+    "mode": "RGB"
+  },
+  {
+    "file": "assets/characters/Real_Kruglik_male_casualsuit04_normal.png",
+    "width": 4096,
+    "height": 4096,
+    "mode": "RGB"
+  },
+  {
+    "file": "assets/characters/Real_Kruglik_shoes05_diffuse.png",
+    "width": 1024,
+    "height": 1024,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/characters/Real_Kruglik_short01_diffuse.png",
+    "width": 2048,
+    "height": 2048,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/characters/Real_Kruglik_young_lightskinned_male_diffuse.png",
+    "width": 2048,
+    "height": 2048,
+    "mode": "RGB"
+  },
+  {
+    "file": "assets/characters/Real_Krysyuk_brown_eye.png",
+    "width": 1024,
+    "height": 1024,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/characters/Real_Krysyuk_eyebrow001.png",
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/characters/Real_Krysyuk_eyelashes01.png",
+    "width": 512,
+    "height": 512,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/characters/Real_Krysyuk_male_casualsuit01_diffuse.png",
+    "width": 2048,
+    "height": 2048,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/characters/Real_Krysyuk_male_casualsuit01_normal.png",
+    "width": 2048,
+    "height": 2048,
+    "mode": "RGB"
+  },
+  {
+    "file": "assets/characters/Real_Krysyuk_shoes05_diffuse.png",
+    "width": 1024,
+    "height": 1024,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/characters/Real_Krysyuk_short02_diffuse.png",
+    "width": 2048,
+    "height": 2048,
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/characters/Real_Krysyuk_young_lightskinned_male_diffuse.png",
+    "width": 2048,
+    "height": 2048,
+    "mode": "RGB"
+  }
+]

@@ -1,0 +1,517 @@
+{
+  "date": "2026-10-15",
+  "kind": "initial_audit_groups",
+  "note": "Группы требований полного ТЗ; это не заявление о закрытии всех его подпунктов. Локальные материалы находятся в /workspace/shashlik-development/stage-01/audit/, ссылки iteration-01 — в /workspace/shashlik-development/iteration-01/.",
+  "items": [
+    {
+      "id": "BASE-01",
+      "tz_sections": "1,2",
+      "object": "Все",
+      "requirement": "Продолжать с последней восстановленной версии",
+      "status": "проверено",
+      "finding": "Graphics 06 и ContactFix 01; архивы и манифест проверены",
+      "evidence": "Git ac186d5; docs/DEVELOPMENT_LOG.md",
+      "next_action": "Сохранять новые этапы отдельно"
+    },
+    {
+      "id": "BASE-02",
+      "tz_sections": "2",
+      "object": "Сцена",
+      "requirement": "Фактический состав объектов и действий",
+      "status": "проверено",
+      "finding": "4 гостя, 7 станций, 5 переносимых предметов, 3 места мангала",
+      "evidence": "scene-inventory.json; tests/audit_inventory.gd",
+      "next_action": "Расширять детализацию описания без новых игровых сущностей"
+    },
+    {
+      "id": "BASE-03",
+      "tz_sections": "3",
+      "object": "Правила",
+      "requirement": "Сохранность готовки, подачи, ошибок и реакций",
+      "status": "в работе",
+      "finding": "Self-test и интеграция прошли на ContactFix 01; все возможные ошибки отдельно не пройдены",
+      "evidence": "docs/DEVELOPMENT_LOG.md; scripts/rules.gd",
+      "next_action": "Проверять затронутые сценарии на следующих этапах"
+    },
+    {
+      "id": "BASE-04",
+      "tz_sections": "3",
+      "object": "Контакты",
+      "requirement": "Соответствие коллизий, видимых вещей и точек использования",
+      "status": "в работе",
+      "finding": "Существующие коллизии и лучевые взаимодействия сохранены; полный визуальный аудит точек не закончен",
+      "evidence": "scripts/main.gd; scripts/world.gd",
+      "next_action": "Проверять после замены геометрии каждого объекта"
+    },
+    {
+      "id": "RES-01",
+      "tz_sections": "4,7",
+      "object": "Ресурсы",
+      "requirement": "Сравнение качественных моделей и реальных референсов",
+      "status": "в работе",
+      "finding": "Доступные архивы изучены; новые внешние источники ещё не получены",
+      "evidence": "game/CREDITS.md; docs/GRAPHICS_TARGET_RU.md",
+      "next_action": "Сравнить новые ресурсы после восстановления доступа"
+    },
+    {
+      "id": "RES-02",
+      "tz_sections": "4",
+      "object": "Ресурсы",
+      "requirement": "Источники, лицензии и история изменений",
+      "status": "в работе",
+      "finding": "Реестр в CREDITS есть; независимая повторная проверка всех источников не завершена",
+      "evidence": "game/CREDITS.md",
+      "next_action": "Вести реестр ресурсов с фактическим статусом загрузки"
+    },
+    {
+      "id": "RES-03",
+      "tz_sections": "4",
+      "object": "Текстуры",
+      "requirement": "Детальные исходники и корректные PBR-карты",
+      "status": "требуется переделка",
+      "finding": "Окружение 1K; люди преимущественно 2K, часть normal одежды 4K",
+      "evidence": "character-textures.json; assets/textures",
+      "next_action": "Получить настоящие детальные источники и проверить видимую пользу"
+    },
+    {
+      "id": "RES-04",
+      "tz_sections": "4",
+      "object": "Инструменты",
+      "requirement": "Безопасное редактирование исходных моделей",
+      "status": "в работе",
+      "finding": "Blender 4.3.2 старее сохранённых .blend; оригиналы не пересохранены",
+      "evidence": "docs/ENVIRONMENT_SETUP.md",
+      "next_action": "Установить совместимый Blender из официального источника"
+    },
+    {
+      "id": "AL-01",
+      "tz_sections": "5",
+      "object": "Алина",
+      "requirement": "Голова, лицо, челюсть и подбородок с разных сторон",
+      "status": "требуется переделка",
+      "finding": "Сняты фронт, профиль, три четверти; видны грубые контуры и резкие переходы освещения",
+      "evidence": "portraits/0-face-front.png; portraits/0-face-profile.png",
+      "next_action": "Сравнить геометрию и материалы в нейтральном свете"
+    },
+    {
+      "id": "AL-02",
+      "tz_sections": "5",
+      "object": "Алина",
+      "requirement": "Кожа, глаза, брови, губы и уши",
+      "status": "требуется переделка",
+      "finding": "Есть текстуры и лицевые формы; качество крупного плана не закрывает ТЗ",
+      "evidence": "portraits/0-face-three-quarter.png; assets/characters/Refined_Alina.glb",
+      "next_action": "Проработать геометрию и раздельные свойства поверхностей"
+    },
+    {
+      "id": "AL-03",
+      "tz_sections": "5",
+      "object": "Алина",
+      "requirement": "Волосы, пряди и пересечения",
+      "status": "требуется переделка",
+      "finding": "В профиле волосы выглядят крупными гладкими объёмами",
+      "evidence": "portraits/0-face-profile.png",
+      "next_action": "Оценить новую причёску или переработку геометрии и материала"
+    },
+    {
+      "id": "AL-04",
+      "tz_sections": "5",
+      "object": "Алина",
+      "requirement": "Пропорции, одежда, кисти и пальцы",
+      "status": "в работе",
+      "finding": "Исходная фигура и одежда сохранены; часть крайних поз ещё требует оценки",
+      "evidence": "portraits/0-full.png; motion/humans-*.png",
+      "next_action": "Проверить силуэт, суставы и деформации ткани"
+    },
+    {
+      "id": "AL-05",
+      "tz_sections": "5,6",
+      "object": "Алина",
+      "requirement": "Посадка, таз, колени, стопы и скамья",
+      "status": "в работе",
+      "finding": "Есть сидячая поза и серии вставания/посадки; художественная готовность не подтверждена",
+      "evidence": "motion/rise-*.png; motion/sit-*.png",
+      "next_action": "Проверить поддержку веса и переходы несколькими ракурсами"
+    },
+    {
+      "id": "GT-01",
+      "tz_sections": "6",
+      "object": "Гитара",
+      "requirement": "Форма, масштаб и физически понятная опора",
+      "status": "в работе",
+      "finding": "Гитара процедурная, отдельные детали есть; полная опора не закрыта",
+      "evidence": "scripts/visual.gd:guitar; portraits/0-full.png",
+      "next_action": "Проверить инструмент вместе с телом и скамьёй"
+    },
+    {
+      "id": "GT-02",
+      "tz_sections": "6",
+      "object": "Левая рука",
+      "requirement": "Хват снизу, большой палец, индивидуальные контакты пальцев",
+      "status": "требуется переделка",
+      "finding": "Запястья достигают целей; визуальный хват остаётся открытой задачей",
+      "evidence": "motion/guitar-*.png; scripts/human_skin.gd",
+      "next_action": "Выбрать технику и переработать всю цепочку руки"
+    },
+    {
+      "id": "GT-03",
+      "tz_sections": "6",
+      "object": "Правая рука",
+      "requirement": "Ладонь к инструменту, работа предплечья и пальцев",
+      "status": "требуется переделка",
+      "finding": "Есть численная проверка ориентации; естественность контактов не подтверждена",
+      "evidence": "tests/hero_validation.gd; motion/guitar-*.png",
+      "next_action": "Оценить несколько фаз и референсов выбранной техники"
+    },
+    {
+      "id": "GT-04",
+      "tz_sections": "6,10",
+      "object": "Гитара",
+      "requirement": "Согласованная техника и сохранение контактов в движении",
+      "status": "в работе",
+      "finding": "Снята последовательность 30 расчётных кадров игры",
+      "evidence": "motion/guitar-000.png — guitar-029.png",
+      "next_action": "Проверить весь цикл, крайние фазы и смену состояний"
+    },
+    {
+      "id": "KR-01",
+      "tz_sections": "8",
+      "object": "Круглик",
+      "requirement": "Лицо, голова, волосы и внешний вид",
+      "status": "требуется переделка",
+      "finding": "Получены три ракурса; грубые черты и простая фуражка требуют доведения",
+      "evidence": "portraits/1-face-front.png; portraits/1-face-profile.png",
+      "next_action": "Переработать лицо и проверить посадку головного убора"
+    },
+    {
+      "id": "KR-02",
+      "tz_sections": "8",
+      "object": "Круглик",
+      "requirement": "Тело, одежда, руки и обувь",
+      "status": "в работе",
+      "finding": "Сняты полный вид и позы; детальная оценка деформаций ещё не закончена",
+      "evidence": "portraits/1-full.png; motion/humans-*.png",
+      "next_action": "Согласовать с качеством Алины"
+    },
+    {
+      "id": "KR-03",
+      "tz_sections": "8,10",
+      "object": "Круглик",
+      "requirement": "Мяч, ходьба, ожидание, заказы и пищевые реакции",
+      "status": "в работе",
+      "finding": "Есть walking/kick и избранные позы реакций; полного цикла ручного прохождения нет",
+      "evidence": "motion/kick-*.png; portraits/1-eat-11.png",
+      "next_action": "Довести переходы и контакты в реальных игровых ситуациях"
+    },
+    {
+      "id": "KY-01",
+      "tz_sections": "8",
+      "object": "Крысюк",
+      "requirement": "Лицо, волосы и очки",
+      "status": "требуется переделка",
+      "finding": "Есть три ракурса; очки построены из простых деталей, качество лица недостаточно",
+      "evidence": "portraits/2-face-three-quarter.png; scripts/human_skin.gd",
+      "next_action": "Проработать геометрию лица, волосы и конструкцию очков"
+    },
+    {
+      "id": "KY-02",
+      "tz_sections": "8",
+      "object": "Крысюк",
+      "requirement": "Тело, одежда, руки и обувь",
+      "status": "в работе",
+      "finding": "Доступны полный вид и исходные позы",
+      "evidence": "portraits/2-full.png; motion/humans-*.png",
+      "next_action": "Проверить крупные планы кистей, обуви и суставов"
+    },
+    {
+      "id": "KY-03",
+      "tz_sections": "8,10",
+      "object": "Крысюк",
+      "requirement": "Существующие действия и реакции",
+      "status": "в работе",
+      "finding": "Сняты выбранные фазы действий; не все переходы оценены",
+      "evidence": "portraits/2-wave-11.png; portraits/2-dislike-35.png",
+      "next_action": "Проверить действия целиком и прерывания"
+    },
+    {
+      "id": "HUM-01",
+      "tz_sections": "8",
+      "object": "Оба мужчины",
+      "requirement": "Сохранение различимости и существующих ролей",
+      "status": "в работе",
+      "finding": "Разные одежда, волосы и аксессуары уже присутствуют; роли BALL сохранены",
+      "evidence": "scene-inventory.json; portraits/1-full.png; portraits/2-full.png",
+      "next_action": "Сохранить различия при замене базовых ресурсов"
+    },
+    {
+      "id": "DOG-01",
+      "tz_sections": "9",
+      "object": "Арториас",
+      "requirement": "Анатомия, силуэт, размер, голова и шея",
+      "status": "требуется переделка",
+      "finding": "Текущая собственная модель остаётся условной с длинной шеей",
+      "evidence": "iteration-01/final/idle-side.png",
+      "next_action": "Сравнить качественные основы и переработать модель"
+    },
+    {
+      "id": "DOG-02",
+      "tz_sections": "9",
+      "object": "Арториас",
+      "requirement": "Морда, уши, хвост, глаза и шерсть",
+      "status": "требуется переделка",
+      "finding": "Детали есть, но форма и фактура не достигли целевого качества",
+      "evidence": "assets/characters/Artorias_Anatomical.glb; assets/shaders/fur.gdshader",
+      "next_action": "Полноценная переработка геометрии и материалов"
+    },
+    {
+      "id": "DOG-03",
+      "tz_sections": "9,10",
+      "object": "Арториас",
+      "requirement": "Скелет, веса и естественные деформации",
+      "status": "требуется переделка",
+      "finding": "26 костей; на кадрах видны дугообразные деформации ног",
+      "evidence": "scene-inventory.json; iteration-01/final/run-016.png",
+      "next_action": "Переработать веса и сверить модель со скелетом"
+    },
+    {
+      "id": "DOG-04",
+      "tz_sections": "9,10",
+      "object": "Арториас",
+      "requirement": "Фиксация суставной точки опорной лапы",
+      "status": "проверено",
+      "finding": "ContactFix 01: при устойчивой опоре дрейф меньше 0,003 мм/кадр в проверенных сценариях",
+      "evidence": "tests/locomotion_contacts.gd; iteration-01/contacts-release.log",
+      "next_action": "Повторить после смены скелета; проверить поверхность лап отдельно"
+    },
+    {
+      "id": "DOG-05",
+      "tz_sections": "9,10",
+      "object": "Арториас",
+      "requirement": "Шаг, рысь и бег как убедительные движения",
+      "status": "в работе",
+      "finding": "Рысь процедурная; есть три серии движений, естественность целиком не принята",
+      "evidence": "motion/dog-walk-*.png; motion/dog-trot-*.png; motion/dog-run-*.png",
+      "next_action": "Оценить опоры, перенос веса и крайние позы по реальным референсам"
+    },
+    {
+      "id": "DOG-06",
+      "tz_sections": "9,10",
+      "object": "Арториас",
+      "requirement": "Повороты, остановки и реакции",
+      "status": "в работе",
+      "finding": "Исправлена просадка при разворотах; общий визуальный аудит ещё нужен",
+      "evidence": "iteration-01/turn-stop.mp4; tests/locomotion_contacts.gd",
+      "next_action": "Довести тело, голову и хвост в переходах"
+    },
+    {
+      "id": "ANIM-01",
+      "tz_sections": "7,10",
+      "object": "Все",
+      "requirement": "Референсы опоры, веса и последовательности движения",
+      "status": "в работе",
+      "finding": "Исторические источники указаны; новые реальные материалы не загружены",
+      "evidence": "game/CREDITS.md",
+      "next_action": "Получить и сравнить подходящие реальные референсы"
+    },
+    {
+      "id": "ANIM-02",
+      "tz_sections": "10",
+      "object": "Люди",
+      "requirement": "Клипы, перенос, темп и корневое движение",
+      "status": "в работе",
+      "finding": "У людей 63 кости и 9 исходных клипов; часть реакций дополняется процедурно; на просмотренных ключевых фазах eat/gag/cough/spit кисть часто закрывает верх лица вместо убедительного контакта у рта",
+      "evidence": "scene-inventory.json; scripts/human_skin.gd",
+      "next_action": "Проверить качество каждого используемого действия"
+    },
+    {
+      "id": "ANIM-03",
+      "tz_sections": "10",
+      "object": "Все",
+      "requirement": "Переходы ожидание → движение → действие → возврат",
+      "status": "в работе",
+      "finding": "Есть исходные серии; полное визуальное закрытие переходов отсутствует",
+      "evidence": "motion/rise-*.png; motion/sit-*.png; portraits/",
+      "next_action": "Проверить последовательности, прерывания и резкие смены направления"
+    },
+    {
+      "id": "ANIM-04",
+      "tz_sections": "10",
+      "object": "Люди",
+      "requirement": "Мимика, моргание и направление взгляда",
+      "status": "в работе",
+      "finding": "Код использует лицевые формы и вращение головы; реализация не равна готовности",
+      "evidence": "scripts/human_skin.gd; scene-inventory.json",
+      "next_action": "Снять и оценить мимику крупно в нескольких состояниях"
+    },
+    {
+      "id": "PROP-01",
+      "tz_sections": "11",
+      "object": "Мангал",
+      "requirement": "Конструкция, металл, угли, зола и следы использования",
+      "status": "требуется переделка",
+      "finding": "Есть каркас, ручки, угли и PBR; общий вид ещё грубый",
+      "evidence": "scripts/world.gd:hero_details; portraits/location-grill.png",
+      "next_action": "Довести геометрию и материалы без изменения рабочих поверхностей"
+    },
+    {
+      "id": "PROP-02",
+      "tz_sections": "11",
+      "object": "Мебель",
+      "requirement": "Древесина, направление волокон и микрорельеф",
+      "status": "требуется переделка",
+      "finding": "Normal дерева загружается, но исходный wood.gdshader его не применяет; волокна ориентированы поперёк досок",
+      "evidence": "scripts/world.gd:shader; assets/shaders/wood.gdshader",
+      "next_action": "Проверить отдельный исправленный материал в раннем образце"
+    },
+    {
+      "id": "PROP-03",
+      "tz_sections": "11",
+      "object": "Мебель",
+      "requirement": "Конструкция, кромки, крепления и масштаб",
+      "status": "в работе",
+      "finding": "Стол разделён на доски, крепёж присутствует; дальнейшая оценка крупным планом нужна",
+      "evidence": "scripts/world.gd:hero_details; portraits/location-table.png",
+      "next_action": "Согласовать детализацию с персонажами"
+    },
+    {
+      "id": "PROP-04",
+      "tz_sections": "11",
+      "object": "Продукты",
+      "requirement": "Силуэт, фактура и читаемость всех пяти продуктов",
+      "status": "требуется переделка",
+      "finding": "Все пять типов присутствуют, многие формы остаются примитивными",
+      "evidence": "scripts/visual.gd:food; portraits/location-table.png",
+      "next_action": "Улучшить модели и сохранить состояние приготовления"
+    },
+    {
+      "id": "PROP-05",
+      "tz_sections": "11",
+      "object": "Посуда",
+      "requirement": "Толщины, внутренняя поверхность и материал",
+      "status": "в работе",
+      "finding": "Полая посуда предусмотрена процедурной геометрией; полный осмотр ещё не завершён",
+      "evidence": "scripts/nature.gd:bowl",
+      "next_action": "Снять крупные ракурсы и проверить толщины"
+    },
+    {
+      "id": "PROP-06",
+      "tz_sections": "11",
+      "object": "Принадлежности",
+      "requirement": "Шампуры, опахало, маринады, мяч",
+      "status": "в работе",
+      "finding": "Три шампура, опахало, мяч и два маринада подтверждены",
+      "evidence": "scene-inventory.json; scripts/visual.gd",
+      "next_action": "Довести конструкцию, фактуры и контакты"
+    },
+    {
+      "id": "ENV-01",
+      "tz_sections": "11",
+      "object": "Земля",
+      "requirement": "Детализация, рельеф и уменьшение повторяемости",
+      "status": "требуется переделка",
+      "finding": "Один 1K набор, плоская игровая поверхность и окрашивание шумом",
+      "evidence": "assets/shaders/ground.gdshader; portraits/location-overview.png",
+      "next_action": "Качественные источники, масштаб и неоднородность покрытия"
+    },
+    {
+      "id": "ENV-02",
+      "tz_sections": "11",
+      "object": "Трава",
+      "requirement": "Форма, распределение и освещение",
+      "status": "требуется переделка",
+      "finding": "6500 экземпляров одного пучка; нормали принудительно направлены вверх",
+      "evidence": "scripts/world.gd:grass; assets/shaders/grass.gdshader",
+      "next_action": "Переработать геометрию, распределение и материал"
+    },
+    {
+      "id": "ENV-03",
+      "tz_sections": "11",
+      "object": "Берёзы",
+      "requirement": "Стволы, ветви, листва и цельный силуэт",
+      "status": "требуется переделка",
+      "finding": "Процедурные ветви, SVG-листва; 13091 ближний экземпляр листвы",
+      "evidence": "scene-inventory.json; scripts/nature.gd",
+      "next_action": "Сравнить более убедительную геометрию и листовые ресурсы"
+    },
+    {
+      "id": "ENV-04",
+      "tz_sections": "11",
+      "object": "Пруд",
+      "requirement": "Вода, берег и согласованность поверхности",
+      "status": "требуется переделка",
+      "finding": "Пруд — цилиндр с непрозрачным шейдером; код нормали требует исправления",
+      "evidence": "scripts/world.gd:build; assets/shaders/water.gdshader",
+      "next_action": "Проверить отражения, правильные нормали и береговую геометрию"
+    },
+    {
+      "id": "ENV-05",
+      "tz_sections": "11",
+      "object": "Дальний план",
+      "requirement": "Камни, дальние деревья и фон",
+      "status": "требуется переделка",
+      "finding": "Повторяющиеся камни и 85 дальних стволов с 8500 листовых экземпляров",
+      "evidence": "scripts/world.gd:distant_forest; portraits/location-water.png",
+      "next_action": "Улучшить вариативность и силуэты существующего окружения"
+    },
+    {
+      "id": "LIGHT-01",
+      "tz_sections": "11",
+      "object": "Свет",
+      "requirement": "Согласованные свет, тени, экспозиция и цвет",
+      "status": "требуется переделка",
+      "finding": "Исходный профиль Compatibility; получен диагностический кадр Forward+ с тенями",
+      "evidence": "forward-with-shadows.png; scripts/world.gd",
+      "next_action": "Подготовить и независимо оценить ранний высокий профиль"
+    },
+    {
+      "id": "LIGHT-02",
+      "tz_sections": "4,11",
+      "object": "Рендер",
+      "requirement": "Forward+, отражения и непрямой свет",
+      "status": "в работе",
+      "finding": "Vulkan работает в программном режиме; кадры ещё не доказывают скорость интерактивного запуска",
+      "evidence": "forward-with-shadows.log; docs/TARGET_PC_RU.md",
+      "next_action": "Проверить отдельный профиль и затем сборку на RTX 5080"
+    },
+    {
+      "id": "VERIFY-01",
+      "tz_sections": "13,14",
+      "object": "Проверки",
+      "requirement": "Свежие ракурсы и последовательности всей четвёрки",
+      "status": "в работе",
+      "finding": "Сняты 60 ракурсов/поз и 198 кадров движений; просмотрены выбранные крупные планы и 4 контактных листа движений/реакций. Полного просмотра видео нет.",
+      "evidence": "portraits.log; motion.log",
+      "next_action": "Завершить визуальный разбор всех ключевых действий"
+    },
+    {
+      "id": "VERIFY-02",
+      "tz_sections": "13,14",
+      "object": "Проверки",
+      "requirement": "Сравнимые до/после и оценка крайних поз",
+      "status": "в работе",
+      "finding": "Для ContactFix есть сравнения; новый графический образец ещё исследуется",
+      "evidence": "docs/DEVELOPMENT_LOG.md; tests/graphics_benchmark.gd",
+      "next_action": "Сохранять одинаковые камеры и явные профили света"
+    },
+    {
+      "id": "DELIVER-01",
+      "tz_sections": "16",
+      "object": "Передача",
+      "requirement": "Проект, сборка ПК, изображения, движения, лицензии и проблемы",
+      "status": "в работе",
+      "finding": "Исходный проект и контрольная точка сохранены; Windows-сборка ещё не проверена",
+      "evidence": "docs/STAGE_SAVING_RU.md",
+      "next_action": "Готовить на завершении содержательных этапов и в конце"
+    },
+    {
+      "id": "SAVE-01",
+      "tz_sections": "15,16",
+      "object": "Сохранение",
+      "requirement": "Отдельный файл и резервная версия каждого этапа",
+      "status": "проверено",
+      "finding": "Правило сохранено, исходники успешно отправлены в отдельную GitHub-ветку",
+      "evidence": "docs/stages/STAGE_00_Backup_and_Quality_RU.md; Git ac186d5",
+      "next_action": "Фиксировать и отправлять последующие отчёты и версии"
+    }
+  ]
+}
