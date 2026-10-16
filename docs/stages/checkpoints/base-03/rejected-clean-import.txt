@@ -1,0 +1,477 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Project initialization (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Scanning file structure...[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Loading global class names...[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Verifying GDExtensions...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Creating autoload scripts...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initializing plugins...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Starting file scan...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | Started Registering global classes... (47 steps)[39m[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | DemoActor[39m[0m
+[   2% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   4% ] [90m[1mupdate_scripts_classes[22m | DemoDogSkin[39m[0m
+[   6% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   8% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  10% ] [90m[1mupdate_scripts_classes[22m | DemoHUD[39m[0m
+[  12% ] [90m[1mupdate_scripts_classes[22m | DemoHumanSkin[39m[0m
+[  14% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  16% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  18% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  20% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  22% ] [90m[1mupdate_scripts_classes[22m | DemoNature[39m[0m
+[  25% ] [90m[1mupdate_scripts_classes[22m | DemoProp[39m[0m
+[  27% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  29% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  31% ] [90m[1mupdate_scripts_classes[22m | DemoRig[39m[0m
+[  33% ] [90m[1mupdate_scripts_classes[22m | DemoRules[39m[0m
+[  35% ] [90m[1mupdate_scripts_classes[22m | DemoVisual[39m[0m
+[  37% ] [90m[1mupdate_scripts_classes[22m | DemoWorld[39m[0m
+[  39% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  41% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  43% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  45% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  47% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  50% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  52% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  54% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  56% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  58% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  60% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  62% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  64% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  66% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  68% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  70% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  72% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  75% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  77% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  79% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  81% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  83% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  85% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  87% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  89% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  91% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  93% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  95% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[92m[ DONE ][39m [1mupdate_scripts_classes[22m
+[0m
+[   0% ] [90m[1m_update_scan_actions[22m | Started Scanning actions... (82 steps)[39m[0m
+[   0% ] [90m[1m_update_scan_actions[22m | bark.wav[39m[0m
+[   1% ] [90m[1m_update_scan_actions[22m | folk-round.mp3[39m[0m
+[   2% ] [90m[1m_update_scan_actions[22m | guitar.ogg[39m[0m
+[   3% ] [90m[1m_update_scan_actions[22m | AlinaSkinStudy_Generated.png[39m[0m
+[   4% ] [90m[1m_update_scan_actions[22m | AlternativeHeadStudy.glb[39m[0m
+[   6% ] [90m[1m_update_scan_actions[22m | Artorias_Anatomical.glb[39m[0m
+[   7% ] [90m[1m_update_scan_actions[22m | Real_Alina.glb[39m[0m
+[   8% ] [90m[1m_update_scan_actions[22m | Real_Alina_brown_eye.png[39m[0m
+[   9% ] [90m[1m_update_scan_actions[22m | Real_Alina_eyebrow001.png[39m[0m
+[  10% ] [90m[1m_update_scan_actions[22m | Real_Alina_eyelashes01.png[39m[0m
+[  12% ] [90m[1m_update_scan_actions[22m | Real_Alina_female_casualsuit01_diffuse.png[39m[0m
+[  13% ] [90m[1m_update_scan_actions[22m | Real_Alina_female_casualsuit01_normal.png[39m[0m
+[  14% ] [90m[1m_update_scan_actions[22m | Real_Alina_long01_diffuse.png[39m[0m
+[  15% ] [90m[1m_update_scan_actions[22m | Real_Alina_shoes05_diffuse.png[39m[0m
+[  16% ] [90m[1m_update_scan_actions[22m | Real_Alina_young_lightskinned_female_diffuse.png[39m[0m
+[  18% ] [90m[1m_update_scan_actions[22m | Real_Kruglik.glb[39m[0m
+[  19% ] [90m[1m_update_scan_actions[22m | Real_Kruglik_brown_eye.png[39m[0m
+[  20% ] [90m[1m_update_scan_actions[22m | Real_Kruglik_eyebrow001.png[39m[0m
+[  21% ] [90m[1m_update_scan_actions[22m | Real_Kruglik_eyelashes01.png[39m[0m
+[  22% ] [90m[1m_update_scan_actions[22m | Real_Kruglik_male_casualsuit04_diffuse.png[39m[0m
+[  24% ] [90m[1m_update_scan_actions[22m | Real_Kruglik_male_casualsuit04_normal.png[39m[0m
+[  25% ] [90m[1m_update_scan_actions[22m | Real_Kruglik_shoes05_diffuse.png[39m[0m
+[  26% ] [90m[1m_update_scan_actions[22m | Real_Kruglik_short01_diffuse.png[39m[0m
+[  27% ] [90m[1m_update_scan_actions[22m | Real_Kruglik_young_lightskinned_male_diffuse.png[39m[0m
+[  28% ] [90m[1m_update_scan_actions[22m | Real_Krysyuk.glb[39m[0m
+[  30% ] [90m[1m_update_scan_actions[22m | Real_Krysyuk_brown_eye.png[39m[0m
+[  31% ] [90m[1m_update_scan_actions[22m | Real_Krysyuk_eyebrow001.png[39m[0m
+[  32% ] [90m[1m_update_scan_actions[22m | Real_Krysyuk_eyelashes01.png[39m[0m
+[  33% ] [90m[1m_update_scan_actions[22m | Real_Krysyuk_male_casualsuit01_diffuse.png[39m[0m
+[  34% ] [90m[1m_update_scan_actions[22m | Real_Krysyuk_male_casualsuit01_normal.png[39m[0m
+[  36% ] [90m[1m_update_scan_actions[22m | Real_Krysyuk_shoes05_diffuse.png[39m[0m
+[  37% ] [90m[1m_update_scan_actions[22m | Real_Krysyuk_short02_diffuse.png[39m[0m
+[  38% ] [90m[1m_update_scan_actions[22m | Real_Krysyuk_young_lightskinned_male_diffuse.png[39m[0m
+[  39% ] [90m[1m_update_scan_actions[22m | Refined_Alina.glb[39m[0m
+[  40% ] [90m[1m_update_scan_actions[22m | Refined_Kruglik.glb[39m[0m
+[  42% ] [90m[1m_update_scan_actions[22m | Refined_Krysyuk.glb[39m[0m
+[  43% ] [90m[1m_update_scan_actions[22m | birch_01.glb[39m[0m
+[  44% ] [90m[1m_update_scan_actions[22m | birch_01_far.glb[39m[0m
+[  45% ] [90m[1m_update_scan_actions[22m | birch_02.glb[39m[0m
+[  46% ] [90m[1m_update_scan_actions[22m | birch_02_far.glb[39m[0m
+[  48% ] [90m[1m_update_scan_actions[22m | birch_03.glb[39m[0m
+[  49% ] [90m[1m_update_scan_actions[22m | birch_03_far.glb[39m[0m
+[  50% ] [90m[1m_update_scan_actions[22m | color_8k.jpg[39m[0m
+[  51% ] [90m[1m_update_scan_actions[22m | normal_8k.jpg[39m[0m
+[  53% ] [90m[1m_update_scan_actions[22m | roughness_8k.jpg[39m[0m
+[  54% ] [90m[1m_update_scan_actions[22m | bark_brown_01_diff.jpg[39m[0m
+[  55% ] [90m[1m_update_scan_actions[22m | bark_brown_01_nor_gl.jpg[39m[0m
+[  56% ] [90m[1m_update_scan_actions[22m | bark_brown_01_rough.jpg[39m[0m
+[  57% ] [90m[1m_update_scan_actions[22m | fabric_pattern_07_nor_gl.jpg[39m[0m
+[  59% ] [90m[1m_update_scan_actions[22m | fabric_pattern_07_rough.jpg[39m[0m
+[  60% ] [90m[1m_update_scan_actions[22m | rusty_metal_04_diff.jpg[39m[0m
+[  61% ] [90m[1m_update_scan_actions[22m | rusty_metal_04_nor_gl.jpg[39m[0m
+[  62% ] [90m[1m_update_scan_actions[22m | rusty_metal_04_rough.jpg[39m[0m
+[  63% ] [90m[1m_update_scan_actions[22m | forest_ground_04_diff_4k.jpg[39m[0m
+[  65% ] [90m[1m_update_scan_actions[22m | forest_ground_04_nor_gl_4k.jpg[39m[0m
+[  66% ] [90m[1m_update_scan_actions[22m | forest_ground_04_rough_4k.jpg[39m[0m
+[  67% ] [90m[1m_update_scan_actions[22m | kloofendal_48d_partly_cloudy_puresky_2k.hdr[39m[0m
+[  68% ] [90m[1m_update_scan_actions[22m | leafy_grass_diff_4k.jpg[39m[0m
+[  69% ] [90m[1m_update_scan_actions[22m | leafy_grass_nor_gl_4k.jpg[39m[0m
+[  71% ] [90m[1m_update_scan_actions[22m | leafy_grass_rough_4k.jpg[39m[0m
+[  72% ] [90m[1m_update_scan_actions[22m | rock_05_diff_4k.jpg[39m[0m
+[  73% ] [90m[1m_update_scan_actions[22m | rock_05_nor_gl_4k.jpg[39m[0m
+[  74% ] [90m[1m_update_scan_actions[22m | rock_05_rough_4k.jpg[39m[0m
+[  75% ] [90m[1m_update_scan_actions[22m | wood_table_worn_diff_4k.jpg[39m[0m
+[  77% ] [90m[1m_update_scan_actions[22m | wood_table_worn_nor_gl_4k.jpg[39m[0m
+[  78% ] [90m[1m_update_scan_actions[22m | wood_table_worn_rough_4k.jpg[39m[0m
+[  79% ] [90m[1m_update_scan_actions[22m | birch-leaves.svg[39m[0m
+[  80% ] [90m[1m_update_scan_actions[22m | birch-twig.svg[39m[0m
+[  81% ] [90m[1m_update_scan_actions[22m | forest_ground_diff.jpg[39m[0m
+[  83% ] [90m[1m_update_scan_actions[22m | forest_ground_normal.jpg[39m[0m
+[  84% ] [90m[1m_update_scan_actions[22m | forest_ground_rough.jpg[39m[0m
+[  85% ] [90m[1m_update_scan_actions[22m | smoke.svg[39m[0m
+[  86% ] [90m[1m_update_scan_actions[22m | wood_table_diff.jpg[39m[0m
+[  87% ] [90m[1m_update_scan_actions[22m | wood_table_normal.jpg[39m[0m
+[  89% ] [90m[1m_update_scan_actions[22m | wood_table_rough.jpg[39m[0m
+[  90% ] [90m[1m_update_scan_actions[22m | chicken.svg[39m[0m
+[  91% ] [90m[1m_update_scan_actions[22m | kefir.svg[39m[0m
+[  92% ] [90m[1m_update_scan_actions[22m | mushroom.svg[39m[0m
+[  93% ] [90m[1m_update_scan_actions[22m | onion.svg[39m[0m
+[  95% ] [90m[1m_update_scan_actions[22m | pepper.svg[39m[0m
+[  96% ] [90m[1m_update_scan_actions[22m | pork.svg[39m[0m
+[  97% ] [90m[1m_update_scan_actions[22m | zucchini.svg[39m[0m
+[92m[ DONE ][39m [1m_update_scan_actions[22m
+[0m
+[   0% ] [90m[1mreimport[22m | Started (Re)Importing Assets (82 steps)[39m[0m
+[   0% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   1% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   2% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   3% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   4% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   6% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   7% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   8% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   9% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  10% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  12% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  13% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  14% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  15% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  16% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  18% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  19% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  20% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  21% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  22% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  24% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  25% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  26% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  27% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  28% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  30% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  31% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  32% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  33% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  34% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  36% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  37% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  38% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  39% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  40% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  42% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  43% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  44% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  45% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  46% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  48% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  49% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  50% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  51% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  53% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  54% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  55% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  56% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  57% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  59% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  60% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  61% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  62% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  63% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  65% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  66% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  67% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  68% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  69% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  71% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  72% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  73% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  74% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  75% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  77% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  78% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  79% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  80% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  81% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  83% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  84% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  85% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  86% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  87% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  89% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  90% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  91% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  92% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  93% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  95% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  96% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[  97% ] [90m[1mreimport[22m | Preparing files to reimport...[39m[0m
+[   0% ] [90m[1mreimport[22m | Executing pre-reimport operations...[39m[0m
+[   0% ] [90m[1mpreload_reimporting_scene[22m | Started Preparing scenes for reload (1 steps)[39m[0m
+[   0% ] [90m[1mpreload_reimporting_scene[22m | Analyzing scene [empty][39m[0m
+[  50% ] [90m[1mpreload_reimporting_scene[22m | Preparation done.[39m[0m
+[92m[ DONE ][39m [1mpreload_reimporting_scene[22m
+[0m
+[   0% ] [90m[1mreimport[22m | folk-round.mp3[39m[0m
+[   1% ] [90m[1mreimport[22m | guitar.ogg[39m[0m
+[   2% ] [90m[1mreimport[22m | folk-round.mp3[39m[0m
+[   3% ] [90m[1mreimport[22m | guitar.ogg[39m[0m
+[   4% ] [90m[1mreimport[22m | rusty_metal_04_diff.jpg[39m[0m
+[   6% ] [90m[1mreimport[22m | fabric_pattern_07_rough.jpg[39m[0m
+[   7% ] [90m[1mreimport[22m | fabric_pattern_07_nor_gl.jpg[39m[0m
+[   8% ] [90m[1mreimport[22m | bark_brown_01_rough.jpg[39m[0m
+[   9% ] [90m[1mreimport[22m | bark_brown_01_nor_gl.jpg[39m[0m
+[   9% ] [90m[1mreimport[22m | bark_brown_01_nor_gl.jpg[39m[0m
+[   9% ] [90m[1mreimport[22m | bark_brown_01_nor_gl.jpg[39m[0m
+[   9% ] [90m[1mreimport[22m | bark_brown_01_nor_gl.jpg[39m[0m
+[   9% ] [90m[1mreimport[22m | bark_brown_01_nor_gl.jpg[39m[0m
+[   9% ] [90m[1mreimport[22m | bark_brown_01_nor_gl.jpg[39m[0m
+[   9% ] [90m[1mreimport[22m | bark_brown_01_nor_gl.jpg[39m[0m
+[   9% ] [90m[1mreimport[22m | bark_brown_01_nor_gl.jpg[39m[0m
+[   9% ] [90m[1mreimport[22m | bark_brown_01_nor_gl.jpg[39m[0m
+[   9% ] [90m[1mreimport[22m | bark_brown_01_nor_gl.jpg[39m[0m
+[   9% ] [90m[1mreimport[22m | bark_brown_01_nor_gl.jpg[39m[0m
+[  10% ] [90m[1mreimport[22m | bark_brown_01_diff.jpg[39m[0m
+[  12% ] [90m[1mreimport[22m | roughness_8k.jpg[39m[0m
+[  13% ] [90m[1mreimport[22m | normal_8k.jpg[39m[0m
+[  14% ] [90m[1mreimport[22m | color_8k.jpg[39m[0m
+[  15% ] [90m[1mreimport[22m | birch-twig.svg[39m[0m
+[  16% ] [90m[1mreimport[22m | forest_ground_diff.jpg[39m[0m
+[  18% ] [90m[1mreimport[22m | forest_ground_normal.jpg[39m[0m
+[  19% ] [90m[1mreimport[22m | forest_ground_rough.jpg[39m[0m
+[  20% ] [90m[1mreimport[22m | smoke.svg[39m[0m
+[  21% ] [90m[1mreimport[22m | wood_table_diff.jpg[39m[0m
+[  21% ] [90m[1mreimport[22m | wood_table_diff.jpg[39m[0m
+[  21% ] [90m[1mreimport[22m | wood_table_diff.jpg[39m[0m
+[  21% ] [90m[1mreimport[22m | wood_table_diff.jpg[39m[0m
+[  21% ] [90m[1mreimport[22m | wood_table_diff.jpg[39m[0m
+[  22% ] [90m[1mreimport[22m | wood_table_normal.jpg[39m[0m
+[  24% ] [90m[1mreimport[22m | rusty_metal_04_nor_gl.jpg[39m[0m
+[  25% ] [90m[1mreimport[22m | rusty_metal_04_rough.jpg[39m[0m
+[  26% ] [90m[1mreimport[22m | forest_ground_04_diff_4k.jpg[39m[0m
+[  26% ] [90m[1mreimport[22m | forest_ground_04_diff_4k.jpg[39m[0m
+[  26% ] [90m[1mreimport[22m | forest_ground_04_diff_4k.jpg[39m[0m
+[  27% ] [90m[1mreimport[22m | forest_ground_04_nor_gl_4k.jpg[39m[0m
+[  27% ] [90m[1mreimport[22m | forest_ground_04_nor_gl_4k.jpg[39m[0m
+[  28% ] [90m[1mreimport[22m | forest_ground_04_rough_4k.jpg[39m[0m
+[  28% ] [90m[1mreimport[22m | forest_ground_04_rough_4k.jpg[39m[0m
+[  30% ] [90m[1mreimport[22m | kloofendal_48d_partly_cloudy_puresky_2k.hdr[39m[0m
+[  30% ] [90m[1mreimport[22m | kloofendal_48d_partly_cloudy_puresky_2k.hdr[39m[0m
+[  31% ] [90m[1mreimport[22m | leafy_grass_diff_4k.jpg[39m[0m
+[  32% ] [90m[1mreimport[22m | leafy_grass_nor_gl_4k.jpg[39m[0m
+[  32% ] [90m[1mreimport[22m | leafy_grass_nor_gl_4k.jpg[39m[0m
+[  33% ] [90m[1mreimport[22m | leafy_grass_rough_4k.jpg[39m[0m
+[  33% ] [90m[1mreimport[22m | leafy_grass_rough_4k.jpg[39m[0m
+[  34% ] [90m[1mreimport[22m | rock_05_diff_4k.jpg[39m[0m
+[  36% ] [90m[1mreimport[22m | rock_05_nor_gl_4k.jpg[39m[0m
+[  36% ] [90m[1mreimport[22m | rock_05_nor_gl_4k.jpg[39m[0m
+[  37% ] [90m[1mreimport[22m | rock_05_rough_4k.jpg[39m[0m
+[  38% ] [90m[1mreimport[22m | wood_table_worn_diff_4k.jpg[39m[0m
+[  39% ] [90m[1mreimport[22m | wood_table_worn_nor_gl_4k.jpg[39m[0m
+[  40% ] [90m[1mreimport[22m | wood_table_worn_rough_4k.jpg[39m[0m
+[  42% ] [90m[1mreimport[22m | birch-leaves.svg[39m[0m
+[  43% ] [90m[1mreimport[22m | zucchini.svg[39m[0m
+[  44% ] [90m[1mreimport[22m | AlinaSkinStudy_Generated.png[39m[0m
+[  45% ] [90m[1mreimport[22m | pork.svg[39m[0m
+[  46% ] [90m[1mreimport[22m | pepper.svg[39m[0m
+[  48% ] [90m[1mreimport[22m | onion.svg[39m[0m
+[  49% ] [90m[1mreimport[22m | Real_Alina_brown_eye.png[39m[0m
+[  50% ] [90m[1mreimport[22m | Real_Alina_eyebrow001.png[39m[0m
+[  51% ] [90m[1mreimport[22m | Real_Alina_eyelashes01.png[39m[0m
+[  53% ] [90m[1mreimport[22m | Real_Alina_female_casualsuit01_diffuse.png[39m[0m
+[  54% ] [90m[1mreimport[22m | Real_Alina_female_casualsuit01_normal.png[39m[0m
+[  55% ] [90m[1mreimport[22m | Real_Alina_long01_diffuse.png[39m[0m
+[  56% ] [90m[1mreimport[22m | Real_Alina_shoes05_diffuse.png[39m[0m
+[  57% ] [90m[1mreimport[22m | Real_Alina_young_lightskinned_female_diffuse.png[39m[0m
+[  59% ] [90m[1mreimport[22m | mushroom.svg[39m[0m
+[  60% ] [90m[1mreimport[22m | Real_Kruglik_brown_eye.png[39m[0m
+[  61% ] [90m[1mreimport[22m | Real_Kruglik_eyebrow001.png[39m[0m
+[  62% ] [90m[1mreimport[22m | wood_table_rough.jpg[39m[0m
+[  63% ] [90m[1mreimport[22m | chicken.svg[39m[0m
+[  65% ] [90m[1mreimport[22m | Real_Krysyuk_young_lightskinned_male_diffuse.png[39m[0m
+[  66% ] [90m[1mreimport[22m | Real_Krysyuk_short02_diffuse.png[39m[0m
+[  67% ] [90m[1mreimport[22m | Real_Krysyuk_shoes05_diffuse.png[39m[0m
+[  68% ] [90m[1mreimport[22m | Real_Krysyuk_male_casualsuit01_normal.png[39m[0m
+[  69% ] [90m[1mreimport[22m | Real_Krysyuk_male_casualsuit01_diffuse.png[39m[0m
+[  71% ] [90m[1mreimport[22m | Real_Krysyuk_eyelashes01.png[39m[0m
+[  72% ] [90m[1mreimport[22m | Real_Krysyuk_eyebrow001.png[39m[0m
+[  73% ] [90m[1mreimport[22m | Real_Krysyuk_brown_eye.png[39m[0m
+[  74% ] [90m[1mreimport[22m | kefir.svg[39m[0m
+[  75% ] [90m[1mreimport[22m | Real_Kruglik_young_lightskinned_male_diffuse.png[39m[0m
+[  77% ] [90m[1mreimport[22m | Real_Kruglik_short01_diffuse.png[39m[0m
+[  78% ] [90m[1mreimport[22m | Real_Kruglik_shoes05_diffuse.png[39m[0m
+[  79% ] [90m[1mreimport[22m | Real_Kruglik_male_casualsuit04_normal.png[39m[0m
+[  79% ] [90m[1mreimport[22m | Real_Kruglik_male_casualsuit04_normal.png[39m[0m
+[  80% ] [90m[1mreimport[22m | bark.wav[39m[0m
+[  81% ] [90m[1mreimport[22m | birch_03_far.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  83% ] [90m[1mreimport[22m | birch_03.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  84% ] [90m[1mreimport[22m | birch_02_far.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  85% ] [90m[1mreimport[22m | birch_02.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  86% ] [90m[1mreimport[22m | birch_01_far.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  87% ] [90m[1mreimport[22m | birch_01.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  89% ] [90m[1mreimport[22m | Refined_Krysyuk.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  90% ] [90m[1mreimport[22m | Refined_Kruglik.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  91% ] [90m[1mreimport[22m | Refined_Alina.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  92% ] [90m[1mreimport[22m | Real_Krysyuk.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  93% ] [90m[1mreimport[22m | Real_Kruglik.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  95% ] [90m[1mreimport[22m | Real_Alina.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  96% ] [90m[1mreimport[22m | Artorias_Anatomical.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  97% ] [90m[1mreimport[22m | AlternativeHeadStudy.glb[39m[0m
+[   0% ] [90m[1mimport[22m | Started Import Scene (104 steps)[39m[0m
+[   0% ] [90m[1mimport[22m | Importing Scene...[39m[0m
+ERROR: Failed loading resource: res://assets/characters/studies/AlternativeHeadStudy_Girl Normal.png. The file doesn't seem to exist.
+   at: _load_resource_on_startup (editor/file_system/editor_file_system.cpp:3414)
+ERROR: Failed loading resource: res://assets/characters/studies/AlternativeHeadStudy_Girl Normal.png.
+   at: _load (core/io/resource_loader.cpp:343)
+WARNING: glTF: Image index '0' with the name 'Girl Normal' resolved to res://assets/characters/studies/AlternativeHeadStudy_Girl Normal.png couldn't be imported. It will be loaded directly instead, uncompressed.
+     at: _parse_image_save_image (modules/gltf/gltf_document.cpp:4117)
+ERROR: Failed loading resource: res://assets/characters/studies/AlternativeHeadStudy_Girl Colour.jpg. The file doesn't seem to exist.
+   at: _load_resource_on_startup (editor/file_system/editor_file_system.cpp:3414)
+ERROR: Failed loading resource: res://assets/characters/studies/AlternativeHeadStudy_Girl Colour.jpg.
+   at: _load (core/io/resource_loader.cpp:343)
+WARNING: glTF: Image index '1' with the name 'Girl Colour' resolved to res://assets/characters/studies/AlternativeHeadStudy_Girl Colour.jpg couldn't be imported. It will be loaded directly instead, uncompressed.
+     at: _parse_image_save_image (modules/gltf/gltf_document.cpp:4117)
+ERROR: Failed loading resource: res://assets/characters/studies/AlternativeHeadStudy_Girl Roughness.png. The file doesn't seem to exist.
+   at: _load_resource_on_startup (editor/file_system/editor_file_system.cpp:3414)
+ERROR: Failed loading resource: res://assets/characters/studies/AlternativeHeadStudy_Girl Roughness.png.
+   at: _load (core/io/resource_loader.cpp:343)
+WARNING: glTF: Image index '2' with the name 'Girl Roughness' resolved to res://assets/characters/studies/AlternativeHeadStudy_Girl Roughness.png couldn't be imported. It will be loaded directly instead, uncompressed.
+     at: _parse_image_save_image (modules/gltf/gltf_document.cpp:4117)
+ERROR: Failed loading resource: res://assets/characters/studies/AlternativeHeadStudy_Eye Bros_Normal.png. The file doesn't seem to exist.
+   at: _load_resource_on_startup (editor/file_system/editor_file_system.cpp:3414)
+ERROR: Failed loading resource: res://assets/characters/studies/AlternativeHeadStudy_Eye Bros_Normal.png.
+   at: _load (core/io/resource_loader.cpp:343)
+WARNING: glTF: Image index '3' with the name 'Eye Bros_Normal' resolved to res://assets/characters/studies/AlternativeHeadStudy_Eye Bros_Normal.png couldn't be imported. It will be loaded directly instead, uncompressed.
+     at: _parse_image_save_image (modules/gltf/gltf_document.cpp:4117)
+ERROR: Failed loading resource: res://assets/characters/studies/AlternativeHeadStudy_Eye Bros_Depth.png. The file doesn't seem to exist.
+   at: _load_resource_on_startup (editor/file_system/editor_file_system.cpp:3414)
+ERROR: Failed loading resource: res://assets/characters/studies/AlternativeHeadStudy_Eye Bros_Depth.png.
+   at: _load (core/io/resource_loader.cpp:343)
+WARNING: glTF: Image index '4' with the name 'Eye Bros_Depth' resolved to res://assets/characters/studies/AlternativeHeadStudy_Eye Bros_Depth.png couldn't be imported. It will be loaded directly instead, uncompressed.
+     at: _parse_image_save_image (modules/gltf/gltf_document.cpp:4117)
+ERROR: Failed loading resource: res://assets/characters/studies/AlternativeHeadStudy_Mouth Normal.png. The file doesn't seem to exist.
+   at: _load_resource_on_startup (editor/file_system/editor_file_system.cpp:3414)
+ERROR: Failed loading resource: res://assets/characters/studies/AlternativeHeadStudy_Mouth Normal.png.
+   at: _load (core/io/resource_loader.cpp:343)
+WARNING: glTF: Image index '5' with the name 'Mouth Normal' resolved to res://assets/characters/studies/AlternativeHeadStudy_Mouth Normal.png couldn't be imported. It will be loaded directly instead, uncompressed.
+     at: _parse_image_save_image (modules/gltf/gltf_document.cpp:4117)
+ERROR: Failed loading resource: res://assets/characters/studies/AlternativeHeadStudy_Mouth Colour.jpg. The file doesn't seem to exist.
+   at: _load_resource_on_startup (editor/file_system/editor_file_system.cpp:3414)
+ERROR: Failed loading resource: res://assets/characters/studies/AlternativeHeadStudy_Mouth Colour.jpg.
+   at: _load (core/io/resource_loader.cpp:343)
+WARNING: glTF: Image index '6' with the name 'Mouth Colour' resolved to res://assets/characters/studies/AlternativeHeadStudy_Mouth Colour.jpg couldn't be imported. It will be loaded directly instead, uncompressed.
+     at: _parse_image_save_image (modules/gltf/gltf_document.cpp:4117)
+[   1% ] [90m[1mimport[22m | Running Custom Script...[39m[0m
+[  99% ] [90m[1mimport[22m | Saving...[39m[0m
+[92m[ DONE ][39m [1mimport[22m
+[0m
+[  98% ] [90m[1mreimport[22m | Finalizing Asset Import...[39m[0m
+[92m[ DONE ][39m [1mreimport[22m
+[0m
+[   0% ] [90m[1mreimport[22m | Started (Re)Importing Assets (82 steps)[39m[0m
+[   0% ] [90m[1mreimport[22m | Executing post-reimport operations...[39m[0m
+[92m[ DONE ][39m [1mreimport[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started Loading editor (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Loading editor layout...[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m

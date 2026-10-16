@@ -28,3 +28,5 @@
 - [Проверка и SHA-256 избранных файлов](evidence/verification.json).
 
 Прочие исходные кадры находятся в `/workspace/shashlik-development/stage-01/` и отдельном проверенном архиве. Доступность локального пути вне текущей среды не гарантируется. Подтверждение отправки версии и сведения об архивах сохраняются отдельно от неподтверждённых намерений.
+
+Итерация 03: [новая голова без татуировок](evidence/base-03/head-clean/front.png), [профиль](evidence/base-03/head-clean/profile.png), [новый берег](evidence/base-03/location/pond.png). Это реальные кадры Godot; голова пока отдельный бюст, в серии локации остаются прежние персонажи. [Проверенный ImportFix ZIP и SHA-256](checkpoints/STAGE_01B_03_Backup.json), source commit `18b40ab`.

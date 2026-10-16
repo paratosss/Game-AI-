@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-16",
+  "source_commit": "18b40ab16999eab2f46ade5bf74c7d6e99971a2c",
+  "archives": [
+    {
+      "file": "Shashlik_Stage01B_Base_03_ImportFix_Source.zip",
+      "bytes": 561134120,
+      "sha256": "469e93c7a9631758b32d81d6478c0f8305b205ed44bf9cc8521f47e14d671b85",
+      "crc": "PASS",
+      "entries": 509
+    },
+    {
+      "file": "Shashlik_Stage01B_Base_03_ImportFix_Review.zip",
+      "bytes": 9575303,
+      "sha256": "5dbc622c2b626327fa40a92287cab95bb9379fbb9592119cac2f3cb2df0a2639",
+      "crc": "PASS",
+      "entries": 46
+    }
+  ],
+  "extracted_root": "/workspace/checkpoints/verify-base-03-importfix/Shashlik_Stage01B_Base_03",
+  "source_checkpoint_import": {
+    "exit_code": 0,
+    "errors": [],
+    "log": "base-03/clean-import.txt",
+    "status": "PASS",
+    "started_without_godot_cache": true
+  },
+  "source_checkpoint_terrain_validation": {
+    "exit_code": 0,
+    "marker": "LAKESIDE_VALIDATION_PASS",
+    "marker_found": true,
+    "errors": [],
+    "log": "base-03/terrain-validation.txt"
+  },
+  "source_checkpoint_forward_self_test": {
+    "exit_code": 0,
+    "marker": "SELF_TEST_04_PASS",
+    "marker_found": true,
+    "errors": [],
+    "log": "base-03/scene-self-test.txt"
+  },
+  "source_checkpoint_head_viewer_smoke": {
+    "exit_code": 0,
+    "marker": "CHARACTER_BASE_STUDY_READY",
+    "marker_found": true,
+    "errors": [],
+    "log": "base-03/head-viewer.txt"
+  },
+  "capture_source_dependencies_match_extracted_project": true,
+  "media_checksums_match_extracted_project": true,
+  "candidate_and_nature_resource_checksums_match": true,
+  "renderer": "Forward+ software Vulkan (Mesa); no RTX 5080 performance measurements",
+  "poly_haven_resource_checksums_match": {
+    "count": 13,
+    "status": "PASS"
+  },
+  "first_archive_rejected": {
+    "source_commit": "e546d43d2a5e5c5612194ad935ea2a8e40b923f3",
+    "file": "Shashlik_Stage01B_Base_03_Source.zip",
+    "reason": "Cold import emitted missing extracted texture errors despite exit code 0. Replaced by separate ImportFix archive."
+  },
+  "github_source_commit_verified": "18b40ab16999eab2f46ade5bf74c7d6e99971a2c",
+  "archives_uploaded_to_github_release": false,
+  "local_archive_directory": "/workspace/checkpoints",
+  "scope": "Intermediate head and lakeside prototype. Full character replacement and target artistic quality remain open."
+}
