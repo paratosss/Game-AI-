@@ -1,0 +1,78 @@
+{
+  "generator": "Blender Sapling Tree Gen 0.3.5, adapted white_birch parameters",
+  "blender": "4.5.3 LTS",
+  "sapling_sources": [
+    {
+      "file": "__init__.py",
+      "url": "https://raw.githubusercontent.com/blender/blender-addons/b42d68627734cb18af0e6f41537063984313a284/add_curve_sapling/__init__.py",
+      "sha256": "7266d098db3a63c97e5d993045c5adfafce315cc580b6b4a3a3511bbf91f0ef8"
+    },
+    {
+      "file": "utils.py",
+      "url": "https://raw.githubusercontent.com/blender/blender-addons/b42d68627734cb18af0e6f41537063984313a284/add_curve_sapling/utils.py",
+      "sha256": "1eed2ded55f783f4fbf69caea91763972d916f59b869a3b55a6a1324a09d4382"
+    },
+    {
+      "file": "presets/white_birch.py",
+      "url": "https://raw.githubusercontent.com/blender/blender-addons/b42d68627734cb18af0e6f41537063984313a284/add_curve_sapling/presets/white_birch.py",
+      "sha256": "174f87a7eb53b4a7acb6b92a21da266b9ceff68ca859f159e674ffe315597a2e"
+    }
+  ],
+  "description": "Generated branch architecture and hexagonal leaf geometry; not photogrammetry.",
+  "variants": [
+    {
+      "file": "birch_01.glb",
+      "seed": 173,
+      "meshes": [
+        {
+          "name": "BirchWood",
+          "vertices": 24900,
+          "triangles": 42984
+        },
+        {
+          "name": "BirchLeaves",
+          "vertices": 76362,
+          "triangles": 50908
+        }
+      ],
+      "sha256": "f8710fe73f516d003a5ee975ede8d1253822ad7c4f677af50b20ef21666223ee",
+      "bytes": 4424112
+    },
+    {
+      "file": "birch_02.glb",
+      "seed": 863,
+      "meshes": [
+        {
+          "name": "BirchWood",
+          "vertices": 24264,
+          "triangles": 41904
+        },
+        {
+          "name": "BirchLeaves",
+          "vertices": 76104,
+          "triangles": 50736
+        }
+      ],
+      "sha256": "79469526746ecc393c598f0abe37b08ab6540dc58af5c6483f1544687dbc0b51",
+      "bytes": 4379352
+    },
+    {
+      "file": "birch_03.glb",
+      "seed": 2471,
+      "meshes": [
+        {
+          "name": "BirchWood",
+          "vertices": 23316,
+          "triangles": 40296
+        },
+        {
+          "name": "BirchLeaves",
+          "vertices": 71124,
+          "triangles": 47416
+        }
+      ],
+      "sha256": "54de84241bcb4bf08117d8843a7063ff0d5ec07ea38da87c90bbf80a67f4b121",
+      "bytes": 4116612
+    }
+  ]
+}

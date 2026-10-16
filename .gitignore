@@ -4,6 +4,8 @@
 # Godot extracts these images from the tracked Refined_*.glb files.
 # Original Real_*.png images and deliberately authored import settings stay versioned.
 /game/assets/characters/Refined_*_*.png*
+/game/assets/characters/studies/AlternativeHeadStudy_*.png*
+/game/assets/characters/studies/AlternativeHeadStudy_*.jpg*
 
 # Local exports, captures and working data; keep release archives outside source history.
 /artifacts/

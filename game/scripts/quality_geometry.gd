@@ -278,7 +278,7 @@ static func grass_patches(game:Node3D,node:MultiMeshInstance3D):
   total+=mm.instance_count
  print("QUALITY_GRASS_APPLIED clumps=",total," patches=",patches.size())
 
-static func apply(game:Node3D,rock_material:Material,earth:ShaderMaterial):
+static func apply(game:Node3D,rock_material:Material,earth:ShaderMaterial,replace_birches:bool=true):
  var rock_count=0
  for node in game.find_children("*","MeshInstance3D",true,false):
   if not node.material_override is StandardMaterial3D:continue
@@ -291,5 +291,5 @@ static func apply(game:Node3D,rock_material:Material,earth:ShaderMaterial):
   if node.material_override is ShaderMaterial and node.material_override.shader.resource_path.ends_with("/grass.gdshader"):
    grass_patches(game,node)
  print("QUALITY_GEOMETRY_APPLIED rocks=",rock_count)
- birches(game)
+ if replace_birches:birches(game)
  shoreline(game,earth,rock_material)

@@ -3,6 +3,7 @@ var game
 var output:String
 var high=false
 var pbr=false
+var lakeside=false
 var initial_actor_transforms=[]
 var capture_metadata=[]
 
@@ -67,14 +68,18 @@ func save_metadata():
  if pbr:
   for path in ["res://scripts/graphics_quality.gd","res://scripts/quality_geometry.gd","res://assets/textures/quality/RESOURCE_MANIFEST.json","res://assets/shaders/wood_pbr.gdshader","res://assets/shaders/ground_pbr.gdshader","res://assets/shaders/rock_pbr.gdshader","res://assets/shaders/grass_quality.gdshader","res://assets/shaders/water_quality.gdshader","res://assets/shaders/photographic_sky.gdshader"]:
    dependencies[path]=FileAccess.get_sha256(path)
+ if lakeside:
+  for path in ["res://scripts/lakeside_quality.gd","res://assets/shaders/birch_scan.gdshader","res://assets/shaders/birch_leaf.gdshader","res://assets/nature/BIRCH_MANIFEST.json"]:
+   dependencies[path]=FileAccess.get_sha256(path)
  var file=FileAccess.open(output.path_join("capture-metadata.json"),FileAccess.WRITE)
- file.store_string(JSON.stringify({"high":high,"pbr":pbr,"renderer":RenderingServer.get_current_rendering_method(),"actor_transforms_stable":true,"benchmark_sha256":FileAccess.get_sha256("res://tests/graphics_benchmark.gd"),"dependencies_sha256":dependencies,"captures":capture_metadata},"  "))
+ file.store_string(JSON.stringify({"high":high,"pbr":pbr,"lakeside":lakeside,"renderer":RenderingServer.get_current_rendering_method(),"actor_transforms_stable":true,"benchmark_sha256":FileAccess.get_sha256("res://tests/graphics_benchmark.gd"),"dependencies_sha256":dependencies,"captures":capture_metadata},"  "))
 
 func run():
  seed(20261015)
  output=OS.get_environment("SHASHLIK_CAPTURE_DIR")
  high="--graphics-high" in OS.get_cmdline_user_args()
- pbr="--graphics-pbr" in OS.get_cmdline_user_args()
+ lakeside="--graphics-lakeside" in OS.get_cmdline_user_args()
+ pbr="--graphics-pbr" in OS.get_cmdline_user_args() or lakeside
  if output.is_empty():quit(1);return
  DirAccess.make_dir_recursive_absolute(output)
  game=load("res://main.tscn").instantiate()
@@ -95,7 +100,8 @@ func run():
    var actor=game.actors[idx]
    actor.model.skin.tick(1.0/60,false,0,"guitar" if idx==0 else "idle",actor.guitar,Vector3.ZERO)
   game.actors[3].model.dog_skin.tick(1.0/60,false,0,"idle")
- if pbr:load("res://scripts/graphics_quality.gd").apply(game)
+ if lakeside:load("res://scripts/lakeside_quality.gd").apply(game)
+ elif pbr:load("res://scripts/graphics_quality.gd").apply(game)
  elif high:apply_profile()
  print("GRAPHICS_BENCHMARK_READY high=",high," pbr=",pbr," renderer=",RenderingServer.get_current_rendering_method())
  await shot("overview",Vector3(-4.1,1.9,4.8),Vector3(1,.5,-1.5))

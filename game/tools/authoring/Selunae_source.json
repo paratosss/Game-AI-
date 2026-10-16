@@ -1,0 +1,18 @@
+{
+  "id": "87bac074-89b5-40d1-8476-7d3c9fad7c6a",
+  "assetBaseId": "0941f2e7-98e9-49a3-8c6a-6a99e7be222d",
+  "name": "Selunae",
+  "description": "works both in eevee and cycles, includes rig for head, face, hair and jewelry. have controlls to customise skin, hair and eyes. if u plan on using cycles make sure to put transparent bounces to atleast 50 under light paths. the eyes are from tiny eyes.",
+  "license": "cc_zero",
+  "isFree": true,
+  "author": "Muhammed Ismayil",
+  "files": [
+    {
+      "uuid": "8d4dba55-b111-4778-b822-8b8f2f232b7f",
+      "fileType": "blend",
+      "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/8d4dba55-b111-4778-b822-8b8f2f232b7f/",
+      "fileUploadSize": 81159500
+    }
+  ],
+  "license_url": "https://www.blenderkit.com/docs/licenses/"
+}

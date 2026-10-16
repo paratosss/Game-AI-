@@ -1,0 +1,44 @@
+{
+  "source": {
+    "id": "007aa54f-ffd0-4da3-888b-f96b9ebdca90",
+    "assetBaseId": "6c7f1b49-2c6f-43e9-8f7f-6326eebc270b",
+    "name": "European White Birch Bark",
+    "description": "3D Photoscanned European White Birch bark, suitable for medium close-up renders. The model is retopologized with quads, UV unwrapped and has 8K (baked) textures to create a stunning and realistic asset. The model also has a multi-resolution modifier for different LODs to fit your needs.",
+    "license": "cc_zero",
+    "isFree": true,
+    "author": "3d-render.nl ",
+    "files": [
+      {
+        "uuid": "6afe50d2-1725-4645-bd17-917a85e3d441",
+        "fileType": "blend",
+        "downloadUrl": "https://www.blenderkit.com/api/v1/downloads/6afe50d2-1725-4645-bd17-917a85e3d441/",
+        "fileUploadSize": 285224127
+      }
+    ],
+    "license_url": "https://www.blenderkit.com/docs/licenses/"
+  },
+  "download_receipt": {
+    "file": "European_White_Birch_Bark.blend",
+    "bytes": 285224127,
+    "sha256": "2a7ac694bb8d11c2ce65addd2e093ea00b4ec210d2b2d55f809c061252699e9b",
+    "api_file_uuid": "6afe50d2-1725-4645-bd17-917a85e3d441"
+  },
+  "status": "candidate study, not accepted final visual quality",
+  "files": [
+    {
+      "file": "assets/textures/birch_scan/color_8k.jpg",
+      "bytes": 13005583,
+      "sha256": "5beecdc6be5fba09750938b71cca1c181bb0ba5086ab839d3f7b750650a4e28a"
+    },
+    {
+      "file": "assets/textures/birch_scan/normal_8k.jpg",
+      "bytes": 20116115,
+      "sha256": "7927f03254f1fd00c13d0c32a0fb3f0cc8cca21e9bc3ccf9f6ff8543d8baaa5b"
+    },
+    {
+      "file": "assets/textures/birch_scan/roughness_8k.jpg",
+      "bytes": 3444572,
+      "sha256": "d234fbb8ea1ec6233278c979e95575d59f163581ea977475c3ec62aade1916c6"
+    }
+  ]
+}
