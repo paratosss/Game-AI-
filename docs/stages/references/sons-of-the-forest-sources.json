@@ -1,0 +1,130 @@
+{
+  "reference_game": "Sons Of The Forest",
+  "research_date": "2026-10-16",
+  "source_page": "https://store.steampowered.com/app/1326470/Sons_Of_The_Forest/",
+  "source_api": "https://store.steampowered.com/api/appdetails?appids=1326470&l=english",
+  "scope": "11 official Steam screenshots, still-image analysis only; no video or game run; no game assets incorporated",
+  "screenshots": [
+    {
+      "id": 0,
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1326470/ss_e6e3ab1badfb287a77fb6eef7b1589a35371496b.1920x1080.jpg?t=1708624856",
+      "bytes": 500970,
+      "sha256": "fc8d6bcb559a8ba04ff56c768a75a8aac5dffa81e6408c98204117d5828ea822",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "id": 1,
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1326470/ss_4fa5d260318f0aa37754b00c5dc10d1b7b9b9b1d.1920x1080.jpg?t=1708624856",
+      "bytes": 544532,
+      "sha256": "c63bbe751aa4df21045ec47958349883eb18be466f8a22d7a6b28c4d2bbcaca0",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "id": 2,
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1326470/ss_2b67491ca913adea6953429e1a567824aaa0ed54.1920x1080.jpg?t=1708624856",
+      "bytes": 539261,
+      "sha256": "1593fcf07558a05fdf37f6212f34cb380270754b49184653ee0d61d4b510867c",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "id": 3,
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1326470/ss_ba2c1f6e69c6c7d69f7965cbd4b78da59ec59d55.1920x1080.jpg?t=1708624856",
+      "bytes": 466934,
+      "sha256": "cffaaef11ded0682a78bace770337f27e0e0247de90777792978c347dad52ad1",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "id": 4,
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1326470/ss_2c537a8c689dd6b21643b8054a64646334ef7391.1920x1080.jpg?t=1708624856",
+      "bytes": 858870,
+      "sha256": "49ff2ed9db99baa2e2287f372f5a3b5b198be581b39bea93f8b7963ca55d8e0c",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "id": 5,
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1326470/ss_b05310f659a67129e9089fbb22e445b0998d6d1d.1920x1080.jpg?t=1708624856",
+      "bytes": 577005,
+      "sha256": "8185b357638ea5fa74ba67fc1c6fc388368c99a554aa798b13e15183bb82fe38",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "id": 6,
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1326470/ss_80a67c430a5f5e2e2f9a243aac4c63d990079252.1920x1080.jpg?t=1708624856",
+      "bytes": 135078,
+      "sha256": "693e94b8c2fa44380ce95b9a487a560d4d810d87583ebff796849e8f73c6cd77",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "id": 7,
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1326470/ss_6f0f7bfcdbc556142b42c9b1411dd28a64d45623.1920x1080.jpg?t=1708624856",
+      "bytes": 767456,
+      "sha256": "ecd3ff9d6380cf27a869520c8bf4fd57da6fded561f450efd274d6096cb4227c",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "id": 8,
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1326470/ss_b55ee5728556d1b52135af967ff5f6c58f64daf6.1920x1080.jpg?t=1708624856",
+      "bytes": 474644,
+      "sha256": "52e81313f075ef1b62a8df4177f4c8eb2b678e9fcf1bd6acd720463005707781",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "id": 9,
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1326470/ss_9d1b215bc41b2fc152e68c045c7b9a4d288d2464.1920x1080.jpg?t=1708624856",
+      "bytes": 558973,
+      "sha256": "dee6a696ea84cdfe8db30d6d13a36d6f02db3e4ad6865d930de613bc8596e0a3",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "id": 10,
+      "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1326470/ss_91907210b074b66131d5dd556206f8be7715302b.1920x1080.jpg?t=1708624856",
+      "bytes": 653993,
+      "sha256": "4796a24f689404043b65bcfb08d15de8099125536b144b7e3860f34c14ed9771",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "visually_reviewed": true
+    }
+  ]
+}
