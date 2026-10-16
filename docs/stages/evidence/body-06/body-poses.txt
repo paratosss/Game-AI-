@@ -1,0 +1,8 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+Vulkan 1.4.305 - Forward+ - Using Device #0: Unknown - llvmpipe (LLVM 19.1.7, 256 bits)
+
+ALINA_POSE_FRAME standing
+ALINA_POSE_FRAME left-elbow
+ALINA_POSE_FRAME right-wrist
+ALINA_POSE_FRAME eating
+ALINA_POSE_REVIEW_COMPLETE

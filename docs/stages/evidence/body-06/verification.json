@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "media": [
+    {
+      "file": "neutral/fretting-hand.png",
+      "bytes": 416962,
+      "sha256": "31da28c51412d6191da48b07148008e45ca86e7c3c20b9ab8961b464fbe75388",
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "neutral/instrument-side.png",
+      "bytes": 56998,
+      "sha256": "b60c8f21c1237388d83fb8cb25ec3465116ca8ca863e69646cff404e3f8d1125",
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "neutral/instrument.png",
+      "bytes": 45287,
+      "sha256": "7744ff48be9b5c4a5bafd16f0cb813b0098afd3b629c430c1d3c8ea3c28a47a3",
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "neutral/seated-neutral.png",
+      "bytes": 197689,
+      "sha256": "9457b87aa1bbdf026f6086b814fd3bb5b78be0304a75f8d9a7f6cb0f3459a340",
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "neutral/strumming-hand.png",
+      "bytes": 706920,
+      "sha256": "f53077ac674db63540656b03f3de6e63f530fc79c68b2a7a52cc4b9941495c0f",
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "poses/eating.png",
+      "bytes": 177598,
+      "sha256": "101bb7d6f8781d114dbda57d93bab0fa9522d234310a32f916bef7bf779710c4",
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "poses/left-elbow.png",
+      "bytes": 285709,
+      "sha256": "fa5933c94813e21d3feeb9df3d14ec180215c8569f341013c9ae76cc08356355",
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "poses/right-wrist.png",
+      "bytes": 473874,
+      "sha256": "04a13897785c4bd53c732423d61a67187bea5dc14751b2f2964231e8608eb356",
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "poses/standing.png",
+      "bytes": 121334,
+      "sha256": "c2ab0b7286a42f17cd237b7c5149e1468c8c7023f4ec42312d8691f1f05671fe",
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "world/guitar-hands.png",
+      "bytes": 1649493,
+      "sha256": "87c810119c4c3f77302ba3c168b9827c8a7d9996c4215683a7c94e8b2a1f655f",
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "world/seated-face.png",
+      "bytes": 1476712,
+      "sha256": "ef934005c8744e6ee31aad940415eeeb696ce4346179202787be68b99e0e70a3",
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "world/seated-front.png",
+      "bytes": 1630413,
+      "sha256": "f33c8b63ae23b45eee73e072af9476150c19331cded16791ef10017009a880e4",
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "world/seated-side.png",
+      "bytes": 1686418,
+      "sha256": "c236a577698ef4bed91064cecce3f0211ad7ae491a1df524852bb082b7b78a02",
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "world-1440/seated-front.png",
+      "bytes": 6031199,
+      "sha256": "257ee707cbbda5be1d8a587737439a7f48d0f349ea0a68a1818d9fdfd7be68d5",
+      "resolution": [
+        2560,
+        1440
+      ]
+    }
+  ],
+  "capture_dependencies_match_current_source": true,
+  "world_cameras_match_iteration_05": true,
+  "renderer": "Forward+ software Vulkan",
+  "not_a_video_review": true
+}

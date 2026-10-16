@@ -2,8 +2,10 @@
   "failures": [],
   "forearm_vertices": 3589,
   "limitation": "Forearm shaft volume only; elbow anatomy, cloth intersections and naturalness require separate visual review.",
+  "maximum_applied_roll_rad": 1.23511207103729,
   "maximum_branch_origin_error_m": 0.0000000999600260342959,
   "maximum_radius_ratio": 1.02642959103332,
+  "maximum_wrist_roll_mismatch_rad": 0.000000316803038913349,
   "minimum_radius_ratio": 0.906896803925468,
   "sampled_poses": 12,
   "status": "PASS"

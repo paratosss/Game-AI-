@@ -46,3 +46,14 @@ shashlik-forward-render res://alina_preview.tscn
 ```
 
 Сборка проверяет SHA обоих исходных GLB. Генерирует новый AlinaRevision.glb и базовый реестр; после импорта сохранить извлечённые AlinaRevision_*.png/jpg вместе с `.import`, включить mipmaps и отключить автоматические LOD этой исследовательской модели. Окончательный реестр дополняется SHA извлечённых карт. Не удалять исходные Refined_Alina и AlternativeHeadStudy. Это совместимая сборка на прежнем теле/клипах, не завершённая замена всей анатомии и одежды.
+
+## Отдельная сетка тела — итерация 06
+
+```bash
+blender-4.5.3 --background --disable-autoexec --python game/tools/authoring/build_alina_body.py
+python3 tools/audit_alina_body.py
+shashlik-godot --headless --editor --import --quit
+shashlik-godot --headless --audio-driver Dummy --script res://tests/body_deformation.gd
+```
+
+Генератор проверяет закреплённый AlinaRevision.glb и создаёт отдельный AlinaBody06.glb без перезаписи головы/полной модели. В отдельной сетке 67 привязок: прежние 63 и четыре вспомогательные ветви предплечий. Runtime graft сохраняет исходный анимированный скелет и материал. Нужен формат до восьми весов. После изменения обновлять реестр, импортировать и заново оценивать деформации/контакты; подразделение поверхности не доказывает анатомическое качество.

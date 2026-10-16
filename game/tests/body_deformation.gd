@@ -34,7 +34,7 @@ func run():
     if t>.10 and t<.95 and radius>.004:samples.append([side,radius,influences])
  check(samples.size()>1000,"Sample actual forearm surface vertices")
  for i in range(120):skin.tick(1.0/60.0,false,0,"guitar",guitar,Vector3.ZERO)
- var min_radius_ratio=INF;var max_radius_ratio=0.0;var max_branch_origin_error=0.0
+ var min_radius_ratio=INF;var max_radius_ratio=0.0;var max_branch_origin_error=0.0;var max_roll_mismatch=0.0;var maximum_applied_roll=0.0
  for frame in range(120):
   skin.tick(1.0/60.0,false,0,"guitar",guitar,Vector3.ZERO)
   if frame%10!=0:continue
@@ -42,6 +42,11 @@ func run():
   for i in range(skin.skeleton.get_bone_count()):poses.append(skin.skeleton.get_bone_global_pose(i))
   for side in ["l","r"]:
    for level in ["mid","end"]:max_branch_origin_error=maxf(max_branch_origin_error,skin.global_pose("forearm_twist_"+level+"_"+side).origin.distance_to(skin.global_pose("lowerarm_"+side).origin))
+   var axis=(skin.global_pose("hand_"+side).origin-skin.global_pose("lowerarm_"+side).origin).normalized()
+   var lower=skin.global_pose("lowerarm_"+side).basis.x;lower=(lower-axis*lower.dot(axis)).normalized()
+   var end=skin.global_pose("forearm_twist_end_"+side).basis.x;end=(end-axis*end.dot(axis)).normalized()
+   var hand=skin.global_pose("hand_"+side).basis.x;hand=(hand-axis*hand.dot(axis)).normalized()
+   max_roll_mismatch=maxf(max_roll_mismatch,end.angle_to(hand));maximum_applied_roll=maxf(maximum_applied_roll,lower.angle_to(end))
   for sample in samples:
    var point=Vector3.ZERO
    for influence in sample[2]:point+=(poses[influence[0]]*influence[1])*influence[2]
@@ -50,12 +55,13 @@ func run():
    min_radius_ratio=minf(min_radius_ratio,ratio);max_radius_ratio=maxf(max_radius_ratio,ratio)
  check(min_radius_ratio>.70 and max_radius_ratio<1.15,"Forearm axial roll preserves most of the actual radial volume")
  check(max_branch_origin_error<.00002,"Auxiliary roll does not detach the arm surface from the elbow")
+ check(max_roll_mismatch<.01 and maximum_applied_roll>.20,"Forearm surface actually rolls towards the wrist instead of leaving the helpers inactive")
  for pose in ["idle","guitar","eat","walk","guitar"]:
   for i in range(45):
    skin.tick(1.0/60.0,pose=="walk",1.4 if pose=="walk" else 0,pose,guitar,Vector3.ZERO)
    for bone in range(skin.skeleton.get_bone_count()):
     var p=skin.skeleton.get_bone_global_pose(bone);check(p.origin.is_finite() and p.basis.is_finite(),"All original and auxiliary bones remain finite in transitions")
- var report={"status":"PASS" if failures.is_empty() else "FAIL","failures":failures,"forearm_vertices":samples.size(),"sampled_poses":12,"minimum_radius_ratio":min_radius_ratio,"maximum_radius_ratio":max_radius_ratio,"maximum_branch_origin_error_m":max_branch_origin_error,"limitation":"Forearm shaft volume only; elbow anatomy, cloth intersections and naturalness require separate visual review."}
+ var report={"status":"PASS" if failures.is_empty() else "FAIL","failures":failures,"forearm_vertices":samples.size(),"sampled_poses":12,"minimum_radius_ratio":min_radius_ratio,"maximum_radius_ratio":max_radius_ratio,"maximum_branch_origin_error_m":max_branch_origin_error,"maximum_wrist_roll_mismatch_rad":max_roll_mismatch,"maximum_applied_roll_rad":maximum_applied_roll,"limitation":"Forearm shaft volume only; elbow anatomy, cloth intersections and naturalness require separate visual review."}
  print(JSON.stringify(report,"  "))
  var path=OS.get_environment("SHASHLIK_BODY_REPORT")
  if not path.is_empty():

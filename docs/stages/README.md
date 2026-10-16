@@ -37,3 +37,5 @@
 Итерация 04: [Алина с гитарой](evidence/alina-04/seated/seated-front.png), [лицо в сцене](evidence/alina-04/seated/seated-face.png), [кадр 2560×1440](evidence/alina-04/seated-1440/seated-front.png), [ступни в общей посадке](evidence/alina-04/contact/seated-contact.png). [Проверенная контрольная точка](checkpoints/STAGE_02_04_Backup.json). Полная художественная переработка Алины остаётся открытой.
 
 Итерация 05: [новая гитара и хват в 1440p](evidence/guitar-05/world-1440/seated-front.png), [игровой крупный план](evidence/guitar-05/world/guitar-hands.png), [конструкция инструмента](evidence/guitar-05/neutral/instrument-side.png). Кисти, опора и полная техника игры остаются открытыми.
+
+Итерация 06: [новое тело в игровой сцене, 1440p](evidence/body-06/world-1440/seated-front.png), [руки с гитарой](evidence/body-06/world/guitar-hands.png), [локоть в покое](evidence/body-06/poses/left-elbow.png), [незавершённая поза еды](evidence/body-06/poses/eating.png). Анатомия и естественность поз остаются открытыми.
