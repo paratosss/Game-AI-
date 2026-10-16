@@ -4,7 +4,9 @@ func check(ok:bool,label:String):
  if not ok:failures+=1;push_error(label)
 func _initialize():call_deferred("run")
 func run():
- var game=load("res://main.tscn").instantiate();root.add_child(game)
+ var game=load("res://main.tscn").instantiate()
+ if "--alina-revision" in OS.get_cmdline_user_args():game.set_meta("alina_revision",true)
+ root.add_child(game)
  await create_timer(.1).timeout;game.initialized=false
  for actor in game.actors:actor.set_physics_process(false)
  var alina=game.actors[0];var guitar=alina.guitar;var skin=alina.model.skin

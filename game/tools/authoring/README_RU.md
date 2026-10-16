@@ -35,3 +35,14 @@ shashlik-forward-render --disable-render-loop res://lakeside_preview.tscn -- --s
 ```
 
 `character_base_study.tscn` — вращение головы, приближение и четыре варианта выражения. Вариант кожи без исходных татуировок/фиолетового макияжа сохранён отдельно с provenance.json; это проверка новой основы, не окончательный образ Алины. `lakeside_preview.tscn` — отдельный интерактивный образец прежней игровой локации. Оба требуют проверки на целевой видеокарте; облачный программный Vulkan не измеряет её FPS.
+
+
+## Полная сборка Алины — итерация 04
+
+```bash
+blender-4.5.3 --background --disable-autoexec --python game/tools/authoring/build_alina_revision.py
+shashlik-godot --headless --editor --import --quit
+shashlik-forward-render res://alina_preview.tscn
+```
+
+Сборка проверяет SHA обоих исходных GLB. Генерирует новый AlinaRevision.glb и базовый реестр; после импорта сохранить извлечённые AlinaRevision_*.png/jpg вместе с `.import`, включить mipmaps и отключить автоматические LOD этой исследовательской модели. Окончательный реестр дополняется SHA извлечённых карт. Не удалять исходные Refined_Alina и AlternativeHeadStudy. Это совместимая сборка на прежнем теле/клипах, не завершённая замена всей анатомии и одежды.

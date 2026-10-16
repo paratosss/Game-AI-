@@ -1,0 +1,75 @@
+{
+  "body_source": "assets/characters/Refined_Alina.glb",
+  "body_sha256": "fb44fcd95d0896420133922dd5498f4036cf32f94dbca6e321eeaae3777eb813",
+  "head_source": "assets/characters/studies/AlternativeHeadStudy.glb",
+  "head_sha256": "d25b7b4a8c2eb8ff8f5c2245089afb63b235a8d022353ff5a7abbbdae5734436",
+  "output": "assets/characters/studies/AlinaRevision.glb",
+  "bytes": 85797136,
+  "sha256": "08a3bb1d9c2c19b6ac972edf9e48e8e2531c61a653fec4c4e7fb2e970255610e",
+  "bones": 63,
+  "facial_shapes": 63,
+  "old_body_faces": 17012,
+  "remaining_body_faces": 8152,
+  "neutral_eye_wide": 0.16,
+  "cloth_thickness_m": 0.0014,
+  "lower_neck_forward_fit_m": 0.052,
+  "status": "integration study; requires seated and animated inspection",
+  "extracted_textures": [
+    {
+      "file": "AlinaRevision_Eye Bros_Depth.png",
+      "bytes": 9663857,
+      "sha256": "a7566f6ad7a8a36890c4950ef539491817b6655a70af7c3017ded7526062a3ad"
+    },
+    {
+      "file": "AlinaRevision_Eye Bros_Normal.png",
+      "bytes": 12355839,
+      "sha256": "9aa2d3151def3a9d78650360d81686c614a6b988993d17ce778afeaebf098622"
+    },
+    {
+      "file": "AlinaRevision_Girl Colour.jpg",
+      "bytes": 302441,
+      "sha256": "6aba56c057ad0adb522dd9c53f9287105117fb587c4329054a6dbfec8724dfe5"
+    },
+    {
+      "file": "AlinaRevision_Girl Normal.png",
+      "bytes": 20307537,
+      "sha256": "6546fbf9ed9ab36ce2c2f355404efbbdf193aa3e765ddb01d32d8e05e31b2df9"
+    },
+    {
+      "file": "AlinaRevision_Girl Roughness.png",
+      "bytes": 1783498,
+      "sha256": "5ab5b882ac6c172564e44e800660bec09a88eb4b580d33cdeb05e6245b8f3a4b"
+    },
+    {
+      "file": "AlinaRevision_Mouth Colour.jpg",
+      "bytes": 373279,
+      "sha256": "886240b889aab619421a7b7165bfb2f37c99a11bb3dbbf4545929fe28b8c8271"
+    },
+    {
+      "file": "AlinaRevision_Mouth Normal.png",
+      "bytes": 2048373,
+      "sha256": "02a3abcc048639892d2284246e348b7c111d3ee4e191082c2239c5a11433797c"
+    },
+    {
+      "file": "AlinaRevision_female_casualsuit01_diffuse.png",
+      "bytes": 3518480,
+      "sha256": "7818c284e5662e1002b3d341b5b176c0efe11931ad208ecdca64636be3f98ebb"
+    },
+    {
+      "file": "AlinaRevision_female_casualsuit01_normal.png",
+      "bytes": 5744103,
+      "sha256": "7bff7afbbc3f068e06f69abcddc8c2c9ce667ec181e0f2a918f8af78eba12610"
+    },
+    {
+      "file": "AlinaRevision_shoes05_diffuse.png",
+      "bytes": 1291907,
+      "sha256": "7fe5ea2600f6578cdf017da3392ae13aedabea8e8cc1dd6302a8f57e8fb7e5af"
+    },
+    {
+      "file": "AlinaRevision_young_lightskinned_female_diffuse.png",
+      "bytes": 4391156,
+      "sha256": "b2a6ac8cd4f9febdb447368e29c76cd68410bb66e46d9dcfa2d5f75126eea8fc"
+    }
+  ],
+  "required_import": "Include extracted maps and .import settings, with mipmaps enabled; cold import must not use a fallback."
+}

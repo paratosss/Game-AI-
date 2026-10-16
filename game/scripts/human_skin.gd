@@ -30,11 +30,18 @@ var nominal_walk_speed=.6343
 var foot_anchors=[Vector3.ZERO,Vector3.ZERO]
 var foot_locked=[false,false]
 var foot_weights=[0.0,0.0]
+var revision_mouth_local=Vector3.ZERO
+var uses_revision=false
 func setup(who:String,col:Color)->Dictionary:
  name="RealCharacter"
  position.y=.012
  var key={"Алина":"Alina","Круглик":"Kruglik","Крысюк":"Krysyuk"}[who]
- var native=load("res://assets/characters/Refined_"+key+".glb").instantiate();add_child(native)
+ var asset="res://assets/characters/Refined_"+key+".glb"
+ var revision=who=="Алина" and get_parent().get_parent().get_meta("alina_revision",false)
+ uses_revision=revision
+ if revision:asset="res://assets/characters/studies/AlinaRevision.glb"
+ var native=load(asset).instantiate();add_child(native)
+ if revision:load("res://scripts/alina_revision_materials.gd").apply(native)
  skeleton=native.find_children("*","Skeleton3D",true,false)[0]
  native_animation=native.find_children("*","AnimationPlayer",true,false)[0]
  for m in native.find_children("*","MeshInstance3D",true,false):
@@ -48,6 +55,9 @@ func setup(who:String,col:Color)->Dictionary:
  for i in range(skeleton.get_bone_count()):
   var n=skeleton.get_bone_name(i);indices[n]=i;rest[n]=skeleton.get_bone_global_rest(i)
  head_anchor=attachment("Head");torso_anchor=attachment("spine_03")
+ if revision:
+  revision_mouth_local=rest.Head.affine_inverse()*Vector3(0,1.386,.102)
+  head_anchor.set_meta("mouth_offset",revision_mouth_local)
  if who=="Круглик":
   var hat=Node3D.new();head_anchor.add_child(hat)
   var p=rest.Head.origin+Vector3(0,.145,-.01)
@@ -212,7 +222,10 @@ func tick(dt:float,moving:bool,speed:float,pose:String,guitar:Node3D,look:Vector
    var point=Vector3(.062,.586,.071) if i==0 else Vector3(-.015+sin(motion_time*5.5)*.030,.145+cos(motion_time*5.5)*.008,.087)
    var desired=to_local(guitar.to_global(point))
    target=target.lerp(desired,guitar_weight)
-  if reaction_weight>0 and i==1:target=target.lerp(global_pose("Head").origin+Vector3(-.015,.035,.14),reaction_weight)
+  if reaction_weight>0 and i==1:
+   var mouth_target=global_pose("Head").origin+Vector3(-.015,.035,.14)
+   if uses_revision:mouth_target=global_pose("Head")*revision_mouth_local+Vector3(-.015,.025,.035)
+   target=target.lerp(mouth_target,reaction_weight)
   if pose in ["happy","wave"] and i==0:target=shoulder+Vector3(.21,.27,.10+sin(motion_time*8)*.06)
   var elbow_pole=Vector3(sign,.05,-.35)
   if guitar:elbow_pole=elbow_pole.lerp(Vector3(.25,-1,.25) if i==0 else Vector3(-.65,.10,-.10),guitar_weight)

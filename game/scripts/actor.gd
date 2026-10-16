@@ -30,6 +30,7 @@ func build(p:Dictionary,col:Color):
  animation.play("idle")
  if not p.get("dog",false):
   crumbs=CPUParticles3D.new();model.head.add_child(crumbs);crumbs.position=Vector3(0,.06,.13);crumbs.amount=16;crumbs.lifetime=.65;crumbs.one_shot=true;crumbs.explosiveness=.75;crumbs.direction=Vector3(0,-.25,1);crumbs.spread=18;crumbs.initial_velocity_min=.4;crumbs.initial_velocity_max=.8;crumbs.gravity=Vector3(0,-2,0);crumbs.local_coords=false
+  crumbs.position=model.head.get_meta("mouth_offset",crumbs.position)
   var m=SphereMesh.new();m.radius=.009;m.height=.018;m.radial_segments=6;m.rings=3;crumbs.mesh=m;crumbs.material_override=DemoVisual.mat(Color("839164"));crumbs.emitting=false
 func add_track(clip:Animation,node:Node3D,prop:String,keys:Array):
  var idx=clip.add_track(Animation.TYPE_VALUE);clip.track_set_path(idx,NodePath(str(get_path_to(node))+":"+prop));clip.track_set_interpolation_type(idx,Animation.INTERPOLATION_CUBIC)

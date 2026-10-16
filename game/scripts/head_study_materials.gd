@@ -7,6 +7,7 @@ static func apply(instance:Node3D):
    if original and original.resource_name.begins_with("Tiny Sclera"):
     var eye=ShaderMaterial.new()
     eye.shader=load("res://assets/shaders/study_eye.gdshader")
+    eye.set_shader_parameter("use_iris_uv",mesh.name.begins_with("AlinaRevisionHead"))
     mesh.set_surface_override_material(index,eye)
    elif original is StandardMaterial3D and original.resource_name=="Head":
     var skin=ShaderMaterial.new()

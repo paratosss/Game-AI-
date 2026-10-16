@@ -4,6 +4,7 @@ var output:String
 var high=false
 var pbr=false
 var lakeside=false
+var alina_revision=false
 var warm_frames=12
 var initial_actor_transforms=[]
 var capture_metadata=[]
@@ -61,7 +62,7 @@ func shot(name:String,position:Vector3,target:Vector3):
    push_error("An actor moved during a controlled comparison")
    quit(1)
    return
- capture_metadata.append({"name":name,"camera_position":[position.x,position.y,position.z],"target":[target.x,target.y,target.z],"width":root.size.x,"height":root.size.y})
+ capture_metadata.append({"name":name,"camera_position":[position.x,position.y,position.z],"target":[target.x,target.y,target.z],"fov":game.camera.fov,"width":root.size.x,"height":root.size.y})
  print("GRAPHICS_BENCHMARK_FRAME ",name)
 
 func save_metadata():
@@ -72,20 +73,29 @@ func save_metadata():
  if lakeside:
   for path in ["res://scripts/lakeside_quality.gd","res://scripts/lakeside_terrain.gd","res://assets/shaders/pond_depth.gdshader","res://assets/shaders/birch_scan.gdshader","res://assets/shaders/birch_leaf.gdshader","res://assets/textures/birch_scan/RESOURCE_MANIFEST.json","res://assets/nature/BIRCH_MANIFEST.json"]:
    dependencies[path]=FileAccess.get_sha256(path)
+ if alina_revision:
+  for path in ["res://scripts/human_skin.gd","res://scripts/actor.gd","res://scripts/alina_revision_materials.gd","res://scripts/head_study_materials.gd","res://assets/shaders/study_eye.gdshader","res://assets/shaders/study_skin.gdshader","res://assets/shaders/cloth_quality.gdshader","res://assets/characters/studies/AlinaRevision.glb","res://assets/characters/studies/ALINA_REVISION_MANIFEST.json","res://assets/characters/studies/AlinaSkinStudy_Generated.png"]:
+   dependencies[path]=FileAccess.get_sha256(path)
+  for name in DirAccess.get_files_at("res://assets/characters/studies"):
+   if name.begins_with("AlinaRevision") and name.ends_with(".import"):
+    var path="res://assets/characters/studies/"+name
+    dependencies[path]=FileAccess.get_sha256(path)
  var file=FileAccess.open(output.path_join("capture-metadata.json"),FileAccess.WRITE)
- file.store_string(JSON.stringify({"high":high,"pbr":pbr,"lakeside":lakeside,"warm_frames_per_view":warm_frames,"renderer":RenderingServer.get_current_rendering_method(),"actor_transforms_stable":true,"benchmark_sha256":FileAccess.get_sha256("res://tests/graphics_benchmark.gd"),"dependencies_sha256":dependencies,"captures":capture_metadata},"  "))
+ file.store_string(JSON.stringify({"high":high,"pbr":pbr,"lakeside":lakeside,"alina_revision":alina_revision,"warm_frames_per_view":warm_frames,"renderer":RenderingServer.get_current_rendering_method(),"actor_transforms_stable":true,"benchmark_sha256":FileAccess.get_sha256("res://tests/graphics_benchmark.gd"),"dependencies_sha256":dependencies,"captures":capture_metadata},"  "))
 
 func run():
  seed(20261015)
  output=OS.get_environment("SHASHLIK_CAPTURE_DIR")
  high="--graphics-high" in OS.get_cmdline_user_args()
  lakeside="--graphics-lakeside" in OS.get_cmdline_user_args()
+ alina_revision="--alina-revision" in OS.get_cmdline_user_args()
  pbr="--graphics-pbr" in OS.get_cmdline_user_args() or lakeside
  for argument in OS.get_cmdline_user_args():
   if argument.begins_with("--warm-frames="):warm_frames=clampi(int(argument.trim_prefix("--warm-frames=")),1,24)
  if output.is_empty():quit(1);return
  DirAccess.make_dir_recursive_absolute(output)
  game=load("res://main.tscn").instantiate()
+ if alina_revision:game.set_meta("alina_revision",true)
  root.add_child(game)
  paused=true
  game.initialized=false
@@ -107,6 +117,23 @@ func run():
  elif pbr:load("res://scripts/graphics_quality.gd").apply(game)
  elif high:apply_profile()
  print("GRAPHICS_BENCHMARK_READY high=",high," pbr=",pbr," renderer=",RenderingServer.get_current_rendering_method())
+ if "--character-review" in OS.get_cmdline_user_args():
+  game.camera.fov=45
+  await shot("seated-front",Vector3(0,1.12,-1.2),Vector3(0,.75,-3.2))
+  if "--character-front-only" in OS.get_cmdline_user_args():
+   save_metadata()
+   print("GRAPHICS_BENCHMARK_COMPLETE character_front_only=true")
+   quit()
+   return
+  await shot("seated-side",Vector3(1.85,1.0,-3.05),Vector3(0,.75,-3.2))
+  game.camera.fov=30
+  await shot("seated-face",Vector3(.25,1.18,-2.45),Vector3(0,1.14,-3.18))
+  game.camera.fov=40
+  await shot("guitar-hands",Vector3(.8,1.1,-2.3),Vector3(0,.86,-3.2))
+  save_metadata()
+  print("GRAPHICS_BENCHMARK_COMPLETE character_review=true")
+  quit()
+  return
  await shot("overview",Vector3(-4.1,1.9,4.8),Vector3(1,.5,-1.5))
  if "--overview-only" in OS.get_cmdline_user_args():
   save_metadata()
