@@ -40,6 +40,48 @@
       ],
       "provenance": "AlinaSkinStudy_Generated.provenance.json",
       "status": "generated color adaptation, not final skin"
+    },
+    {
+      "file": "assets/characters/studies/AlternativeHeadStudy_Eye Bros_Depth.png",
+      "bytes": 9663857,
+      "sha256": "a7566f6ad7a8a36890c4950ef539491817b6655a70af7c3017ded7526062a3ad",
+      "reason": "Original extracted texture included for clean first import with authored mipmaps settings"
+    },
+    {
+      "file": "assets/characters/studies/AlternativeHeadStudy_Eye Bros_Normal.png",
+      "bytes": 12355839,
+      "sha256": "9aa2d3151def3a9d78650360d81686c614a6b988993d17ce778afeaebf098622",
+      "reason": "Original extracted texture included for clean first import with authored mipmaps settings"
+    },
+    {
+      "file": "assets/characters/studies/AlternativeHeadStudy_Girl Colour.jpg",
+      "bytes": 302441,
+      "sha256": "6aba56c057ad0adb522dd9c53f9287105117fb587c4329054a6dbfec8724dfe5",
+      "reason": "Original extracted texture included for clean first import with authored mipmaps settings"
+    },
+    {
+      "file": "assets/characters/studies/AlternativeHeadStudy_Girl Normal.png",
+      "bytes": 20307537,
+      "sha256": "6546fbf9ed9ab36ce2c2f355404efbbdf193aa3e765ddb01d32d8e05e31b2df9",
+      "reason": "Original extracted texture included for clean first import with authored mipmaps settings"
+    },
+    {
+      "file": "assets/characters/studies/AlternativeHeadStudy_Girl Roughness.png",
+      "bytes": 1783498,
+      "sha256": "5ab5b882ac6c172564e44e800660bec09a88eb4b580d33cdeb05e6245b8f3a4b",
+      "reason": "Original extracted texture included for clean first import with authored mipmaps settings"
+    },
+    {
+      "file": "assets/characters/studies/AlternativeHeadStudy_Mouth Colour.jpg",
+      "bytes": 373279,
+      "sha256": "886240b889aab619421a7b7165bfb2f37c99a11bb3dbbf4545929fe28b8c8271",
+      "reason": "Original extracted texture included for clean first import with authored mipmaps settings"
+    },
+    {
+      "file": "assets/characters/studies/AlternativeHeadStudy_Mouth Normal.png",
+      "bytes": 2048373,
+      "sha256": "02a3abcc048639892d2284246e348b7c111d3ee4e191082c2239c5a11433797c",
+      "reason": "Original extracted texture included for clean first import with authored mipmaps settings"
     }
   ]
 }
