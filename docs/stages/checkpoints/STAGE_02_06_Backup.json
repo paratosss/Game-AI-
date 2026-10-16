@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-17",
+  "source_commit": "93a423eeb3417808c062e793f8dcfd0677231240",
+  "archives": [
+    {
+      "file": "Shashlik_Stage02_Body_06_Source.zip",
+      "bytes": 742496600,
+      "sha256": "fbcd9911a959b1198dd727465f27f2eeb590c30dfc078f88fc72bfff145c4660",
+      "crc": "PASS",
+      "entries": 686
+    },
+    {
+      "file": "Shashlik_Stage02_Body_06_Review.zip",
+      "bytes": 14957516,
+      "sha256": "afd99062435537168079ef94d0d7cfd19394685f562be39fe6f663bdbeb7175b",
+      "crc": "PASS",
+      "entries": 32
+    }
+  ],
+  "extracted_root": "/workspace/checkpoints/verify-body-06/Shashlik_Stage02_Body_06",
+  "clean-import": {
+    "exit_code": 0,
+    "markers": [],
+    "all_markers_found": true,
+    "errors": [],
+    "log": "body-06/clean-import.txt",
+    "started_without_godot_cache": true
+  },
+  "hero-revision": {
+    "exit_code": 0,
+    "markers": [
+      "HERO_VALIDATION_04_PASS failures=0"
+    ],
+    "all_markers_found": true,
+    "errors": [],
+    "log": "body-06/hero-revision.txt"
+  },
+  "hero-original": {
+    "exit_code": 0,
+    "markers": [
+      "HERO_VALIDATION_04_PASS failures=0"
+    ],
+    "all_markers_found": true,
+    "errors": [],
+    "log": "body-06/hero-original.txt"
+  },
+  "export-audit": {
+    "exit_code": 0,
+    "markers": [
+      "\"status\": \"PASS\""
+    ],
+    "all_markers_found": true,
+    "errors": [],
+    "log": "body-06/export-audit.txt"
+  },
+  "guitar-contacts": {
+    "exit_code": 0,
+    "markers": [
+      "GUITAR_CONTACTS_05_PASS failures=0"
+    ],
+    "all_markers_found": true,
+    "errors": [],
+    "log": "body-06/guitar-contacts.txt"
+  },
+  "body-export-audit": {
+    "exit_code": 0,
+    "markers": [
+      "\"status\": \"PASS\""
+    ],
+    "all_markers_found": true,
+    "errors": [],
+    "log": "body-06/body-export-audit.txt"
+  },
+  "body-deformation": {
+    "exit_code": 0,
+    "markers": [
+      "BODY_DEFORMATION_06_PASS failures=0"
+    ],
+    "all_markers_found": true,
+    "errors": [],
+    "log": "body-06/body-deformation.txt"
+  },
+  "scene-self-test": {
+    "exit_code": 0,
+    "markers": [
+      "ALINA_REVISION_ACTOR_CONFIRMED shapes=63",
+      "GUITAR_REVISION_CONFIRMED geometry_version=5",
+      "ALINA_BODY_REVISION_CONFIRMED bones=67",
+      "ALINA_REVISION_PREVIEW_READY",
+      "SELF_TEST_04_PASS"
+    ],
+    "all_markers_found": true,
+    "errors": [],
+    "log": "body-06/scene-self-test.txt"
+  },
+  "capture_dependencies_and_media_match_archive": true,
+  "model_and_extracted_texture_checksums_match": true,
+  "renderer": "Forward+ software Vulkan; RTX 5080 performance not measured",
+  "github_source_commit_verified": "93a423eeb3417808c062e793f8dcfd0677231240",
+  "archives_uploaded_to_github_release": false,
+  "local_archive_directory": "/workspace/checkpoints",
+  "scope": "Intermediate surface subdivision and forearm roll distribution; anatomical sculpt, skin materials, natural idle/eating poses and support remain open"
+}
