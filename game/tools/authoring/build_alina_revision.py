@@ -81,9 +81,13 @@ for face in head.data.polygons:
 # rigid to the head, while facial deformation is supplied by the retained keys.
 head.vertex_groups.clear()
 groups={n:head.vertex_groups.new(name=n)for n in ['spine_03','neck_01','Head']}
+rigid_vertices={index for face in head.data.polygons if head.data.materials[face.material_index].name!='Head' for index in face.vertices}
 for v in head.data.vertices:
  world=head.matrix_world@v.co
- t=max(0.,min(1.,(world.z-1.32)/.09));t=t*t*(3-2*t)
+ forward=-world.y
+ t=smooth(1.325,1.38,world.z)
+ face=smooth(1.325,1.34,world.z)*max(smooth(.015,.040,forward),smooth(.020,.035,abs(world.x)))
+ t=1.0 if v.index in rigid_vertices else max(t,face)
  neck=max(0.,min(1.,(world.z-1.27)/.055));neck=neck*neck*(3-2*neck)
  weights={'Head':t,'neck_01':(1-t)*neck,'spine_03':(1-t)*(1-neck)}
  for name,weight in weights.items():
@@ -105,6 +109,6 @@ receipt={'body_source':str(body_file.relative_to(root)),'body_sha256':hashlib.sh
  'head_source':str(head_file.relative_to(root)),'head_sha256':hashlib.sha256(head_file.read_bytes()).hexdigest(),
  'output':str(output.relative_to(root)),'bytes':output.stat().st_size,'sha256':hashlib.sha256(output.read_bytes()).hexdigest(),
  'bones':len(rig.data.bones),'facial_shapes':len(keys)-1,'old_body_faces':old_count,'remaining_body_faces':len(body.data.polygons),
- 'neutral_eye_wide':.16,'cloth_thickness_m':.0014,'lower_neck_forward_fit_m':.052,'status':'integration study; requires seated and animated inspection'}
+ 'neutral_eye_wide':.16,'cloth_thickness_m':.0014,'lower_neck_forward_fit_m':.052,'rigid_mouth_eyes_hair':True,'status':'integration study; requires seated and animated inspection'}
 (root/'assets/characters/studies/ALINA_REVISION_MANIFEST.json').write_text(json.dumps(receipt,ensure_ascii=False,indent=2)+'\n')
 print('ALINA_REVISION_EXPORTED',receipt,flush=True)

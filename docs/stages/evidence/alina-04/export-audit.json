@@ -1,0 +1,51 @@
+{
+  "file": "/workspace/Game-AI-/game/assets/characters/studies/AlinaRevision.glb",
+  "sha256": "53358b0f8daeb64b573579212eeca4b5edf0345e49df1fe5beb326528069102a",
+  "bones": 63,
+  "facial_shapes": 63,
+  "clips": [
+    "dislike",
+    "eat",
+    "getup",
+    "happy",
+    "idle",
+    "sit",
+    "sit_down",
+    "walk",
+    "wave"
+  ],
+  "rigid_surfaces": [
+    {
+      "material": "Eye Lashes",
+      "vertices": 1037,
+      "minimum_head_weight": 1.0
+    },
+    {
+      "material": "Hair",
+      "vertices": 33486,
+      "minimum_head_weight": 1.0
+    },
+    {
+      "material": "Eye Bros",
+      "vertices": 968,
+      "minimum_head_weight": 1.0
+    },
+    {
+      "material": "Mouth",
+      "vertices": 3208,
+      "minimum_head_weight": 1.0
+    },
+    {
+      "material": "Waterline",
+      "vertices": 136,
+      "minimum_head_weight": 1.0
+    },
+    {
+      "material": "Tiny Sclera 1.3 (Real Light Blue)",
+      "vertices": 1988,
+      "minimum_head_weight": 1.0
+    }
+  ],
+  "status": "PASS",
+  "limitation": "Export integrity only, not an artistic acceptance of anatomy or animation"
+}

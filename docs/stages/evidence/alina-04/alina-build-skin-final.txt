@@ -1,0 +1,35 @@
+13:27:08 | INFO: Data are loaded, start creating Blender stuff
+13:27:08 | INFO: Blender create Mesh node base.001
+13:27:08 | INFO: Blender create Mesh node eyebrow001.001
+13:27:08 | INFO: Blender create Mesh node eyelashes01.001
+13:27:08 | INFO: Blender create Mesh node female_casualsuit01
+13:27:08 | INFO: Blender create Mesh node high-poly
+13:27:08 | INFO: Blender create Mesh node long01
+13:27:08 | INFO: Blender create Mesh node shoes05
+13:27:08 | INFO: glTF import finished in 0.40s
+13:27:09 | INFO: Data are loaded, start creating Blender stuff
+13:27:09 | INFO: Blender create Mesh node Cube.002
+13:27:09 | INFO: glTF import finished in 0.22s
+INFO Draco mesh compression is available, use library at /workspace/.cloud-tools/blender-4.5.3/blender-4.5.3-linux-x64/4.5/scripts/addons_core/io_scene_gltf2/libextern_draco.so
+13:27:35 | INFO: Starting glTF 2.0 export
+13:27:35 | INFO: Extracting primitive: Cube.002
+13:27:38 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+13:27:38 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+13:27:39 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+13:27:39 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+13:27:39 | INFO: Primitives created: 7
+13:27:40 | INFO: Extracting primitive: base.001
+13:27:40 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+13:27:40 | INFO: Primitives created: 1
+13:27:40 | INFO: Extracting primitive: female_casualsuit01
+13:27:40 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+13:27:40 | INFO: Primitives created: 1
+13:27:40 | INFO: Extracting primitive: shoes05
+13:27:40 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+13:27:40 | INFO: Primitives created: 1
+13:27:48 | INFO: Finished glTF 2.0 export in 12.95283842086792 s
+
+ALINA_REVISION_EXPORTED {'body_source': 'assets/characters/Refined_Alina.glb', 'body_sha256': 'fb44fcd95d0896420133922dd5498f4036cf32f94dbca6e321eeaae3777eb813', 'head_source': 'assets/characters/studies/AlternativeHeadStudy.glb', 'head_sha256': 'd25b7b4a8c2eb8ff8f5c2245089afb63b235a8d022353ff5a7abbbdae5734436', 'output': 'assets/characters/studies/AlinaRevision.glb', 'bytes': 85797136, 'sha256': '53358b0f8daeb64b573579212eeca4b5edf0345e49df1fe5beb326528069102a', 'bones': 63, 'facial_shapes': 63, 'old_body_faces': 17012, 'remaining_body_faces': 8152, 'neutral_eye_wide': 0.16, 'cloth_thickness_m': 0.0014, 'lower_neck_forward_fit_m': 0.052, 'rigid_mouth_eyes_hair': True, 'status': 'integration study; requires seated and animated inspection'}
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:38:15)
+
+Blender quit

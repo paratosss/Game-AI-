@@ -5,7 +5,7 @@
   "head_sha256": "d25b7b4a8c2eb8ff8f5c2245089afb63b235a8d022353ff5a7abbbdae5734436",
   "output": "assets/characters/studies/AlinaRevision.glb",
   "bytes": 85797136,
-  "sha256": "08a3bb1d9c2c19b6ac972edf9e48e8e2531c61a653fec4c4e7fb2e970255610e",
+  "sha256": "53358b0f8daeb64b573579212eeca4b5edf0345e49df1fe5beb326528069102a",
   "bones": 63,
   "facial_shapes": 63,
   "old_body_faces": 17012,
@@ -13,6 +13,7 @@
   "neutral_eye_wide": 0.16,
   "cloth_thickness_m": 0.0014,
   "lower_neck_forward_fit_m": 0.052,
+  "rigid_mouth_eyes_hair": true,
   "status": "integration study; requires seated and animated inspection",
   "extracted_textures": [
     {
@@ -71,5 +72,5 @@
       "sha256": "b2a6ac8cd4f9febdb447368e29c76cd68410bb66e46d9dcfa2d5f75126eea8fc"
     }
   ],
-  "required_import": "Include extracted maps and .import settings, with mipmaps enabled; cold import must not use a fallback."
+  "required_import": "Version extracted maps with mipmaps import settings; no cold-import fallback is acceptable."
 }

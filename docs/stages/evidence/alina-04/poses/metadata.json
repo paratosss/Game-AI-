@@ -1,0 +1,88 @@
+{
+  "captures": [
+    {
+      "camera": [
+        0.0,
+        1.0,
+        2.90000009536743
+      ],
+      "fov": 36.0,
+      "head_transform": "[X: (0.978532, -0.000286, 0.206096), Y: (-0.01337, 0.997804, 0.064865), Z: (-0.205662, -0.066228, 0.976379), O: (-0.021823, 1.376502, 0.137859)]",
+      "height": 720,
+      "mouth_position": "(-0.032806, 1.322795, 0.189931)",
+      "name": "standing",
+      "target": [
+        0.0,
+        0.829999983310699,
+        0.0
+      ],
+      "width": 1280
+    },
+    {
+      "camera": [
+        0.0,
+        1.48000001907349,
+        0.819999992847443
+      ],
+      "fov": 30.0,
+      "head_transform": "[X: (0.978532, -0.000286, 0.206096), Y: (-0.01337, 0.997804, 0.064865), Z: (-0.205662, -0.066228, 0.976379), O: (-0.021823, 1.376502, 0.137859)]",
+      "height": 720,
+      "mouth_position": "(-0.032806, 1.322795, 0.189931)",
+      "name": "face-front",
+      "target": [
+        0.0,
+        1.46000003814697,
+        0.100000001490116
+      ],
+      "width": 1280
+    },
+    {
+      "camera": [
+        0.0,
+        1.48000001907349,
+        0.819999992847443
+      ],
+      "fov": 30.0,
+      "head_transform": "[X: (0.98593, -0.000481, -0.167159), Y: (0.013145, 0.997122, 0.074661), Z: (0.166642, -0.075808, 0.983099), O: (-0.023229, 1.373761, 0.145102)]",
+      "height": 720,
+      "mouth_position": "(-0.014446, 1.319545, 0.197064)",
+      "name": "face-turned",
+      "target": [
+        0.0,
+        1.46000003814697,
+        0.100000001490116
+      ],
+      "width": 1280
+    },
+    {
+      "camera": [
+        0.620000004768372,
+        1.39999997615814,
+        0.949999988079071
+      ],
+      "fov": 40.0,
+      "head_transform": "[X: (0.948229, 0.158688, -0.275099), Y: (-0.160831, 0.986869, 0.014903), Z: (0.273852, 0.030113, 0.9613), O: (-0.053445, 1.381342, 0.1081)]",
+      "height": 720,
+      "mouth_position": "(-0.029877, 1.333641, 0.161819)",
+      "name": "eating",
+      "target": [
+        0.0,
+        1.27999997138977,
+        0.0700000002980232
+      ],
+      "width": 1280
+    }
+  ],
+  "dependencies_sha256": {
+    "res://assets/characters/studies/AlinaRevision.glb": "53358b0f8daeb64b573579212eeca4b5edf0345e49df1fe5beb326528069102a",
+    "res://assets/shaders/cloth_quality.gdshader": "9b0b18b8bcf3bb33a2f7e20de792e4faa692f820a9513dd9b3e7b981db050beb",
+    "res://assets/shaders/study_eye.gdshader": "2637db565a741462ff6f49cd54b001ed1f268a4ff67e5443ff6abc4f005ea6a9",
+    "res://assets/shaders/study_skin.gdshader": "0618921376881aef6880940a3101d05bf6703c2b2e9ebe2b128e26a2e8979977",
+    "res://scripts/alina_revision_materials.gd": "393f8376ba0454c6c9bc4c09dca432a10227ca72d075817c9e5907653bfd80b5",
+    "res://scripts/head_study_materials.gd": "b40f192ed1305045799e2a8a45d0a7de7acf910f7ca0df6a62e929ef8a72ad6a",
+    "res://scripts/human_skin.gd": "6d144cddcb528795f774dd6b7370038d8e1c7bce141ef53ca345beffdcdacdc5",
+    "res://tests/alina_pose_review.gd": "f087ef130c09d7578d50aaf8a6ecf5d5702af064bab95f69ceb46f39f06e1615"
+  },
+  "renderer": "forward_plus",
+  "taa": true
+}

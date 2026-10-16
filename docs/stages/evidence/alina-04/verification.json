@@ -1,0 +1,95 @@
+{
+  "source_code_status": "Frozen integration study; artistic target remains open",
+  "working_capture_exit_codes": {
+    "seated": 0,
+    "native_1440": 0,
+    "poses": 0,
+    "contact": 0
+  },
+  "export_audit": "PASS",
+  "viewed_images": {
+    "seated": 4,
+    "native_1440": 1,
+    "poses": 4,
+    "contact": 1
+  },
+  "limitations": [
+    "Static pose images are not a watched animation video",
+    "Body, hand anatomy, grip, gesture and target visual quality remain unfinished",
+    "Cloud software Vulkan is not a performance measurement of RTX 5080"
+  ],
+  "media": [
+    {
+      "file": "contact/seated-contact.png",
+      "sha256": "52f00ffd513dd09bd4c4c6741d8819cfd051e21a34dcae29b413d9b9535743b7",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "file": "poses/eating.png",
+      "sha256": "a41e4f9621ac171ce65f4f87f8b9a472208d83da338c8101ac06e65a68042c33",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "file": "poses/face-front.png",
+      "sha256": "8b0acad2b8aede74b52b6d32cadbf6724744825508a741bcf5d2d533bdee3337",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "file": "poses/face-turned.png",
+      "sha256": "fb63d43b298047e8679620fe3e9857a6be9182c1b9cc4a4d1abf0e8c0663c9f3",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "file": "poses/standing.png",
+      "sha256": "26d82b45bd4d5e0b0ee235e4d2b3eb3993f2f73b8906cbce41479580637897b0",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "file": "rejected-neck-front.png",
+      "sha256": "3f57d2021205c5b6bcbf7b3499e6d1be932c3cb50b8190b35ac8617c3af67768",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "file": "rejected-neck-profile.png",
+      "sha256": "c8d1b7b00d45d91a14f3572fcf9c59632e7b00832b60b221ee7e05bc82856b56",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "file": "seated/guitar-hands.png",
+      "sha256": "cdf0117349df97116de535f975af338bff6b65d58ff88d7efe4ecbdb77120e45",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "file": "seated/seated-face.png",
+      "sha256": "9ba5ba72f1274c9d5e623ee900cdc37b14b46144e081f64b1248a26491351d14",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "file": "seated/seated-front.png",
+      "sha256": "26ccd5d61974008579402129b04844f982a50c5b84d82558b63e4f5307490fd5",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "file": "seated/seated-side.png",
+      "sha256": "9db839bb81e898a577fc479e6e5682ea59e463589f04621d18d86ef2b4d2d1ed",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "file": "seated-1440/seated-front.png",
+      "sha256": "47b9279e128371025937ca31582cfa13451ca103efc4b596a77ce2dd31b8d037",
+      "width": 2560,
+      "height": 1440
+    }
+  ]
+}

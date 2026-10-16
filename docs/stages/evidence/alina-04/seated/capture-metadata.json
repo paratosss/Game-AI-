@@ -1,0 +1,116 @@
+{
+  "actor_transforms_stable": true,
+  "alina_revision": true,
+  "benchmark_sha256": "6f0e4f9d10e64095c318b7fcd4d04d6dedaa74e0463118c9e6cec831b1cb89ae",
+  "captures": [
+    {
+      "camera_position": [
+        0.0,
+        1.12000000476837,
+        -1.20000004768372
+      ],
+      "fov": 45.0,
+      "height": 720,
+      "name": "seated-front",
+      "target": [
+        0.0,
+        0.75,
+        -3.20000004768372
+      ],
+      "width": 1280
+    },
+    {
+      "camera_position": [
+        1.85000002384186,
+        1.0,
+        -3.04999995231628
+      ],
+      "fov": 45.0,
+      "height": 720,
+      "name": "seated-side",
+      "target": [
+        0.0,
+        0.75,
+        -3.20000004768372
+      ],
+      "width": 1280
+    },
+    {
+      "camera_position": [
+        0.25,
+        1.17999994754791,
+        -2.45000004768372
+      ],
+      "fov": 30.0,
+      "height": 720,
+      "name": "seated-face",
+      "target": [
+        0.0,
+        1.13999998569489,
+        -3.1800000667572
+      ],
+      "width": 1280
+    },
+    {
+      "camera_position": [
+        0.800000011920929,
+        1.10000002384186,
+        -2.29999995231628
+      ],
+      "fov": 40.0,
+      "height": 720,
+      "name": "guitar-hands",
+      "target": [
+        0.0,
+        0.860000014305115,
+        -3.20000004768372
+      ],
+      "width": 1280
+    }
+  ],
+  "dependencies_sha256": {
+    "res://assets/characters/studies/ALINA_REVISION_MANIFEST.json": "8712ce7751ef3b979bac3c22e1c096df97a28ee8071a83a9bd6a31d8adbe9b5e",
+    "res://assets/characters/studies/AlinaRevision.glb": "53358b0f8daeb64b573579212eeca4b5edf0345e49df1fe5beb326528069102a",
+    "res://assets/characters/studies/AlinaRevision.glb.import": "7509a0c9371630857ab980e579804e59af18f70af16484f60cdb03a736926414",
+    "res://assets/characters/studies/AlinaRevision_Eye Bros_Depth.png.import": "170f415c8d270024155f94e27796c7cec151fe190147dda0927262ee5899dc46",
+    "res://assets/characters/studies/AlinaRevision_Eye Bros_Normal.png.import": "24e838031aa2ce3ced979cb38cdfcb8a222aa0c5e9943e66ece7b1730e16b1f2",
+    "res://assets/characters/studies/AlinaRevision_Girl Colour.jpg.import": "ad11260ec4edca5d4f346a7b5607f0fc5d1329206dc3998a0827797a1f962d42",
+    "res://assets/characters/studies/AlinaRevision_Girl Normal.png.import": "cc214c90c42bf7a69226d03315f800efa40f2808d55d6ccac1b9034bfe738863",
+    "res://assets/characters/studies/AlinaRevision_Girl Roughness.png.import": "d4853b1f39220fc0ff7f83f75552b7290f05d5f00449470472c0c6bd371fc1c2",
+    "res://assets/characters/studies/AlinaRevision_Mouth Colour.jpg.import": "365fda710291e9e5cb1ad07585f02fa5cf401de5473c0cde69eed1bde425e95e",
+    "res://assets/characters/studies/AlinaRevision_Mouth Normal.png.import": "c4d1c00ef6fe2a2717f60e609af673366af7cb96ddf15c183cd861d8c8063536",
+    "res://assets/characters/studies/AlinaRevision_female_casualsuit01_diffuse.png.import": "ba7f3a5acdd285fb20144eef119fc7586c210e8064e06b7df7ea308891de6e09",
+    "res://assets/characters/studies/AlinaRevision_female_casualsuit01_normal.png.import": "708ef3ddb70e659c11d5bb2feeee9bb14227be7d06c006d1a62d2bfc5397db0a",
+    "res://assets/characters/studies/AlinaRevision_shoes05_diffuse.png.import": "1ab85fc827d8aa4e26f0370de5c30afccbf1addcad2e522bd4e8724ad4a40387",
+    "res://assets/characters/studies/AlinaRevision_young_lightskinned_female_diffuse.png.import": "10e881c158d6a819c709d3c964fe89a074da96df69dd47dd71d8483f3b31702a",
+    "res://assets/characters/studies/AlinaSkinStudy_Generated.png": "16c4480d293ce009a2378fbf461f4366a8d6d4054cdebc549491c2b6f0827075",
+    "res://assets/nature/BIRCH_MANIFEST.json": "dcf5b6daeb8400b9a1f19084c261a5b5963443bd4e566a8a0d84d555aafbb29f",
+    "res://assets/shaders/birch_leaf.gdshader": "815fb99a70f0f18d34ea7c1f48182123f452551b6996dff0249d726241398409",
+    "res://assets/shaders/birch_scan.gdshader": "14f1fa3b5f2c7631eb498578ec33c85989cb583c32ea822d4b0d6406b32d2aaa",
+    "res://assets/shaders/cloth_quality.gdshader": "9b0b18b8bcf3bb33a2f7e20de792e4faa692f820a9513dd9b3e7b981db050beb",
+    "res://assets/shaders/grass_quality.gdshader": "6610cd6f41147187b274868456bee2c775df92a82d04e88ec1779e345916cd89",
+    "res://assets/shaders/ground_pbr.gdshader": "906d3ea831ff89e407e55c9f157485a0cc1eb70ef38f066ecde98edee32bb1b2",
+    "res://assets/shaders/photographic_sky.gdshader": "cb7cea2853db9223c33b40ca9c37dbdc2de50f0c72eb12f13d44a077ea64ef32",
+    "res://assets/shaders/pond_depth.gdshader": "dc6fb2a65b2bdcfc208255ae93b7cf936a12f62b6a69c0d549e1374dfef9de27",
+    "res://assets/shaders/rock_pbr.gdshader": "81e519f9b71d8cffe02d3035e3c12440ed311ac5e253784942865379f97f01c8",
+    "res://assets/shaders/study_eye.gdshader": "2637db565a741462ff6f49cd54b001ed1f268a4ff67e5443ff6abc4f005ea6a9",
+    "res://assets/shaders/study_skin.gdshader": "0618921376881aef6880940a3101d05bf6703c2b2e9ebe2b128e26a2e8979977",
+    "res://assets/shaders/water_quality.gdshader": "2c172dd1933dd61348f28336bbe0374afc5dc9cc7e17b807e0994e9a8f97f646",
+    "res://assets/shaders/wood_pbr.gdshader": "67d4fd716c79f19082c0599e2110b4517f7bc70ae9d3c44f966874f69112ede2",
+    "res://assets/textures/birch_scan/RESOURCE_MANIFEST.json": "244c09ea1521e86fe4c257d1811d00a6a44bf171a3303eb67d11983d2190edb0",
+    "res://assets/textures/quality/RESOURCE_MANIFEST.json": "4393f78e740201d854639a42cb3d109fe29e5112c79022491930265e3995c19c",
+    "res://scripts/actor.gd": "8f743fbfe01b100ea939cb494c6b7ab522b4ddad363f0ae5e389b27ab6bac218",
+    "res://scripts/alina_revision_materials.gd": "393f8376ba0454c6c9bc4c09dca432a10227ca72d075817c9e5907653bfd80b5",
+    "res://scripts/graphics_quality.gd": "f39bd0c6590dd868f16926ca006d33c620fa8dc402bc6792f7b08aff7ff2d0f7",
+    "res://scripts/head_study_materials.gd": "b40f192ed1305045799e2a8a45d0a7de7acf910f7ca0df6a62e929ef8a72ad6a",
+    "res://scripts/human_skin.gd": "6d144cddcb528795f774dd6b7370038d8e1c7bce141ef53ca345beffdcdacdc5",
+    "res://scripts/lakeside_quality.gd": "5941dc73ab74e3cc52f2cbf6dc2051fba91672284ac4aca2951cfe6d6ee27cee",
+    "res://scripts/lakeside_terrain.gd": "ef2ec834f9f20ba833513bcc34f1be0a76126ed453c1914726e015d95edd8d84",
+    "res://scripts/quality_geometry.gd": "99ece419d901f583da11cb56e89cbdf19f13c2465128127e6a5832a9e7138514"
+  },
+  "high": false,
+  "lakeside": true,
+  "pbr": true,
+  "renderer": "forward_plus",
+  "warm_frames_per_view": 6
+}
