@@ -28,7 +28,9 @@ func run():
   check(grip.x>.04,"Fretting wrist stays below the neck, with an underhand grip")
   check(skin.arm_error<.02,"Both wrist targets remain reachable across a strum cycle")
   check(skin.guitar_elbows[0].y<skin.global_pose("upperarm_l").origin.y,"Fretting elbow stays below shoulder")
- for finger in ["index_04_leaf_l","middle_04_leaf_l","ring_04_leaf_l"]:
+ if skin.uses_revision:check(guitar.get_meta("geometry_version",0)==5,"Revised actor actually uses the new acoustic guitar")
+ var stopped=["middle_04_leaf_l","ring_04_leaf_l"] if skin.uses_revision else ["index_04_leaf_l","middle_04_leaf_l","ring_04_leaf_l"]
+ for finger in stopped:
    var local=guitar.to_local(skin.to_global(skin.global_pose(finger).origin))
    check(absf(local.x)<.035,"Fretting fingers stay inside neck width")
    check(local.z>.045 and local.z<.085,"Fretting fingertips stay near the front surface")

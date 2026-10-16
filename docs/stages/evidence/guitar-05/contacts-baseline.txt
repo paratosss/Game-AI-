@@ -1,0 +1,3 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+BASELINE_HAND_SURFACE min_z_m=0.02014526724815 sampled_vertices=1749 soundboard_z_m=0.047 source=fe79ccdde2be56ed0a488488e19fa792cf3eb651

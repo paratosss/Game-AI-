@@ -2,6 +2,7 @@
 
 Разработка продолжается в ветке `codex/graphics-rework`. Полная переработка графики и анимаций ещё не завершена.
 
+- [Новая гитара и хват — итерация 05](docs/stages/STAGE_02_Guitar_05_RU.md).
 - [Новая сборка Алины с гитарой — итерация 04](docs/stages/STAGE_02_Alina_Integration_04_RU.md).
 - [Актуальное состояние и точка продолжения](docs/LATEST_STATE_RU.md).
 - [План этапов](docs/WORK_PLAN_RU.md) и [сохранённые отчёты](docs/stages/README.md).

@@ -103,15 +103,16 @@ func solve_limb(a:String,b:String,c:String,target:Vector3,pole:Vector3):
  align_bone(a,b,middle-origin)
  var current=global_pose(b).origin
  align_bone(b,c,target-current)
-func fit_finger(finger:String,target:Vector3):
+func fit_finger(finger:String,target:Vector3,suffix:String="_l",pole_hint:Vector3=Vector3.ZERO):
  # Three phalanges, fixed bone lengths. Keep the initial curved solution as a pole.
- var names=[finger+"_01_l",finger+"_02_l",finger+"_03_l",finger+"_04_leaf_l"]
+ var names=[finger+"_01"+suffix,finger+"_02"+suffix,finger+"_03"+suffix,finger+"_04_leaf"+suffix]
  var points=[];var lengths=[]
  for n in names:points.append(global_pose(n).origin)
  var base:Vector3=points[0]
  for j in range(3):lengths.append(rest[names[j]].origin.distance_to(rest[names[j+1]].origin))
  var direction=(target-base).normalized()
  var outward=to_local(to_global(Vector3(0,0,1)))-to_local(global_position)
+ if pole_hint.length_squared()>.01:outward=pole_hint.normalized()
  var pole=(outward-direction*outward.dot(direction)).normalized()
  var reach=lengths[0]+lengths[1]+lengths[2]
  var arc=clampf((reach-base.distance_to(target))*.55,.003,.025)
@@ -220,6 +221,7 @@ func tick(dt:float,moving:bool,speed:float,pose:String,guitar:Node3D,look:Vector
   var target=global_pose("hand"+suffix).origin
   if guitar and guitar_weight>0:
    var point=Vector3(.062,.586,.071) if i==0 else Vector3(-.015+sin(motion_time*5.5)*.030,.145+cos(motion_time*5.5)*.008,.087)
+   if uses_revision:point=Vector3(.062,.550,.022) if i==0 else Vector3(-.084+sin(motion_time*5.5)*.015,.106+cos(motion_time*5.5)*.003,.132)
    var desired=to_local(guitar.to_global(point))
    target=target.lerp(desired,guitar_weight)
   if reaction_weight>0 and i==1:
@@ -243,6 +245,11 @@ func tick(dt:float,moving:bool,speed:float,pose:String,guitar:Node3D,look:Vector
    var source_frame=Basis(source_normal,palm_long,source_normal.cross(palm_long)).orthonormalized()
    var direction=-finger_direction if i==0 else finger_direction
    var desired_frame=Basis(palm_normal,direction,palm_normal.cross(direction)).orthonormalized()
+   if uses_revision and i==0:
+    var forward=(to_local(guitar.to_global(Vector3(0,0,1)))-to_local(guitar.global_position)).normalized()
+    direction=(-finger_direction*.55+forward*.84).normalized()
+    palm_normal=(-forward*.55-finger_direction*.84).normalized()
+    desired_frame=Basis(palm_normal,direction,palm_normal.cross(direction)).orthonormalized()
    var wrist_basis=desired_frame*source_frame.inverse()*rest["hand"+suffix].basis
    if i==1:wrist_basis=Basis(-palm_normal,-.045+sin(motion_time*5.5)*.04)*wrist_basis
    # Share axial rotation with the forearm; avoid concentrating all twist at the wrist.
@@ -258,7 +265,7 @@ func tick(dt:float,moving:bool,speed:float,pose:String,guitar:Node3D,look:Vector
    set_bone_global_basis("hand"+suffix,Basis(neutral.slerp(playing,guitar_weight)))
   if guitar and guitar_weight>.98:arm_error=maxf(arm_error,global_pose("hand"+suffix).origin.distance_to(target))
   # Finger curl gives the resting hand a relaxed shape and wraps around the guitar neck.
-  for finger in ["index","middle","ring","pinky"]:
+  for finger in (["thumb","index","middle","ring","pinky"] if uses_revision else ["index","middle","ring","pinky"]):
    for j in [1,2,3]:
     var bone=finger+"_0"+str(j)+suffix
     var idx=indices.get(bone,-1)
@@ -267,12 +274,34 @@ func tick(dt:float,moving:bool,speed:float,pose:String,guitar:Node3D,look:Vector
      var curl=0.0
      if guitar and guitar_weight>0:
       var relaxed=curl
-      var f=["index","middle","ring","pinky"].find(finger)
-      if i==0:curl=[.79,.82,.85,.73][f] if j==1 else [.62,.65,.68,.60][f]
-      else:curl=[.20,.27,.34,.39][f] if j==1 else (.30 if j==2 else .18)
+      if uses_revision:curl=[.18,.32,.20][j-1] if i==1 else [.35,.50,.20][j-1]
+      else:
+       var f=["index","middle","ring","pinky"].find(finger)
+       if i==0:curl=[.79,.82,.85,.73][f] if j==1 else [.62,.65,.68,.60][f]
+       else:curl=[.20,.27,.34,.39][f] if j==1 else (.30 if j==2 else .18)
       curl=lerpf(relaxed,curl,guitar_weight)
-     skeleton.set_bone_pose_rotation(idx,q*Quaternion(Vector3.RIGHT,curl))
- if guitar and guitar_weight>0:
+     if uses_revision and guitar and guitar_weight>0:
+      var parent=skeleton.get_bone_parent(idx)
+      var local_rest=rest[bone].basis
+      if parent>=0:local_rest=rest[skeleton.get_bone_name(parent)].basis.inverse()*local_rest
+      var playing=local_rest.get_rotation_quaternion()*Quaternion(Vector3.RIGHT,curl)
+      skeleton.set_bone_pose_rotation(idx,q.slerp(playing,guitar_weight))
+     else:skeleton.set_bone_pose_rotation(idx,q*Quaternion(Vector3.RIGHT,curl))
+ if guitar and guitar_weight>0 and uses_revision:
+  var front=(to_local(guitar.to_global(Vector3(0,0,1)))-to_local(guitar.global_position)).normalized()
+  # Two stopped strings form E minor; the remaining fingers are relaxed.
+  for entry in [["index",.0,.596,.087],["middle",-.010,.568,.064],["ring",-.003,.559,.064],["pinky",.014,.521,.093]]:
+   var point=Vector3(entry[1],entry[2],entry[3])
+   var bone=entry[0]+"_04_leaf_l"
+   fit_finger(entry[0],global_pose(bone).origin.lerp(to_local(guitar.to_global(point)),guitar_weight),"_l",front)
+  var thumb_target=to_local(guitar.to_global(Vector3(.003,.552,.024)))
+  var thumb_pole=(to_local(guitar.to_global(Vector3(.35,0,-1)))-to_local(guitar.global_position)).normalized()
+  fit_finger("thumb",global_pose("thumb_04_leaf_l").origin.lerp(thumb_target,guitar_weight),"_l",thumb_pole)
+  # The nail of the index finger sweeps the strings; no invisible pick is used.
+  var stroke=sin(motion_time*5.5)
+  var picking=to_local(guitar.to_global(Vector3(stroke*.024,.100,.062+pow(absf(stroke),6)*.007)))
+  fit_finger("index",global_pose("index_04_leaf_r").origin.lerp(picking,guitar_weight),"_r",front)
+ if guitar and guitar_weight>0 and not uses_revision:
   # Distinct string contacts: fingertips form an arch rather than a closed fist.
   var fingers=["index","middle","ring","pinky"]
   for f in range(4):

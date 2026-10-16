@@ -21,7 +21,7 @@ func build(p:Dictionary,col:Color):
  model=DemoRig.dog(self) if p.get("dog",false) else DemoRig.human(self,p.name,col)
  var c=CollisionShape3D.new();var s=CapsuleShape3D.new();s.radius=.15 if p.get("dog",false) else .22;s.height=.56 if p.get("dog",false) else 1.57 if p.name=="Алина" else 1.78 if p.name=="Круглик" else 1.82;c.shape=s;c.position.y=s.height/2;add_child(c)
  if p.activity=="GUITAR":
-  guitar=DemoVisual.guitar(model.visual);guitar.position=Vector3(-.12,.760,.205);guitar.rotation=Vector3(-.08,0,-1.26)
+  guitar=load("res://scripts/guitar_quality.gd").build(model.visual) if model.skin.uses_revision else DemoVisual.guitar(model.visual);guitar.position=Vector3(-.12,.760,.205);guitar.rotation=Vector3(-.08,0,-1.26)
  animation=AnimationPlayer.new();animation.name="AnimationPlayer";add_child(animation)
  var lib=AnimationLibrary.new();animation.add_animation_library("",lib)
  var dog=p.get("dog",false)

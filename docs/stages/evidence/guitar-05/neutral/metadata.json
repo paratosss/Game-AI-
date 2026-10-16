@@ -1,0 +1,64 @@
+{
+  "captures": [
+    {
+      "camera": "(0.15, 1.12, 1.9)",
+      "fov": 40.0,
+      "guitar_transform": "[X: (0.507943, -0.859377, 0.058859), Y: (0.86139, 0.506756, -0.034708), Z: (0.0, 0.06833, 0.997663), O: (-0.105, 0.757, 0.205)]",
+      "height": 720,
+      "motion_time": 2.0,
+      "name": "seated-neutral",
+      "target": "(0.03, 0.87, 0.12)",
+      "width": 1280
+    },
+    {
+      "camera": "(0.404321, 1.002891, 0.589096)",
+      "fov": 36.0,
+      "guitar_transform": "[X: (0.507943, -0.859377, 0.058859), Y: (0.86139, 0.506756, -0.034708), Z: (0.0, 0.06833, 0.997663), O: (-0.105, 0.757, 0.205)]",
+      "height": 720,
+      "motion_time": 2.0,
+      "name": "fretting-hand",
+      "target": "(0.368765, 1.039474, 0.240782)",
+      "width": 1280
+    },
+    {
+      "camera": "(-0.045803, 0.902965, 0.636034)",
+      "fov": 40.0,
+      "guitar_transform": "[X: (0.507943, -0.859377, 0.058859), Y: (0.86139, 0.506756, -0.034708), Z: (0.0, 0.06833, 0.997663), O: (-0.105, 0.757, 0.205)]",
+      "height": 720,
+      "motion_time": 2.0,
+      "name": "strumming-hand",
+      "target": "(-0.02902, 0.829305, 0.2652)",
+      "width": 1280
+    },
+    {
+      "camera": "(0.65, 0.33, 1.48)",
+      "fov": 43.0,
+      "guitar_transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0), O: (0.0, 0.0, 0.0)]",
+      "height": 720,
+      "motion_time": 2.0,
+      "name": "instrument",
+      "target": "(0.0, 0.25, 0.0)",
+      "width": 1280
+    },
+    {
+      "camera": "(0.75, 0.34, 0.7)",
+      "fov": 57.0,
+      "guitar_transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0), O: (0.0, 0.0, 0.0)]",
+      "height": 720,
+      "motion_time": 2.0,
+      "name": "instrument-side",
+      "target": "(0.0, 0.25, 0.0)",
+      "width": 1280
+    }
+  ],
+  "dependencies_sha256": {
+    "res://assets/characters/studies/AlinaRevision.glb": "53358b0f8daeb64b573579212eeca4b5edf0345e49df1fe5beb326528069102a",
+    "res://assets/shaders/instrument_wood.gdshader": "391ff481cc4e7e0c5c0585b445090d66a8fb7c5d388b852d19070314655113b2",
+    "res://scripts/alina_revision_materials.gd": "393f8376ba0454c6c9bc4c09dca432a10227ca72d075817c9e5907653bfd80b5",
+    "res://scripts/guitar_quality.gd": "4122c6eac6cd56ffa72566a2a36450d294637c192a54d4486e10923c458a1858",
+    "res://scripts/human_skin.gd": "4eecf4e2759f8046b70f5cae971c3d5920669d355832378908138c6e7f561e48",
+    "res://tests/guitar_review.gd": "41568249d03c2f7cfa44f59cdccbf0bc54e24977c943344daaf057df07c2a6b5"
+  },
+  "renderer": "forward_plus",
+  "taa": true
+}

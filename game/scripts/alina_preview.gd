@@ -11,5 +11,8 @@ func apply_profile():
   get_tree().quit(1)
   return
  print("ALINA_REVISION_ACTOR_CONFIRMED shapes=63")
+ if get_parent().actors[0].guitar.get_meta("geometry_version",0)!=5:
+  push_error("Alina preview did not load the revised guitar");get_tree().quit(1);return
+ print("GUITAR_REVISION_CONFIRMED geometry_version=5")
  load("res://scripts/lakeside_quality.gd").apply(get_parent())
  print("ALINA_REVISION_PREVIEW_READY")
