@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-16",
+  "source_commit": "27e8ff03c7db56b9402b17fb711367ef6c53b99b",
+  "archives": [
+    {
+      "file": "Shashlik_Stage02_Alina_04_Source.zip",
+      "bytes": 710070419,
+      "sha256": "b243413086bf531b803d036f8edbe69171220d1bcb08a7ff0d7ae6b094144343",
+      "crc": "PASS",
+      "entries": 586
+    },
+    {
+      "file": "Shashlik_Stage02_Alina_04_Review.zip",
+      "bytes": 15560826,
+      "sha256": "8192e959b2f6b090a098b52600f260b412319048b357f31c24ea90cb51309740",
+      "crc": "PASS",
+      "entries": 27
+    }
+  ],
+  "extracted_root": "/workspace/checkpoints/verify-alina-04/Shashlik_Stage02_Alina_04",
+  "clean-import": {
+    "exit_code": 0,
+    "markers": [],
+    "all_markers_found": true,
+    "errors": [],
+    "log": "alina-04/clean-import.txt",
+    "started_without_godot_cache": true
+  },
+  "hero-revision": {
+    "exit_code": 0,
+    "markers": [
+      "HERO_VALIDATION_04_PASS failures=0"
+    ],
+    "all_markers_found": true,
+    "errors": [],
+    "log": "alina-04/hero-revision.txt"
+  },
+  "hero-original": {
+    "exit_code": 0,
+    "markers": [
+      "HERO_VALIDATION_04_PASS failures=0"
+    ],
+    "all_markers_found": true,
+    "errors": [],
+    "log": "alina-04/hero-original.txt"
+  },
+  "export-audit": {
+    "exit_code": 0,
+    "markers": [
+      "\"status\": \"PASS\""
+    ],
+    "all_markers_found": true,
+    "errors": [],
+    "log": "alina-04/export-audit.txt"
+  },
+  "scene-self-test": {
+    "exit_code": 0,
+    "markers": [
+      "ALINA_REVISION_ACTOR_CONFIRMED shapes=63",
+      "ALINA_REVISION_PREVIEW_READY",
+      "SELF_TEST_04_PASS"
+    ],
+    "all_markers_found": true,
+    "errors": [],
+    "log": "alina-04/scene-self-test.txt"
+  },
+  "capture_dependencies_and_media_match_archive": true,
+  "model_and_extracted_texture_checksums_match": true,
+  "renderer": "Forward+ software Vulkan; RTX 5080 performance not measured",
+  "github_source_commit_verified": "27e8ff03c7db56b9402b17fb711367ef6c53b99b",
+  "archives_uploaded_to_github_release": false,
+  "local_archive_directory": "/workspace/checkpoints",
+  "scope": "Intermediate integration: existing body/garment/rig with replacement head; artistic quality and contact work remain open"
+}

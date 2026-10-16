@@ -31,3 +31,5 @@
 Прочие исходные кадры находятся в `/workspace/shashlik-development/stage-01/` и отдельном проверенном архиве. Доступность локального пути вне текущей среды не гарантируется. Подтверждение отправки версии и сведения об архивах сохраняются отдельно от неподтверждённых намерений.
 
 Итерация 03: [новая голова без татуировок](evidence/base-03/head-clean/front.png), [профиль](evidence/base-03/head-clean/profile.png), [новый берег](evidence/base-03/location/pond.png). Это реальные кадры Godot; голова пока отдельный бюст, в серии локации остаются прежние персонажи. [Проверенный ImportFix ZIP и SHA-256](checkpoints/STAGE_01B_03_Backup.json), source commit `18b40ab`.
+
+Итерация 04: [Алина с гитарой](evidence/alina-04/seated/seated-front.png), [лицо в сцене](evidence/alina-04/seated/seated-face.png), [кадр 2560×1440](evidence/alina-04/seated-1440/seated-front.png), [ступни в общей посадке](evidence/alina-04/contact/seated-contact.png). [Проверенная контрольная точка](checkpoints/STAGE_02_04_Backup.json). Полная художественная переработка Алины остаётся открытой.
