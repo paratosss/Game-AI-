@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-16",
+  "source_commit": "e02ed3d75a2cb488a53e2de4f4f6373e55fdf636",
+  "archives": [
+    {
+      "file": "Shashlik_Stage02_Guitar_05_Source.zip",
+      "bytes": 723990950,
+      "sha256": "590d68b2ca5001d1d3b1f97c6fb9db1211c0246fd8022161d234600a11787a60",
+      "crc": "PASS",
+      "entries": 630
+    },
+    {
+      "file": "Shashlik_Stage02_Guitar_05_Review.zip",
+      "bytes": 13900762,
+      "sha256": "082dbdeecf2867244cadfcccb8932bf4be4d2e47e7b0c657913677ff81dfcfbb",
+      "crc": "PASS",
+      "entries": 25
+    }
+  ],
+  "extracted_root": "/workspace/checkpoints/verify-guitar-05/Shashlik_Stage02_Guitar_05",
+  "clean-import": {
+    "exit_code": 0,
+    "markers": [],
+    "all_markers_found": true,
+    "errors": [],
+    "log": "guitar-05/clean-import.txt",
+    "started_without_godot_cache": true
+  },
+  "hero-revision": {
+    "exit_code": 0,
+    "markers": [
+      "HERO_VALIDATION_04_PASS failures=0"
+    ],
+    "all_markers_found": true,
+    "errors": [],
+    "log": "guitar-05/hero-revision.txt"
+  },
+  "hero-original": {
+    "exit_code": 0,
+    "markers": [
+      "HERO_VALIDATION_04_PASS failures=0"
+    ],
+    "all_markers_found": true,
+    "errors": [],
+    "log": "guitar-05/hero-original.txt"
+  },
+  "export-audit": {
+    "exit_code": 0,
+    "markers": [
+      "\"status\": \"PASS\""
+    ],
+    "all_markers_found": true,
+    "errors": [],
+    "log": "guitar-05/export-audit.txt"
+  },
+  "guitar-contacts": {
+    "exit_code": 0,
+    "markers": [
+      "GUITAR_CONTACTS_05_PASS failures=0"
+    ],
+    "all_markers_found": true,
+    "errors": [],
+    "log": "guitar-05/guitar-contacts.txt"
+  },
+  "scene-self-test": {
+    "exit_code": 0,
+    "markers": [
+      "ALINA_REVISION_ACTOR_CONFIRMED shapes=63",
+      "GUITAR_REVISION_CONFIRMED geometry_version=5",
+      "ALINA_REVISION_PREVIEW_READY",
+      "SELF_TEST_04_PASS"
+    ],
+    "all_markers_found": true,
+    "errors": [],
+    "log": "guitar-05/scene-self-test.txt"
+  },
+  "capture_dependencies_and_media_match_archive": true,
+  "model_and_extracted_texture_checksums_match": true,
+  "renderer": "Forward+ software Vulkan; RTX 5080 performance not measured",
+  "github_source_commit_verified": "e02ed3d75a2cb488a53e2de4f4f6373e55fdf636",
+  "archives_uploaded_to_github_release": false,
+  "local_archive_directory": "/workspace/checkpoints",
+  "scope": "Intermediate guitar geometry/material and hand pose revision; full anatomy, support, continuous contact and artistic target remain open"
+}
