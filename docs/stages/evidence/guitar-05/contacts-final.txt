@@ -3,10 +3,10 @@ Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
 {
   "failures": [],
   "max_finger_length_error_m": 0.0000000819563865661621,
-  "max_stopped_finger_error_m": 0.000000242219527990528,
+  "max_stopped_finger_to_string_distance_m": 0.00500519853085279,
   "max_wrist_error_m": 0.000000161180707891617,
   "right_hand_min_soundboard_z_m": 0.0626114308834076,
-  "right_hand_min_string_gap_m": 0.00109882026851913,
+  "right_hand_min_string_gap_m": 0.00109882118997356,
   "sampled_hand_vertices": 1749,
   "sampled_poses": 24,
   "status": "PASS"

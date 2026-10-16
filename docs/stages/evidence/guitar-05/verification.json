@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "media": [
+    {
+      "file": "neutral/fretting-hand.png",
+      "bytes": 417842,
+      "sha256": "d4f71a4471fabc9a4a8a731694dbabf99d3c4476b62bda069c14738d7ac038eb",
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "neutral/instrument-side.png",
+      "bytes": 56995,
+      "sha256": "8d4d15fe1a578deeec5f9f04e2a2f5e3714eb9fa70ad6fa1da1683563c64d6f5",
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "neutral/instrument.png",
+      "bytes": 45290,
+      "sha256": "6d01e7c912ff9b76d27f3c9eba1a3b43bc2369f4097f9da0186455c86d3d67b3",
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "neutral/seated-neutral.png",
+      "bytes": 197867,
+      "sha256": "640786ca400694e699d2b8b13501d8e3d2700ceaceb31440cc9344543576f4fa",
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "neutral/strumming-hand.png",
+      "bytes": 707407,
+      "sha256": "3d286712d5a8402e5af36735cc6aeb86dfeb746e1c41c5b668e49184aab5b11a",
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "world/guitar-hands.png",
+      "bytes": 1649449,
+      "sha256": "b021c7f8ac323f3503dcd2482bb650a69cba9325fdd18c48d8e07813a3ff8cf0",
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "world/seated-face.png",
+      "bytes": 1476394,
+      "sha256": "fcb1cebac448181374984a7ef26e94916e2d61cfb5be04ab58649c58c9d63479",
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "world/seated-front.png",
+      "bytes": 1628546,
+      "sha256": "c23e090ee5f761d78fdadabc76bfe2f87a031e7cbd6faaa88f418f0259565e7d",
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "world/seated-side.png",
+      "bytes": 1686259,
+      "sha256": "3fca842f5c78d61124044bc40a815c7a84fbab8a98600a534a64ae1d2c7b947a",
+      "resolution": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "world-1440/seated-front.png",
+      "bytes": 6023398,
+      "sha256": "f071521095dd9f5ed3091447a4cade08ec6db88590ae3f8479b905ebee4adcc4",
+      "resolution": [
+        2560,
+        1440
+      ]
+    }
+  ],
+  "capture_dependencies_match_current_source": true,
+  "world_cameras_match_iteration_04": true,
+  "renderer": "Forward+ software Vulkan",
+  "not_a_video_review": true
+}

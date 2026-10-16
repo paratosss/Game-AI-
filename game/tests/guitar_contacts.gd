@@ -32,14 +32,17 @@ func run():
  var string=guitar.get_node("String0");var nut=string.position+string.basis.y*string.mesh.height*.5;var saddle=string.position-string.basis.y*string.mesh.height*.5
  check(absf(absf(nut.y-saddle.y)-.648)<.0001,"String has an actual 648 mm scale")
  check(absf(guitar.get_node("Fret12").position.y-(nut.y+saddle.y)*.5)<.0001,"Twelfth fret bisects the actual string")
- var min_mesh_z=INF;var min_string_gap=INF;var max_arm_error=0.0;var max_stopped_error=0.0;var visited=0
+ var min_mesh_z=INF;var min_string_gap=INF;var max_arm_error=0.0;var max_stopped_string_distance=0.0;var visited=0
  for i in range(120):skin.tick(1.0/60.0,false,0,"guitar",guitar,Vector3.ZERO)
  for frame in range(144):
   skin.tick(1.0/60.0,false,0,"guitar",guitar,Vector3.ZERO)
   max_arm_error=maxf(max_arm_error,skin.arm_error)
-  for entry in [["middle",-.010,.568],["ring",-.003,.559]]:
+  for entry in [["middle",1],["ring",2]]:
    var tip=guitar.to_local(skin.to_global(skin.global_pose(entry[0]+"_04_leaf_l").origin))
-   max_stopped_error=maxf(max_stopped_error,tip.distance_to(Vector3(entry[1],entry[2],.064)))
+   var stopped_string=guitar.get_node("String%d"%entry[1]);var end_a=stopped_string.position+stopped_string.basis.y*stopped_string.mesh.height*.5;var end_b=stopped_string.position-stopped_string.basis.y*stopped_string.mesh.height*.5
+   var string_point=end_b.lerp(end_a,(tip.y-end_b.y)/(end_a.y-end_b.y))
+   max_stopped_string_distance=maxf(max_stopped_string_distance,tip.distance_to(string_point))
+   check(tip.z>=guitar.get_node("Fingerboard").mesh.get_aabb().end.z,"Stopped fingertip joints remain in front of the fingerboard")
    check(tip.y>guitar.get_node("Fret02").position.y and tip.y<guitar.get_node("Fret01").position.y,"E minor fingers stop the second fret from the nut side")
   if frame%6!=0:continue
   var poses=[]
@@ -50,12 +53,12 @@ func run():
    point=guitar.to_local(skin.skeleton.to_global(point))
    if Geometry2D.is_point_in_polygon(Vector2(point.x,point.y),guitar.get_meta("outline")):
     min_mesh_z=minf(min_mesh_z,point.z);visited+=1
-    if absf(point.x)<.022 and absf(point.y-.100)<.050:min_string_gap=minf(min_string_gap,point.z-load("res://scripts/guitar_quality.gd").string_z_at(point.y))
+    if absf(point.x)<.022 and absf(point.y-.100)<.050:min_string_gap=minf(min_string_gap,point.z-lerpf(saddle.z,nut.z,(point.y-saddle.y)/(nut.y-saddle.y)))
  check(visited>1000,"Right hand is actually measured over the instrument")
  check(min_mesh_z>=.047,"Deformed right hand stays in front of the soundboard")
  check(min_string_gap>=-.002,"Deformed right hand avoids deep string penetration")
  check(min_string_gap<=.0015,"Strumming finger actually reaches the strings")
- check(max_stopped_error<.002,"Stopped fingers remain reachable without stretching")
+ check(max_stopped_string_distance<.010,"Stopped fingertip joints remain within a finger pad of the actual A/D strings")
  check(max_arm_error<.020,"Both wrists remain reachable over multiple strums")
  # Bone lengths must survive all pose transitions without scaling.
  var max_length_error=0.0
@@ -69,7 +72,7 @@ func run():
       var length=skin.global_pose(names[j]).origin.distance_to(skin.global_pose(names[j+1]).origin)
       max_length_error=maxf(max_length_error,absf(length-skin.rest[names[j]].origin.distance_to(skin.rest[names[j+1]].origin)))
  check(max_length_error<.00005,"Finger bones retain their lengths in transitions")
- var report={"status":"PASS" if failures.is_empty() else "FAIL","failures":failures,"sampled_hand_vertices":samples.size(),"sampled_poses":24,"right_hand_min_soundboard_z_m":min_mesh_z,"right_hand_min_string_gap_m":min_string_gap,"max_wrist_error_m":max_arm_error,"max_stopped_finger_error_m":max_stopped_error,"max_finger_length_error_m":max_length_error}
+ var report={"status":"PASS" if failures.is_empty() else "FAIL","failures":failures,"sampled_hand_vertices":samples.size(),"sampled_poses":24,"right_hand_min_soundboard_z_m":min_mesh_z,"right_hand_min_string_gap_m":min_string_gap,"max_wrist_error_m":max_arm_error,"max_stopped_finger_to_string_distance_m":max_stopped_string_distance,"max_finger_length_error_m":max_length_error}
  print(JSON.stringify(report,"  "))
  var path=OS.get_environment("SHASHLIK_CONTACT_REPORT")
  if not path.is_empty():
