@@ -27,8 +27,19 @@
   "files": [
     {
       "file": "assets/characters/studies/AlternativeHeadStudy.glb",
-      "bytes": 95218416,
-      "sha256": "d43d079b0c32ad075fc8085c4e7e50dbc4fe5eaec708a233c60bc3293f3d9b4a"
+      "bytes": 93967776,
+      "sha256": "d25b7b4a8c2eb8ff8f5c2245089afb63b235a8d022353ff5a7abbbdae5734436"
+    },
+    {
+      "file": "assets/characters/studies/AlinaSkinStudy_Generated.png",
+      "bytes": 1413771,
+      "sha256": "16c4480d293ce009a2378fbf461f4366a8d6d4054cdebc549491c2b6f0827075",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "provenance": "AlinaSkinStudy_Generated.provenance.json",
+      "status": "generated color adaptation, not final skin"
     }
   ]
 }

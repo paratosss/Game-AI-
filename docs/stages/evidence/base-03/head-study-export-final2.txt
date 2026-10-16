@@ -1,0 +1,12 @@
+INFO Draco mesh compression is available, use library at /workspace/.cloud-tools/blender-4.5.3/blender-4.5.3-linux-x64/4.5/scripts/addons_core/io_scene_gltf2/libextern_draco.so
+06:59:25 | INFO: Starting glTF 2.0 export
+06:59:25 | INFO: Extracting primitive: Cube.002
+06:59:27 | WARNING: The active Vertex Color will not be exported, as it is not used in the node tree of the material
+06:59:32 | INFO: Primitives created: 7
+06:59:32 | INFO: Finished glTF 2.0 export in 7.016505479812622 s
+
+ALTERNATIVE_HEAD_STUDY_EXPORTED
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:38:15)
+Read blend: "/workspace/shashlik-development/stage-02-resources/Selunae.blend"
+
+Blender quit

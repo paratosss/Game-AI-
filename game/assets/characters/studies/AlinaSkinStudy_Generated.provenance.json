@@ -1,0 +1,18 @@
+{
+  "file": "AlinaSkinStudy_Generated.png",
+  "sha256": "16c4480d293ce009a2378fbf461f4366a8d6d4054cdebc549491c2b6f0827075",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "kind": "AI edited diffuse texture, candidate for Alina head study",
+  "tool": "OpenAI image_gen",
+  "source": "Selunae Girl Colour.jpg, Muhammed Ismayil, BlenderKit CC0",
+  "original_dimensions": [
+    2048,
+    2048
+  ],
+  "changes": "Remove tattoos and purple makeup; natural skin and pink lips. UV atlas retained approximately; evaluate on actual mesh.",
+  "limitations": "Generated output has lower resolution than input; not a photographic skin scan or final production skin. Original normal/roughness maps retained.",
+  "original_generated_file": "/workspace/generated_images/exec-d4b8e150-2758-40a6-a86d-2cc226b75b7b.png"
+}

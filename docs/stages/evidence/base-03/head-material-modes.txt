@@ -1,0 +1,9 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+Head transparency=0 alphaAA=0 roughness=1.0
+Eye Lashes transparency=4 alphaAA=0 roughness=0.47999998927116
+Hair transparency=4 alphaAA=0 roughness=0.47999998927116
+Eye Bros transparency=4 alphaAA=0 roughness=0.47999998927116
+Mouth transparency=0 alphaAA=0 roughness=0.5
+Waterline transparency=0 alphaAA=0 roughness=0.28000000119209
+Tiny Sclera 1.3 (Real Light Blue) transparency=0 alphaAA=0 roughness=0.15000000596046

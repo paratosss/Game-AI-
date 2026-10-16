@@ -1,0 +1,99 @@
+{
+  "asset": "res://assets/characters/Refined_Alina.glb",
+  "bones": 63,
+  "captures": [
+    {
+      "camera": [
+        0.0,
+        1.45500004291534,
+        0.820000052452087
+      ],
+      "fov": 30.0,
+      "height": 720,
+      "name": "front",
+      "target": [
+        0.0,
+        1.45500004291534,
+        0.100000001490116
+      ],
+      "width": 1280
+    },
+    {
+      "camera": [
+        0.699999988079071,
+        1.45500004291534,
+        0.115000002086163
+      ],
+      "fov": 30.0,
+      "height": 720,
+      "name": "profile",
+      "target": [
+        0.0,
+        1.45500004291534,
+        0.100000001490116
+      ],
+      "width": 1280
+    },
+    {
+      "camera": [
+        0.490000009536743,
+        1.45500004291534,
+        0.64000004529953
+      ],
+      "fov": 30.0,
+      "height": 720,
+      "name": "three-quarter",
+      "target": [
+        0.0,
+        1.45500004291534,
+        0.100000001490116
+      ],
+      "width": 1280
+    },
+    {
+      "camera": [
+        0.0,
+        0.949999988079071,
+        3.20000004768372
+      ],
+      "fov": 36.0,
+      "height": 720,
+      "name": "full",
+      "target": [
+        0.0,
+        0.839999973773956,
+        0.0
+      ],
+      "width": 1280
+    }
+  ],
+  "clips": [
+    "dislike",
+    "eat",
+    "getup",
+    "happy",
+    "idle",
+    "sit",
+    "sit_down",
+    "walk",
+    "wave"
+  ],
+  "head_materials": false,
+  "import_settings_sha256": {
+    "res://assets/characters/Refined_Alina.glb.import": "bedbbef257513b625c23a1376b89b63461a52275d8d38569b70b35f4142026d2",
+    "res://assets/characters/Refined_Alina_brown_eye.png.import": "49ccf6a5e7c39ef328bb960b1a70f6a61344ad89f2a6068e4ef9bb6eb2857a35",
+    "res://assets/characters/Refined_Alina_eyebrow001.png.import": "dbaf5000e9f6392698b8c889ed252ed62ab110ae7c411db0af17107d170dde83",
+    "res://assets/characters/Refined_Alina_eyelashes01.png.import": "08e7198b1ab32e8f794db243b96364f47f99254761d674c422052024f79ce6e5",
+    "res://assets/characters/Refined_Alina_female_casualsuit01_diffuse.png.import": "dac319830f438d3b8462739aee65bababd024d51cefdbf6dd8d0a630799ea606",
+    "res://assets/characters/Refined_Alina_female_casualsuit01_normal.png.import": "e4c235815f09f04526ff1ddf071f6b9024a224d8ed89b04052b6d40d64238589",
+    "res://assets/characters/Refined_Alina_long01_diffuse.png.import": "c111e24285542c2437768c26ef54a41194e2810e0778ac47f33528916768f41c",
+    "res://assets/characters/Refined_Alina_shoes05_diffuse.png.import": "143770a0b8343a4403470f4ce525f77399fd84a80190259ce23aa10864881cca",
+    "res://assets/characters/Refined_Alina_young_lightskinned_female_diffuse.png.import": "03722055b59e0a27f86e8883efc678d25242a738eb5dcd2d7d5a82030ae77100"
+  },
+  "msaa_3d": 2,
+  "renderer": "forward_plus",
+  "rest_pose": true,
+  "review_script_sha256": "9132504d1f3d62ee7a9971adc7dca91585127289f6e33c61fb63f5459e8c4241",
+  "sha256": "fb44fcd95d0896420133922dd5498f4036cf32f94dbca6e321eeaae3777eb813",
+  "taa": true
+}

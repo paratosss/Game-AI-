@@ -1,0 +1,55 @@
+Tree creation in 0.6s
+INFO Draco mesh compression is available, use library at /workspace/.cloud-tools/blender-4.5.3/blender-4.5.3-linux-x64/4.5/scripts/addons_core/io_scene_gltf2/libextern_draco.so
+07:09:48 | INFO: Starting glTF 2.0 export
+07:09:48 | INFO: Extracting primitive: tree
+07:09:48 | INFO: Primitives created: 1
+07:09:48 | INFO: Extracting primitive: leaves
+07:09:48 | INFO: Primitives created: 1
+07:09:48 | INFO: Finished glTF 2.0 export in 0.09926414489746094 s
+
+BIRCH_EXPORTED birch_01.glb [{'name': 'BirchWood', 'vertices': 24900, 'triangles': 42984}, {'name': 'BirchLeaves', 'vertices': 76362, 'triangles': 50908}]
+07:09:48 | INFO: Starting glTF 2.0 export
+07:09:48 | INFO: Extracting primitive: tree
+07:09:48 | INFO: Primitives created: 1
+07:09:48 | INFO: Extracting primitive: leaves
+07:09:48 | INFO: Primitives created: 1
+07:09:48 | INFO: Finished glTF 2.0 export in 0.04387235641479492 s
+
+BIRCH_DISTANT_EXPORTED birch_01_far.glb [{'name': 'BirchWood', 'vertices': 24900, 'triangles': 42984}, {'name': 'BirchLeaves', 'vertices': 19092, 'triangles': 12728}]
+Tree creation in 0.5s
+07:09:49 | INFO: Starting glTF 2.0 export
+07:09:49 | INFO: Extracting primitive: tree.001
+07:09:49 | INFO: Primitives created: 1
+07:09:49 | INFO: Extracting primitive: leaves.001
+07:09:49 | INFO: Primitives created: 1
+07:09:49 | INFO: Finished glTF 2.0 export in 0.07831192016601562 s
+
+BIRCH_EXPORTED birch_02.glb [{'name': 'BirchWood', 'vertices': 24264, 'triangles': 41904}, {'name': 'BirchLeaves', 'vertices': 76104, 'triangles': 50736}]
+07:09:49 | INFO: Starting glTF 2.0 export
+07:09:49 | INFO: Extracting primitive: tree.001
+07:09:49 | INFO: Primitives created: 1
+07:09:49 | INFO: Extracting primitive: leaves.001
+07:09:49 | INFO: Primitives created: 1
+07:09:49 | INFO: Finished glTF 2.0 export in 0.04987645149230957 s
+
+BIRCH_DISTANT_EXPORTED birch_02_far.glb [{'name': 'BirchWood', 'vertices': 24264, 'triangles': 41904}, {'name': 'BirchLeaves', 'vertices': 19026, 'triangles': 12684}]
+Tree creation in 0.5s
+07:09:50 | INFO: Starting glTF 2.0 export
+07:09:50 | INFO: Extracting primitive: tree.002
+07:09:50 | INFO: Primitives created: 1
+07:09:50 | INFO: Extracting primitive: leaves.002
+07:09:50 | INFO: Primitives created: 1
+07:09:50 | INFO: Finished glTF 2.0 export in 0.06561446189880371 s
+
+BIRCH_EXPORTED birch_03.glb [{'name': 'BirchWood', 'vertices': 23316, 'triangles': 40296}, {'name': 'BirchLeaves', 'vertices': 71124, 'triangles': 47416}]
+07:09:50 | INFO: Starting glTF 2.0 export
+07:09:50 | INFO: Extracting primitive: tree.002
+07:09:50 | INFO: Primitives created: 1
+07:09:50 | INFO: Extracting primitive: leaves.002
+07:09:50 | INFO: Primitives created: 1
+07:09:50 | INFO: Finished glTF 2.0 export in 0.04101061820983887 s
+
+BIRCH_DISTANT_EXPORTED birch_03_far.glb [{'name': 'BirchWood', 'vertices': 23316, 'triangles': 40296}, {'name': 'BirchLeaves', 'vertices': 17784, 'triangles': 11856}]
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:38:15)
+
+Blender quit

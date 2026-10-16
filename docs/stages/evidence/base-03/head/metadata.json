@@ -1,0 +1,155 @@
+{
+  "asset": "res://assets/characters/studies/AlternativeHeadStudy.glb",
+  "bones": 0,
+  "captures": [
+    {
+      "camera": [
+        0.0,
+        1.45500004291534,
+        0.820000052452087
+      ],
+      "fov": 30.0,
+      "height": 720,
+      "name": "front",
+      "target": [
+        0.0,
+        1.45500004291534,
+        0.100000001490116
+      ],
+      "width": 1280
+    },
+    {
+      "camera": [
+        0.699999988079071,
+        1.45500004291534,
+        0.115000002086163
+      ],
+      "fov": 30.0,
+      "height": 720,
+      "name": "profile",
+      "target": [
+        0.0,
+        1.45500004291534,
+        0.100000001490116
+      ],
+      "width": 1280
+    },
+    {
+      "camera": [
+        0.490000009536743,
+        1.45500004291534,
+        0.64000004529953
+      ],
+      "fov": 30.0,
+      "height": 720,
+      "name": "three-quarter",
+      "target": [
+        0.0,
+        1.45500004291534,
+        0.100000001490116
+      ],
+      "width": 1280
+    },
+    {
+      "camera": [
+        0.0,
+        0.949999988079071,
+        3.20000004768372
+      ],
+      "fov": 36.0,
+      "height": 720,
+      "name": "full",
+      "target": [
+        0.0,
+        0.839999973773956,
+        0.0
+      ],
+      "width": 1280
+    },
+    {
+      "camera": [
+        0.0,
+        1.45500004291534,
+        0.820000052452087
+      ],
+      "fov": 30.0,
+      "height": 720,
+      "name": "eyeBlinkLeft",
+      "target": [
+        0.0,
+        1.45500004291534,
+        0.100000001490116
+      ],
+      "width": 1280
+    },
+    {
+      "camera": [
+        0.0,
+        1.45500004291534,
+        0.820000052452087
+      ],
+      "fov": 30.0,
+      "height": 720,
+      "name": "eyeBlinkRight",
+      "target": [
+        0.0,
+        1.45500004291534,
+        0.100000001490116
+      ],
+      "width": 1280
+    },
+    {
+      "camera": [
+        0.0,
+        1.45500004291534,
+        0.820000052452087
+      ],
+      "fov": 30.0,
+      "height": 720,
+      "name": "mouthSmileLeft",
+      "target": [
+        0.0,
+        1.45500004291534,
+        0.100000001490116
+      ],
+      "width": 1280
+    },
+    {
+      "camera": [
+        0.0,
+        1.45500004291534,
+        0.820000052452087
+      ],
+      "fov": 30.0,
+      "height": 720,
+      "name": "jawOpen",
+      "target": [
+        0.0,
+        1.45500004291534,
+        0.100000001490116
+      ],
+      "width": 1280
+    }
+  ],
+  "clips": [],
+  "eye_shader_sha256": "77b182f144f1ec9589da46622225d8422699a78fde6424e6870af0c62364e3d7",
+  "head_materials": true,
+  "import_settings_sha256": {
+    "res://assets/characters/studies/AlternativeHeadStudy.glb.import": "c264e58dbb9ea8b8a206ba97cdb5e48c11bb5c9322bceb815d48106b00ffafa7",
+    "res://assets/characters/studies/AlternativeHeadStudy_Eye Bros_Depth.png.import": "ecfb438fe39b88a92e20c6924ff2561015738d4f8036f9a1b00e4512edacadfa",
+    "res://assets/characters/studies/AlternativeHeadStudy_Eye Bros_Normal.png.import": "30411a1e5a88314f91616e2af20e48c8fca9a3791dafb6c52429f14b8d97ff39",
+    "res://assets/characters/studies/AlternativeHeadStudy_Girl Colour.jpg.import": "0c0b527d70fea5fcc15b14e8c51a51bdd310f0572620b6a1652eb251151bfb4f",
+    "res://assets/characters/studies/AlternativeHeadStudy_Girl Normal.png.import": "81724e25a9a53d60ef82b9d5f612d745940c35748b0a374f0708151742c7ba8a",
+    "res://assets/characters/studies/AlternativeHeadStudy_Girl Roughness.png.import": "fedf05192de04c2a2bc4104aa6828996c60d485021e22048c6bab17f4f74b841",
+    "res://assets/characters/studies/AlternativeHeadStudy_Mouth Colour.jpg.import": "95a899d76fd339d91f71d8459f54783d1ffda30a372cdf0b35ee818a506528a1",
+    "res://assets/characters/studies/AlternativeHeadStudy_Mouth Normal.png.import": "dc3a70b7356be25f5654b23b93c57c91e79d8490ae0491d5c147d1bea506717a"
+  },
+  "material_script_sha256": "4802e175d5b6e6d752d368b0b0520e14f22115a6e827170f4c5c079cde3ca42f",
+  "msaa_3d": 2,
+  "renderer": "forward_plus",
+  "rest_pose": true,
+  "review_script_sha256": "9132504d1f3d62ee7a9971adc7dca91585127289f6e33c61fb63f5459e8c4241",
+  "sha256": "d25b7b4a8c2eb8ff8f5c2245089afb63b235a8d022353ff5a7abbbdae5734436",
+  "skin_shader_sha256": "0618921376881aef6880940a3101d05bf6703c2b2e9ebe2b128e26a2e8979977",
+  "taa": true
+}

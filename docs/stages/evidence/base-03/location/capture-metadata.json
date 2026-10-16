@@ -1,0 +1,74 @@
+{
+  "actor_transforms_stable": true,
+  "benchmark_sha256": "2ca4d08a3c054e8da46e02bf8b8b373140d7811e812d948d789da2b3f60cd84a",
+  "captures": [
+    {
+      "camera_position": [
+        -4.09999990463257,
+        1.89999997615814,
+        4.80000019073486
+      ],
+      "height": 720,
+      "name": "overview",
+      "target": [
+        1.0,
+        0.5,
+        -1.5
+      ],
+      "width": 1280
+    },
+    {
+      "camera_position": [
+        0.899999976158142,
+        1.62000000476837,
+        -1.5
+      ],
+      "height": 720,
+      "name": "alina",
+      "target": [
+        0.0,
+        1.01999998092651,
+        -3.20000004768372
+      ],
+      "width": 1280
+    },
+    {
+      "camera_position": [
+        3.09999990463257,
+        1.64999997615814,
+        -2.20000004768372
+      ],
+      "height": 720,
+      "name": "pond",
+      "target": [
+        7.0,
+        0.300000011920929,
+        -6.0
+      ],
+      "width": 1280
+    }
+  ],
+  "dependencies_sha256": {
+    "res://assets/nature/BIRCH_MANIFEST.json": "dcf5b6daeb8400b9a1f19084c261a5b5963443bd4e566a8a0d84d555aafbb29f",
+    "res://assets/shaders/birch_leaf.gdshader": "815fb99a70f0f18d34ea7c1f48182123f452551b6996dff0249d726241398409",
+    "res://assets/shaders/birch_scan.gdshader": "14f1fa3b5f2c7631eb498578ec33c85989cb583c32ea822d4b0d6406b32d2aaa",
+    "res://assets/shaders/grass_quality.gdshader": "6610cd6f41147187b274868456bee2c775df92a82d04e88ec1779e345916cd89",
+    "res://assets/shaders/ground_pbr.gdshader": "906d3ea831ff89e407e55c9f157485a0cc1eb70ef38f066ecde98edee32bb1b2",
+    "res://assets/shaders/photographic_sky.gdshader": "cb7cea2853db9223c33b40ca9c37dbdc2de50f0c72eb12f13d44a077ea64ef32",
+    "res://assets/shaders/pond_depth.gdshader": "dc6fb2a65b2bdcfc208255ae93b7cf936a12f62b6a69c0d549e1374dfef9de27",
+    "res://assets/shaders/rock_pbr.gdshader": "81e519f9b71d8cffe02d3035e3c12440ed311ac5e253784942865379f97f01c8",
+    "res://assets/shaders/water_quality.gdshader": "2c172dd1933dd61348f28336bbe0374afc5dc9cc7e17b807e0994e9a8f97f646",
+    "res://assets/shaders/wood_pbr.gdshader": "67d4fd716c79f19082c0599e2110b4517f7bc70ae9d3c44f966874f69112ede2",
+    "res://assets/textures/birch_scan/RESOURCE_MANIFEST.json": "244c09ea1521e86fe4c257d1811d00a6a44bf171a3303eb67d11983d2190edb0",
+    "res://assets/textures/quality/RESOURCE_MANIFEST.json": "4393f78e740201d854639a42cb3d109fe29e5112c79022491930265e3995c19c",
+    "res://scripts/graphics_quality.gd": "f39bd0c6590dd868f16926ca006d33c620fa8dc402bc6792f7b08aff7ff2d0f7",
+    "res://scripts/lakeside_quality.gd": "5941dc73ab74e3cc52f2cbf6dc2051fba91672284ac4aca2951cfe6d6ee27cee",
+    "res://scripts/lakeside_terrain.gd": "ef2ec834f9f20ba833513bcc34f1be0a76126ed453c1914726e015d95edd8d84",
+    "res://scripts/quality_geometry.gd": "99ece419d901f583da11cb56e89cbdf19f13c2465128127e6a5832a9e7138514"
+  },
+  "high": false,
+  "lakeside": true,
+  "pbr": true,
+  "renderer": "forward_plus",
+  "warm_frames_per_view": 6
+}

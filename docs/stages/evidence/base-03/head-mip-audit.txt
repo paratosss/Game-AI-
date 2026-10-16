@@ -1,0 +1,7 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+Head texture_mips=false filter=3
+Eye Lashes texture_mips=false filter=3
+Hair texture_mips=false filter=3
+Eye Bros texture_mips=false filter=3
+Mouth texture_mips=false filter=3

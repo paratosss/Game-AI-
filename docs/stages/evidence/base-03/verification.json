@@ -1,0 +1,139 @@
+{
+  "source_comparison": {
+    "four_cameras_identical": true,
+    "same_review_script": true,
+    "rest_mode": true,
+    "taa": true
+  },
+  "working_scene_self_test": {
+    "exit_code": 0,
+    "marker": "SELF_TEST_04_PASS",
+    "failures": 0,
+    "renderer": "Vulkan Forward+"
+  },
+  "terrain_station_check": {
+    "exit_code": 0,
+    "marker": "LAKESIDE_VALIDATION_PASS",
+    "failures": 0
+  },
+  "head_viewer_smoke": {
+    "exit_code": 0,
+    "marker": "CHARACTER_BASE_STUDY_READY",
+    "mode": "headless, initialization only"
+  },
+  "media": [
+    {
+      "file": "head/eyeBlinkLeft.png",
+      "sha256": "847f23a627f7d4d1d4c5b72c4742d35c058ae3b66aaf0a3131c18d0d549cab51"
+    },
+    {
+      "file": "head/eyeBlinkRight.png",
+      "sha256": "d1dc79b88605c44a3ed50a39d25ab7159c4bd4414609ccb457ccc0db606fa94b"
+    },
+    {
+      "file": "head/front.png",
+      "sha256": "af3e75b05af1d2834bbb7f2b106fcfe9764ef56ab060961bd354ddef44ca2907"
+    },
+    {
+      "file": "head/full.png",
+      "sha256": "35205368e74b9925e6dbb646d8849e3c9e74072f6f4c981a57c4b8baf0064a00"
+    },
+    {
+      "file": "head/jawOpen.png",
+      "sha256": "0467e857c96288fe6433d1f87c6bb1212e9c320c7ec4d20ba16eefc422b227d0"
+    },
+    {
+      "file": "head/mouthSmileLeft.png",
+      "sha256": "72456469e4954fc923e89620e35ed8caf59501399e76759262d4f2289581df88"
+    },
+    {
+      "file": "head/profile.png",
+      "sha256": "f82de7e4e5f049acab843441aeaac9d28742d92920363d9c3021118bbc511475"
+    },
+    {
+      "file": "head/three-quarter.png",
+      "sha256": "589554b186240c6b0c364ddf19b44d1a0133c4aeee30ba9a20e09d09d5a28765"
+    },
+    {
+      "file": "head-clean/eyeBlinkLeft.png",
+      "sha256": "1eebf15646a039637302e123544a9008b2e8b46b9fb63f92fc7098ba060dbbae"
+    },
+    {
+      "file": "head-clean/eyeBlinkRight.png",
+      "sha256": "a2cfcb056821edf0c9148382f228e48dbc0fef16f60d732d9c0d2118089dd8ff"
+    },
+    {
+      "file": "head-clean/front.png",
+      "sha256": "dc9afc72cb18e096b9b841ce5ee87827e3035c50280776ae504ce2c570312359"
+    },
+    {
+      "file": "head-clean/full.png",
+      "sha256": "e2d0bcac6591af91490dd3f1f02b3ea6303d6082de200bb3fc1c838d4aa3a761"
+    },
+    {
+      "file": "head-clean/jawOpen.png",
+      "sha256": "304b332067256cd058d81b096b8b2d72000fb62ae70c13720bb10eb41c924ce2"
+    },
+    {
+      "file": "head-clean/mouthSmileLeft.png",
+      "sha256": "abcd1bd15ef52576976148c18be1819f2c724a8a27e0ebe53896fa38e2c0cb55"
+    },
+    {
+      "file": "head-clean/profile.png",
+      "sha256": "b5e944a32d4a296d4d78e8d82d51524f12d121fbcd17a484acb0f98d0f62f5a3"
+    },
+    {
+      "file": "head-clean/three-quarter.png",
+      "sha256": "4ef8e655971e12b2b991a3a2470507cadf1258940aec96af673b2255d697e1e7"
+    },
+    {
+      "file": "location/alina.png",
+      "sha256": "b655d8dabb8da9cbd5e25b0f26caf817a1ace143434e6f7d9bc6e534852e6118"
+    },
+    {
+      "file": "location/overview.png",
+      "sha256": "2d7e03ada4587a502dcffe48e87b06913797314fe531ef0237faae477fd9773e"
+    },
+    {
+      "file": "location/pond.png",
+      "sha256": "8bc8ef71082674294e80a53fd49607bdd604c55211fead95eceb7240acac7329"
+    },
+    {
+      "file": "original/front.png",
+      "sha256": "2e28a440710f8113db49fc8f825dab4890589af6d9396914b141d80c9883d090"
+    },
+    {
+      "file": "original/full.png",
+      "sha256": "3b68ba89640541d7006db7af882eeb8b67399c091c2f33a82a23261bb70508de"
+    },
+    {
+      "file": "original/profile.png",
+      "sha256": "2e531392aab75db46351e24659a781c665ad48d9cdab86cb2c752f2ee81ce5be"
+    },
+    {
+      "file": "original/three-quarter.png",
+      "sha256": "439d1636229b25f11956a323e38b1dec785d585898e63d61fa6a4a11a706d002"
+    },
+    {
+      "file": "rejected-fullbody.png",
+      "sha256": "d36eccaa2348accb9b21832dad3baab55f17099b188e015cfafd09e5aa0a2c72"
+    }
+  ],
+  "clean_head_review": {
+    "exit_code": 0,
+    "marker": "RESOURCE_REVIEW_COMPLETE",
+    "visually_reviewed_frames": 8,
+    "same_four_cameras_as_original": true,
+    "renderer": "forward_plus",
+    "taa": true,
+    "material_script_sha256": "38e8fe5874ecfe092996dbf1d23f3480bf6750a7fd539474afbca7b4cca87032",
+    "skin_texture_sha256": "16c4480d293ce009a2378fbf461f4366a8d6d4054cdebc549491c2b6f0827075",
+    "skin_texture_import_sha256": "c8c00b448e79280b30c05eed7494282fa0362abdb7ccef116937ef3879cd92db",
+    "skin_dimensions": [
+      1254,
+      1254
+    ],
+    "observations": "Tattoo-free texture evaluated on mesh, lips/eyes align in rendered front/profile/three-quarter views. Eyes, hair and mouth interior remain WIP. Not integrated full character."
+  },
+  "current_location_dependencies_match": true
+}

@@ -4,6 +4,7 @@ var output:String
 var high=false
 var pbr=false
 var lakeside=false
+var warm_frames=12
 var initial_actor_transforms=[]
 var capture_metadata=[]
 
@@ -50,7 +51,7 @@ func shot(name:String,position:Vector3,target:Vector3):
  game.camera.look_at(target,Vector3.UP)
  # Explicit draws keep one-shot high-quality rendering practical on the
  # cloud's software GPU. These captures do not measure gameplay frame rate.
- for warm_frame in range(12):
+ for warm_frame in range(warm_frames):
   await process_frame
   RenderingServer.force_draw()
  var result=root.get_texture().get_image().save_png(output.path_join(name+".png"))
@@ -69,10 +70,10 @@ func save_metadata():
   for path in ["res://scripts/graphics_quality.gd","res://scripts/quality_geometry.gd","res://assets/textures/quality/RESOURCE_MANIFEST.json","res://assets/shaders/wood_pbr.gdshader","res://assets/shaders/ground_pbr.gdshader","res://assets/shaders/rock_pbr.gdshader","res://assets/shaders/grass_quality.gdshader","res://assets/shaders/water_quality.gdshader","res://assets/shaders/photographic_sky.gdshader"]:
    dependencies[path]=FileAccess.get_sha256(path)
  if lakeside:
-  for path in ["res://scripts/lakeside_quality.gd","res://assets/shaders/birch_scan.gdshader","res://assets/shaders/birch_leaf.gdshader","res://assets/nature/BIRCH_MANIFEST.json"]:
+  for path in ["res://scripts/lakeside_quality.gd","res://scripts/lakeside_terrain.gd","res://assets/shaders/pond_depth.gdshader","res://assets/shaders/birch_scan.gdshader","res://assets/shaders/birch_leaf.gdshader","res://assets/textures/birch_scan/RESOURCE_MANIFEST.json","res://assets/nature/BIRCH_MANIFEST.json"]:
    dependencies[path]=FileAccess.get_sha256(path)
  var file=FileAccess.open(output.path_join("capture-metadata.json"),FileAccess.WRITE)
- file.store_string(JSON.stringify({"high":high,"pbr":pbr,"lakeside":lakeside,"renderer":RenderingServer.get_current_rendering_method(),"actor_transforms_stable":true,"benchmark_sha256":FileAccess.get_sha256("res://tests/graphics_benchmark.gd"),"dependencies_sha256":dependencies,"captures":capture_metadata},"  "))
+ file.store_string(JSON.stringify({"high":high,"pbr":pbr,"lakeside":lakeside,"warm_frames_per_view":warm_frames,"renderer":RenderingServer.get_current_rendering_method(),"actor_transforms_stable":true,"benchmark_sha256":FileAccess.get_sha256("res://tests/graphics_benchmark.gd"),"dependencies_sha256":dependencies,"captures":capture_metadata},"  "))
 
 func run():
  seed(20261015)
@@ -80,6 +81,8 @@ func run():
  high="--graphics-high" in OS.get_cmdline_user_args()
  lakeside="--graphics-lakeside" in OS.get_cmdline_user_args()
  pbr="--graphics-pbr" in OS.get_cmdline_user_args() or lakeside
+ for argument in OS.get_cmdline_user_args():
+  if argument.begins_with("--warm-frames="):warm_frames=clampi(int(argument.trim_prefix("--warm-frames=")),1,24)
  if output.is_empty():quit(1);return
  DirAccess.make_dir_recursive_absolute(output)
  game=load("res://main.tscn").instantiate()
@@ -110,8 +113,9 @@ func run():
   print("GRAPHICS_BENCHMARK_COMPLETE high=",high," overview_only=true")
   quit()
   return
- await shot("table",Vector3(-3.0,1.4,3.9),Vector3(-3.2,.88,2.9))
- await shot("grill",Vector3(-1.3,1.2,1.25),game.grill_pos+Vector3(0,.77,0))
+ if not "--location-review" in OS.get_cmdline_user_args():
+  await shot("table",Vector3(-3.0,1.4,3.9),Vector3(-3.2,.88,2.9))
+  await shot("grill",Vector3(-1.3,1.2,1.25),game.grill_pos+Vector3(0,.77,0))
  await shot("alina",Vector3(.9,1.62,-1.5),Vector3(0,1.02,-3.2))
  await shot("pond",Vector3(3.1,1.65,-2.2),Vector3(7,.3,-6))
  save_metadata()

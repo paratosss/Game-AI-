@@ -34,6 +34,7 @@ func run():
  DirAccess.make_dir_recursive_absolute(output)
  stage=Node3D.new()
  root.add_child(stage)
+ if RenderingServer.get_current_rendering_method()=="forward_plus":root.use_taa=not "--no-taa" in OS.get_cmdline_user_args()
  var environment=WorldEnvironment.new()
  environment.environment=Environment.new()
  environment.environment.background_mode=Environment.BG_COLOR
@@ -77,8 +78,40 @@ func run():
  if "--rest" in OS.get_cmdline_user_args():
   for skeleton in rig:skeleton.reset_bone_poses()
  metadata["rest_pose"]="--rest" in OS.get_cmdline_user_args()
+ metadata["taa"]=root.use_taa
+ metadata["msaa_3d"]=root.msaa_3d
+ metadata["import_settings_sha256"]={}
+ for name in DirAccess.get_files_at(asset.get_base_dir()):
+  if name==asset.get_file()+".import" or (name.begins_with(asset.get_file().get_basename()+"_") and name.ends_with(".import")):
+   var path=asset.get_base_dir().path_join(name)
+   metadata.import_settings_sha256[path]=FileAccess.get_sha256(path)
  var head=Vector3(0,1.455,0.10)
  await capture("front",head+Vector3(0,0,0.72),head,30)
+ if "--front-only" in OS.get_cmdline_user_args():
+  print("RESOURCE_REVIEW_FRONT_COMPLETE")
+  quit()
+  return
+ if "--inspect-lashes" in OS.get_cmdline_user_args():
+  for mesh in instance.find_children("*","MeshInstance3D",true,false):
+   for index in range(mesh.mesh.get_surface_count()):
+    var material=mesh.mesh.surface_get_material(index)
+    if material.resource_name=="Eye Lashes":
+     var invisible=ShaderMaterial.new()
+     invisible.shader=Shader.new()
+     invisible.shader.code="shader_type spatial; render_mode unshaded,depth_draw_never; void fragment(){ALPHA=0.0;}"
+     mesh.set_surface_override_material(index,invisible)
+  await capture("front-no-lashes",head+Vector3(0,0,0.72),head,30)
+  print("RESOURCE_LASH_COMPARISON_COMPLETE")
+  quit()
+  return
+ if "--compare-taa" in OS.get_cmdline_user_args():
+  root.use_taa=false
+  await capture("front-no-taa",head+Vector3(0,0,0.72),head,30)
+  var comparison=FileAccess.open(output.path_join("metadata.json"),FileAccess.WRITE)
+  comparison.store_string(JSON.stringify(metadata,"  "))
+  print("RESOURCE_TAA_COMPARISON_COMPLETE")
+  quit()
+  return
  await capture("profile",head+Vector3(0.70,0,0.015),head,30)
  await capture("three-quarter",head+Vector3(0.49,0,0.54),head,30)
  await capture("full",Vector3(0,0.95,3.2),Vector3(0,0.84,0),36)

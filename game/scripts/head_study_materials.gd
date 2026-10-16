@@ -11,7 +11,7 @@ static func apply(instance:Node3D):
    elif original is StandardMaterial3D and original.resource_name=="Head":
     var skin=ShaderMaterial.new()
     skin.shader=load("res://assets/shaders/study_skin.gdshader")
-    skin.set_shader_parameter("skin_color",original.albedo_texture)
+    skin.set_shader_parameter("skin_color",load("res://assets/characters/studies/AlinaSkinStudy_Generated.png"))
     skin.set_shader_parameter("skin_normal",original.normal_texture)
     skin.set_shader_parameter("skin_roughness",original.roughness_texture)
     var channel=Vector4.ZERO

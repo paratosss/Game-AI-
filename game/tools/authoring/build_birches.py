@@ -5,6 +5,7 @@ Sapling is a separate GPL-2.0-or-later authoring tool; fetched source is checksu
 No Sapling program code is packaged in the game. Generated meshes are not scans.
 """
 import ast
+import bmesh
 import hashlib
 import json
 import os
@@ -65,7 +66,39 @@ for index, seed in enumerate([173, 863, 2471], 1):
     bpy.ops.export_scene.gltf(filepath=str(path), export_format='GLB', export_animations=False,
                               export_extras=False)
     manifest['variants'].append({'file': path.name, 'seed': seed, 'meshes': stats,
+                                'lod': 'near',
                                 'sha256': hashlib.sha256(path.read_bytes()).hexdigest(),
                                 'bytes': path.stat().st_size})
     print('BIRCH_EXPORTED', path.name, stats, flush=True)
+    # A separate distant mesh keeps leaf coverage approximately constant while
+    # replacing four subpixel leaves by one larger representative leaf.
+    lod_stats = []
+    for ob in list(bpy.context.scene.objects):
+        bpy.ops.object.select_all(action='DESELECT')
+        ob.select_set(True)
+        bpy.context.view_layer.objects.active = ob
+        if ob.name == 'BirchWood':
+            # Collapse decimation bridged separate branches into long triangles.
+            # Keep the validated branch topology; only distant leaves use proxies.
+            pass
+        else:
+            vertices = ob.data.vertices
+            for start in range(0, len(vertices), 6):
+                center = sum((vertices[i].co.copy() for i in range(start, start + 6)), vertices[start].co * 0) / 6
+                for i in range(start, start + 6):
+                    vertices[i].co = center + (vertices[i].co - center) * 2
+            bm = bmesh.new()
+            bm.from_mesh(ob.data)
+            bm.verts.ensure_lookup_table()
+            bmesh.ops.delete(bm, geom=[v for v in bm.verts if (v.index // 6) % 4 != 0], context='VERTS')
+            bm.to_mesh(ob.data)
+            bm.free()
+        ob.data.calc_loop_triangles()
+        lod_stats.append({'name': ob.name, 'vertices': len(ob.data.vertices), 'triangles': len(ob.data.loop_triangles)})
+    bpy.ops.object.select_all(action='SELECT')
+    distant = output / ('birch_%02d_far.glb' % index)
+    bpy.ops.export_scene.gltf(filepath=str(distant), export_format='GLB', export_animations=False, export_extras=False)
+    manifest['variants'].append({'file': distant.name, 'seed': seed, 'meshes': lod_stats, 'lod': 'far',
+                                'sha256': hashlib.sha256(distant.read_bytes()).hexdigest(), 'bytes': distant.stat().st_size})
+    print('BIRCH_DISTANT_EXPORTED', distant.name, lod_stats, flush=True)
 (output / 'BIRCH_MANIFEST.json').write_text(json.dumps(manifest, indent=2) + '\n')

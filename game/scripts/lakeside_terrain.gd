@@ -18,6 +18,18 @@ static func height_at(x:float,z:float)->float:
 
 static func point(x:float,z:float)->Vector3:return Vector3(x,height_at(x,z),z)
 
+static func visible_height_at(x:float,z:float)->float:
+ var step=0.5 if absf(x)<=18.0 and absf(z)<=15.0 else 3.0
+ var x0=floorf(x/step)*step
+ var z0=floorf(z/step)*step
+ var u=(x-x0)/step
+ var v=(z-z0)/step
+ var a=height_at(x0,z0)
+ var b=height_at(x0+step,z0)
+ var c=height_at(x0,z0+step)
+ var d=height_at(x0+step,z0+step)
+ return a+(b-a)*u+(c-a)*v if u+v<=1.0 else d+(b-d)*(1.0-v)+(c-d)*(1.0-u)
+
 static func normal_at(x:float,z:float)->Vector3:
  var dx=(height_at(x+0.04,z)-height_at(x-0.04,z))/0.08
  var dz=(height_at(x,z+0.04)-height_at(x,z-0.04))/0.08

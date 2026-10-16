@@ -35,8 +35,28 @@
           "triangles": 50908
         }
       ],
+      "lod": "near",
       "sha256": "f8710fe73f516d003a5ee975ede8d1253822ad7c4f677af50b20ef21666223ee",
       "bytes": 4424112
+    },
+    {
+      "file": "birch_01_far.glb",
+      "seed": 173,
+      "meshes": [
+        {
+          "name": "BirchWood",
+          "vertices": 24900,
+          "triangles": 42984
+        },
+        {
+          "name": "BirchLeaves",
+          "vertices": 19092,
+          "triangles": 12728
+        }
+      ],
+      "lod": "far",
+      "sha256": "9cdd1b06738af38e75ee99049d999f684924d23f7e7491f5c0dcc738f11057b9",
+      "bytes": 1900204
     },
     {
       "file": "birch_02.glb",
@@ -53,8 +73,28 @@
           "triangles": 50736
         }
       ],
+      "lod": "near",
       "sha256": "79469526746ecc393c598f0abe37b08ab6540dc58af5c6483f1544687dbc0b51",
       "bytes": 4379352
+    },
+    {
+      "file": "birch_02_far.glb",
+      "seed": 863,
+      "meshes": [
+        {
+          "name": "BirchWood",
+          "vertices": 24264,
+          "triangles": 41904
+        },
+        {
+          "name": "BirchLeaves",
+          "vertices": 19026,
+          "triangles": 12684
+        }
+      ],
+      "lod": "far",
+      "sha256": "895d763b4acff1f4bf28c60f393f66c85ebfae58928aebc53277272c462ea803",
+      "bytes": 1865628
     },
     {
       "file": "birch_03.glb",
@@ -71,8 +111,28 @@
           "triangles": 47416
         }
       ],
+      "lod": "near",
       "sha256": "54de84241bcb4bf08117d8843a7063ff0d5ec07ea38da87c90bbf80a67f4b121",
       "bytes": 4116612
+    },
+    {
+      "file": "birch_03_far.glb",
+      "seed": 2471,
+      "meshes": [
+        {
+          "name": "BirchWood",
+          "vertices": 23316,
+          "triangles": 40296
+        },
+        {
+          "name": "BirchLeaves",
+          "vertices": 17784,
+          "triangles": 11856
+        }
+      ],
+      "lod": "far",
+      "sha256": "d2f2048c68de01ebd79efabe4507ab5dd251016877c4e4abc6b78fc20729c6cc",
+      "bytes": 1774912
     }
   ]
 }
