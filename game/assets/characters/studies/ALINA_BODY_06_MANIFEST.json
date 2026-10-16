@@ -1,0 +1,29 @@
+{
+  "source": "assets/characters/studies/AlinaRevision.glb",
+  "source_sha256": "53358b0f8daeb64b573579212eeca4b5edf0345e49df1fe5beb326528069102a",
+  "output": "assets/characters/studies/AlinaBody06.glb",
+  "bytes": 8278628,
+  "sha256": "686b0bae92b6c4743bfe4664af55d777a102f08907bb99fd15c393ab9fc1dfb3",
+  "original_vertices": 4600,
+  "recovered_quads": 3200,
+  "vertices": 72306,
+  "polygons": 72224,
+  "bones": 67,
+  "auxiliary_bones": [
+    "forearm_twist_mid_l",
+    "forearm_twist_end_l",
+    "forearm_twist_mid_r",
+    "forearm_twist_end_r"
+  ],
+  "preserved_zero_shape_names": [
+    "Basis",
+    "eyeBlinkLeft",
+    "eyeBlinkRight",
+    "mouthSmileLeft",
+    "mouthSmileRight",
+    "jawOpen"
+  ],
+  "subdivision_levels": 2,
+  "materials": "reuse the original body material at runtime; no duplicate texture pack",
+  "status": "candidate: inspect deformation and body/cloth/string clearances before acceptance"
+}

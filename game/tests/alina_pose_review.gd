@@ -36,6 +36,8 @@ func run():
  camera=Camera3D.new();camera.current=true;stage.add_child(camera)
  if RenderingServer.get_current_rendering_method()=="forward_plus":root.use_taa=true
  metadata={"renderer":RenderingServer.get_current_rendering_method(),"taa":root.use_taa,"captures":[],"dependencies_sha256":{}}
+ for path in ["res://scripts/alina_body_revision.gd","res://assets/characters/studies/AlinaBody06.glb","res://assets/characters/studies/AlinaBody06.glb.import","res://assets/characters/studies/ALINA_BODY_06_MANIFEST.json"]:
+  metadata.dependencies_sha256[path]=FileAccess.get_sha256(path)
  for path in ["res://tests/alina_pose_review.gd","res://scripts/human_skin.gd","res://scripts/alina_revision_materials.gd","res://scripts/head_study_materials.gd","res://assets/characters/studies/AlinaRevision.glb","res://assets/shaders/study_eye.gdshader","res://assets/shaders/study_skin.gdshader","res://assets/shaders/cloth_quality.gdshader"]:
   metadata.dependencies_sha256[path]=FileAccess.get_sha256(path)
  simulate("idle",180)

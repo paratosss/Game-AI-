@@ -74,6 +74,8 @@ func save_metadata():
   for path in ["res://scripts/lakeside_quality.gd","res://scripts/lakeside_terrain.gd","res://assets/shaders/pond_depth.gdshader","res://assets/shaders/birch_scan.gdshader","res://assets/shaders/birch_leaf.gdshader","res://assets/textures/birch_scan/RESOURCE_MANIFEST.json","res://assets/nature/BIRCH_MANIFEST.json"]:
    dependencies[path]=FileAccess.get_sha256(path)
  if alina_revision:
+  for path in ["res://scripts/alina_body_revision.gd","res://assets/characters/studies/AlinaBody06.glb","res://assets/characters/studies/AlinaBody06.glb.import","res://assets/characters/studies/ALINA_BODY_06_MANIFEST.json"]:
+   dependencies[path]=FileAccess.get_sha256(path)
   for path in ["res://scripts/guitar_quality.gd","res://assets/shaders/instrument_wood.gdshader"]:
    dependencies[path]=FileAccess.get_sha256(path)
   for path in ["res://scripts/human_skin.gd","res://scripts/actor.gd","res://scripts/alina_revision_materials.gd","res://scripts/head_study_materials.gd","res://assets/shaders/study_eye.gdshader","res://assets/shaders/study_skin.gdshader","res://assets/shaders/cloth_quality.gdshader","res://assets/characters/studies/AlinaRevision.glb","res://assets/characters/studies/ALINA_REVISION_MANIFEST.json","res://assets/characters/studies/AlinaSkinStudy_Generated.png"]:

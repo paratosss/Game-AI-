@@ -1,6 +1,7 @@
 extends RefCounted
 ## Materials for the full-character study, isolated from the original actors.
 static func apply(instance:Node3D):
+ load("res://scripts/alina_body_revision.gd").apply(instance)
  load("res://scripts/head_study_materials.gd").apply(instance)
  for mesh in instance.find_children("*","MeshInstance3D",true,false):
   for index in range(mesh.mesh.get_surface_count()):

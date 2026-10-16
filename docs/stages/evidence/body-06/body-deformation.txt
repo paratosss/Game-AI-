@@ -1,0 +1,13 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+{
+  "failures": [],
+  "forearm_vertices": 3589,
+  "limitation": "Forearm shaft volume only; elbow anatomy, cloth intersections and naturalness require separate visual review.",
+  "maximum_branch_origin_error_m": 0.0000000999600260342959,
+  "maximum_radius_ratio": 1.02642959103332,
+  "minimum_radius_ratio": 0.906896803925468,
+  "sampled_poses": 12,
+  "status": "PASS"
+}
+BODY_DEFORMATION_06_PASS failures=0

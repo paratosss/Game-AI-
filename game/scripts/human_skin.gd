@@ -155,6 +155,11 @@ func tick(dt:float,moving:bool,speed:float,pose:String,guitar:Node3D,look:Vector
   current_native_clip=clip;native_animation.play(clip,.22)
  native_animation.speed_scale=maxf(.15,speed/nominal_walk_speed) if moving else native_animation.get_animation("getup").length/.85 if clip=="getup" else 1.0
  native_animation.advance(dt)
+ if uses_revision and indices.has("forearm_twist_mid_l"):
+  for side in ["l","r"]:
+   for level in ["mid","end"]:
+    var idx=indices["forearm_twist_"+level+"_"+side]
+    skeleton.reset_bone_pose(idx)
  if guitar:
   guitar.position=Vector3(-.105,1.10-.355*sit_weight,.205)
   guitar.rotation=Vector3(-.07+sin(motion_time*1.1)*.002,0,-1.04+sin(motion_time*.8)*.002)
@@ -259,7 +264,10 @@ func tick(dt:float,moving:bool,speed:float,pose:String,guitar:Node3D,look:Vector
    var desired_axis=wrist_basis.x
    desired_axis=(desired_axis-forearm_axis*desired_axis.dot(forearm_axis)).normalized()
    var twist=atan2(forearm_axis.dot(current_axis.cross(desired_axis)),current_axis.dot(desired_axis))
-   rotate_world("lowerarm"+suffix,forearm_axis,twist*.75*guitar_weight)
+   if uses_revision and indices.has("forearm_twist_mid"+suffix):
+    rotate_world("forearm_twist_mid"+suffix,forearm_axis,twist*.5*guitar_weight)
+    rotate_world("forearm_twist_end"+suffix,forearm_axis,twist*guitar_weight)
+   else:rotate_world("lowerarm"+suffix,forearm_axis,twist*.75*guitar_weight)
    var neutral=global_pose("hand"+suffix).basis.get_rotation_quaternion()
    var playing=wrist_basis.get_rotation_quaternion()
    set_bone_global_basis("hand"+suffix,Basis(neutral.slerp(playing,guitar_weight)))

@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "sha256": "686b0bae92b6c4743bfe4664af55d777a102f08907bb99fd15c393ab9fc1dfb3",
+  "vertices": 74308,
+  "bones": 67,
+  "preserved_original_bones": 63,
+  "maximum_weight_sum_error": 1.7881393432617188e-07,
+  "maximum_influences": 5,
+  "helpers": {
+    "forearm_twist_mid_l": {
+      "weighted_vertices": 2696,
+      "maximum_weight": 0.9971011281013489
+    },
+    "forearm_twist_end_l": {
+      "weighted_vertices": 3474,
+      "maximum_weight": 0.9657712578773499
+    },
+    "forearm_twist_mid_r": {
+      "weighted_vertices": 2696,
+      "maximum_weight": 0.9971010088920593
+    },
+    "forearm_twist_end_r": {
+      "weighted_vertices": 3647,
+      "maximum_weight": 0.9657745361328125
+    }
+  },
+  "limitation": "Export and rest-rig integrity; does not certify anatomical or artistic quality."
+}
