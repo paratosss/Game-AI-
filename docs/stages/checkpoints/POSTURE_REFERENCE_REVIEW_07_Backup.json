@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-17",
+  "kind": "documentary reference review; game unchanged",
+  "document_source_commit": "bc6ee8e154f475258f6493e5043a6a5512e8ab08",
+  "github_source_commit_verified": "bc6ee8e154f475258f6493e5043a6a5512e8ab08",
+  "game_source_commit": "93a423eeb3417808c062e793f8dcfd0677231240",
+  "file": "Shashlik_Posture_Reference_07_Documents.zip",
+  "bytes": 443963,
+  "sha256": "70079efdb447468d081d10fdfcbb124cdee89e54a733cba971276ab16f2f8237",
+  "crc": "PASS",
+  "entries": 11,
+  "local_archive_directory": "/workspace/checkpoints",
+  "uploaded_to_release": false,
+  "game_tests_repeated": false
+}
