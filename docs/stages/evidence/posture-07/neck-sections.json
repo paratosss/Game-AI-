@@ -1,0 +1,81 @@
+{
+  "kind": "rest mesh samples, not a posed or anatomical measurement",
+  "neck_sections": [
+    {
+      "height_m": 1.29,
+      "vertices": 58,
+      "front_m": 0.06113778427243233,
+      "back_m": 0.047582074999809265,
+      "midpoint_m": 0.054359929636120796
+    },
+    {
+      "height_m": 1.31,
+      "vertices": 124,
+      "front_m": 0.06495768576860428,
+      "back_m": -0.03218120336532593,
+      "midpoint_m": 0.016388241201639175
+    },
+    {
+      "height_m": 1.33,
+      "vertices": 158,
+      "front_m": 0.07151910662651062,
+      "back_m": -0.015893563628196716,
+      "midpoint_m": 0.027812771499156952
+    },
+    {
+      "height_m": 1.35,
+      "vertices": 368,
+      "front_m": 0.08509623259305954,
+      "back_m": -0.024457262828946114,
+      "midpoint_m": 0.030319484882056713
+    },
+    {
+      "height_m": 1.37,
+      "vertices": 386,
+      "front_m": 0.09378982335329056,
+      "back_m": -0.04286223277449608,
+      "midpoint_m": 0.02546379528939724
+    }
+  ],
+  "bones": {
+    "spine_03": {
+      "head": [
+        8.795015835950416e-15,
+        -0.01252751238644123,
+        1.0328799486160278
+      ],
+      "tail": [
+        2.1485898726424785e-14,
+        -0.01332390308380127,
+        1.256628394126892
+      ]
+    },
+    "neck_01": {
+      "head": [
+        1.652295650560881e-14,
+        -0.001864235964603722,
+        1.3238043785095215
+      ],
+      "tail": [
+        2.192411291575269e-14,
+        -0.04324089363217354,
+        1.4335808753967285
+      ]
+    },
+    "Head": {
+      "head": [
+        1.8859019164027546e-14,
+        -0.043240807950496674,
+        1.4335808753967285
+      ],
+      "tail": [
+        2.6327162970301785e-14,
+        -0.03819279000163078,
+        1.5507875680923462
+      ]
+    }
+  },
+  "source_model": "game/assets/characters/studies/AlinaRevision.glb",
+  "source_sha256": "53358b0f8daeb64b573579212eeca4b5edf0345e49df1fe5beb326528069102a",
+  "limitation": "Slices select only a central strip; lowest ring is incomplete and upper samples can include jaw. Midpoints are not neck-axis or human-proportion measurements."
+}
