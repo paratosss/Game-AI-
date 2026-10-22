@@ -5,6 +5,7 @@ var high=false
 var pbr=false
 var lakeside=false
 var alina_revision=false
+var anatomy_revision=true
 var warm_frames=12
 var initial_actor_transforms=[]
 var capture_metadata=[]
@@ -74,6 +75,8 @@ func save_metadata():
   for path in ["res://scripts/lakeside_quality.gd","res://scripts/lakeside_terrain.gd","res://assets/shaders/pond_depth.gdshader","res://assets/shaders/birch_scan.gdshader","res://assets/shaders/birch_leaf.gdshader","res://assets/textures/birch_scan/RESOURCE_MANIFEST.json","res://assets/nature/BIRCH_MANIFEST.json"]:
    dependencies[path]=FileAccess.get_sha256(path)
  if alina_revision:
+  if anatomy_revision:
+   for path in ["res://scripts/alina_anatomy_revision.gd","res://assets/characters/studies/AlinaAnatomy09.glb","res://assets/characters/studies/AlinaAnatomy09.glb.import","res://assets/characters/studies/ALINA_ANATOMY_09_MANIFEST.json"]:dependencies[path]=FileAccess.get_sha256(path)
   dependencies["res://scripts/guitar_posture.gd"]=FileAccess.get_sha256("res://scripts/guitar_posture.gd")
   for path in ["res://scripts/alina_body_revision.gd","res://assets/characters/studies/AlinaBody06.glb","res://assets/characters/studies/AlinaBody06.glb.import","res://assets/characters/studies/ALINA_BODY_06_MANIFEST.json"]:
    dependencies[path]=FileAccess.get_sha256(path)
@@ -94,13 +97,16 @@ func run():
  high="--graphics-high" in OS.get_cmdline_user_args()
  lakeside="--graphics-lakeside" in OS.get_cmdline_user_args()
  alina_revision="--alina-revision" in OS.get_cmdline_user_args()
+ anatomy_revision=not "--anatomy-baseline" in OS.get_cmdline_user_args()
  pbr="--graphics-pbr" in OS.get_cmdline_user_args() or lakeside
  for argument in OS.get_cmdline_user_args():
   if argument.begins_with("--warm-frames="):warm_frames=clampi(int(argument.trim_prefix("--warm-frames=")),1,24)
  if output.is_empty():quit(1);return
  DirAccess.make_dir_recursive_absolute(output)
  game=load("res://main.tscn").instantiate()
- if alina_revision:game.set_meta("alina_revision",true)
+ if alina_revision:
+  game.set_meta("alina_revision",true)
+  game.set_meta("anatomy_revision",anatomy_revision)
  root.add_child(game)
  paused=true
  game.initialized=false

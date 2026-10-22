@@ -33,6 +33,8 @@ func run():
  camera=Camera3D.new();camera.current=true;stage.add_child(camera)
  if RenderingServer.get_current_rendering_method()=="forward_plus":root.use_taa=true
  metadata.renderer=RenderingServer.get_current_rendering_method();metadata.taa=root.use_taa
+ if skin.uses_anatomy:
+  for path in ["res://scripts/alina_anatomy_revision.gd","res://assets/characters/studies/AlinaAnatomy09.glb","res://assets/characters/studies/AlinaAnatomy09.glb.import","res://assets/characters/studies/ALINA_ANATOMY_09_MANIFEST.json"]:metadata.dependencies_sha256[path]=FileAccess.get_sha256(path)
  for path in ["res://scripts/alina_body_revision.gd","res://assets/characters/studies/AlinaBody06.glb","res://assets/characters/studies/AlinaBody06.glb.import","res://assets/characters/studies/ALINA_BODY_06_MANIFEST.json"]:
   metadata.dependencies_sha256[path]=FileAccess.get_sha256(path)
  for path in ["res://tests/guitar_review.gd","res://scripts/human_skin.gd","res://scripts/guitar_quality.gd","res://assets/shaders/instrument_wood.gdshader","res://scripts/alina_revision_materials.gd","res://assets/characters/studies/AlinaRevision.glb"]:

@@ -33,6 +33,7 @@ var foot_locked=[false,false]
 var foot_weights=[0.0,0.0]
 var revision_mouth_local=Vector3.ZERO
 var uses_revision=false
+var uses_anatomy=false
 var guitar_gaze=Vector2(.22,.40)
 var native_poses=[]
 var previous_upper_rotations={}
@@ -45,7 +46,10 @@ func setup(who:String,col:Color)->Dictionary:
  uses_revision=revision
  if revision:asset="res://assets/characters/studies/AlinaRevision.glb"
  var native=load(asset).instantiate();add_child(native)
- if revision:load("res://scripts/alina_revision_materials.gd").apply(native)
+ if revision:
+  load("res://scripts/alina_revision_materials.gd").apply(native)
+  uses_anatomy=get_parent().get_parent().get_meta("anatomy_revision",true)
+  if uses_anatomy:load("res://scripts/alina_anatomy_revision.gd").apply(native)
  skeleton=native.find_children("*","Skeleton3D",true,false)[0]
  native_animation=native.find_children("*","AnimationPlayer",true,false)[0]
  for m in native.find_children("*","MeshInstance3D",true,false):
@@ -303,7 +307,7 @@ func tick(dt:float,moving:bool,speed:float,pose:String,guitar:Node3D,look:Vector
   if pose in ["happy","wave"] and i==0:target=shoulder+Vector3(.21,.27,.10+sin(motion_time*8)*.06)
   var elbow_pole=Vector3(sign,.05,-.35)
   if guitar:elbow_pole=elbow_pole.lerp(Vector3(.25,-1,.25) if i==0 else Vector3(-.65,.10,-.10),guitar_weight)
-  if uses_revision:elbow_pole=Vector3(sign,.05,-.35).lerp(Vector3(.25,-1,.35) if i==0 else Vector3(-.75,-.20,.50),guitar_weight)
+  if uses_revision:elbow_pole=Vector3(sign,.05,-.35).lerp(Vector3(.25,-1,.35) if i==0 else Vector3(-.75,-.20,.47 if uses_anatomy else .50),guitar_weight)
   if guitar_weight>0 or reaction_weight>0 or pose=="kick":
    var strength=guitar_weight if uses_revision and reaction_weight==0 and pose!="kick" else 1.0
    solve_limb("upperarm"+suffix,"lowerarm"+suffix,"hand"+suffix,target,elbow_pole,strength)
@@ -405,8 +409,15 @@ func tick(dt:float,moving:bool,speed:float,pose:String,guitar:Node3D,look:Vector
  skeleton.force_update_all_bone_transforms()
  var blink_phase=fposmod(motion_time,blink_period)
  var blink=sin(blink_phase/.17*PI) if blink_phase<.17 else 0.0
+ var elbow_correctives={}
+ if uses_anatomy:
+  for side in ["_l","_r"]:
+   var upper=global_pose("lowerarm"+side).origin-global_pose("upperarm"+side).origin
+   var forearm=global_pose("hand"+side).origin-global_pose("lowerarm"+side).origin
+   elbow_correctives["anatomyElbowFlex"+side]=smoothstep(.45,1.8,upper.angle_to(forearm))
  for mesh in face_meshes:
   for i in range(mesh.mesh.get_blend_shape_count()):
    var name=mesh.mesh.get_blend_shape_name(i)
    var value=blink if name in ["eyeBlinkLeft","eyeBlinkRight"] else .26 if pose=="happy" and name in ["mouthSmileLeft","mouthSmileRight"] else (.075*(.5+.5*sin(motion_time*8)) if pose=="eat" else .18*reaction_weight) if pose in ["eat","cough","gag","spit"] and name=="jawOpen" else 0.0
+   if elbow_correctives.has(name):value=elbow_correctives[name]
    mesh.set_blend_shape_value(i,value)

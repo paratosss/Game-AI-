@@ -1,0 +1,39 @@
+{
+  "source_sha256": "53358b0f8daeb64b573579212eeca4b5edf0345e49df1fe5beb326528069102a",
+  "body_source_sha256": "686b0bae92b6c4743bfe4664af55d777a102f08907bb99fd15c393ab9fc1dfb3",
+  "file": "assets/characters/studies/AlinaAnatomy09.glb",
+  "bytes": 31525840,
+  "sha256": "2db1ac961d16a6c5edf0f2b867a6b47ac357b301e91067a9088271cdcdc6c266",
+  "bones": 67,
+  "changes": {
+    "AlinaRevisionHead": {
+      "vertices": 51285,
+      "moved_vertices": 3094,
+      "maximum_displacement_m": 0.01649471745290426,
+      "shape_count": 63
+    },
+    "Human": {
+      "vertices": 74308,
+      "moved_vertices": 13590,
+      "maximum_displacement_m": 0.004206498228405299,
+      "shape_count": 7
+    },
+    "Human.female_casualsuit01": {
+      "vertices": 17968,
+      "moved_vertices": 1916,
+      "maximum_displacement_m": 0.0049954653227191285,
+      "shape_count": 0
+    }
+  },
+  "correctives": {
+    "anatomyElbowFlex_l": {
+      "moved_vertices": 904,
+      "maximum_displacement_m": 0.001700809911793256
+    },
+    "anatomyElbowFlex_r": {
+      "moved_vertices": 904,
+      "maximum_displacement_m": 0.0017008035324748809
+    }
+  },
+  "scope": "First cervical/upper-limb surface reshaping on the preserved rig, not a new anatomical full-body sculpt; materials are placeholders replaced at runtime."
+}

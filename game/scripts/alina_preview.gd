@@ -18,5 +18,8 @@ func apply_profile():
  if body.get_meta("body_revision",0)!=6 or skin.skeleton.get_bone_count()!=67:
   push_error("Alina preview did not load the revised body");get_tree().quit(1);return
  print("ALINA_BODY_REVISION_CONFIRMED bones=67")
+ if body.get_meta("anatomy_revision",0)!=9 or body.mesh.get_blend_shape_count()!=7:
+  push_error("Alina preview did not load the anatomical overlay");get_tree().quit(1);return
+ print("ALINA_ANATOMY_REVISION_CONFIRMED shapes=7 bones=67")
  load("res://scripts/lakeside_quality.gd").apply(get_parent())
  print("ALINA_REVISION_PREVIEW_READY")

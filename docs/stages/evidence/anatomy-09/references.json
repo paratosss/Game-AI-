@@ -1,0 +1,51 @@
+[
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:1105_Anterior_and_Posterior_Views_of_Muscles.jpg",
+    "license": "CC BY 4.0",
+    "author": "OpenStax",
+    "sha256": "a11ddefe42a0429624ce21181bbb99c880ea2a1eb613acf1009c0459c4c341de",
+    "role": "anatomical landmarks; not a mandatory physique or anthropometric standard",
+    "copied_into_documentation": true,
+    "included_in_game": false
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Female_Ventral_Surface_Anatomy.png",
+    "license": "CC BY 2.0",
+    "author": "Elements Of This World",
+    "sha256": "e312f4dd54324e4ba819874ccdd20bed1ea33a7cf091647dc0d0a9a87e8c0687",
+    "role": "anatomical landmarks; not a mandatory physique or anthropometric standard",
+    "copied_into_documentation": false,
+    "included_in_game": false
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:Anatomical_chart_showing_male-_female_proportions._Wellcome_M0000425.jpg",
+    "license": "CC BY 4.0",
+    "author": "",
+    "sha256": "258f9700920f5c77888ab32196d5b98d9b9be34f6f8ed499e4e0d524b2d99bb9",
+    "role": "anatomical landmarks; not a mandatory physique or anthropometric standard",
+    "copied_into_documentation": false,
+    "included_in_game": false
+  },
+  {
+    "name": "Female body reference",
+    "asset_id": "d80151a2-f21f-47f2-ba4d-eb30290aabde",
+    "asset_base_id": "b8fd598d-118c-4d37-be23-989a2f77cab2",
+    "author": "Rex Mun",
+    "license": "cc_zero",
+    "source": "https://www.blenderkit.com/asset-gallery-detail/b8fd598d-118c-4d37-be23-989a2f77cab2/",
+    "sha256": "d6b9697b7301f74254d175e914d61f10501aa0d01cab1865367d081a99ff6cef",
+    "included_in_game": false,
+    "finding": "Unrigged complete body reference evaluated for anatomical volumes; not integrated."
+  },
+  {
+    "name": "Stacey",
+    "asset_id": "cd877704-4d17-477f-8bf9-d5e25dd02186",
+    "asset_base_id": "4f812a9b-bc0e-456f-b423-31243feffcf0",
+    "author": "Introspective Mnisi",
+    "license": "cc_zero",
+    "source": "https://www.blenderkit.com/asset-gallery-detail/4f812a9b-bc0e-456f-b423-31243feffcf0/",
+    "sha256": "7558ecfbc0414dd548a43d7e3853012f2b3ab5a5717873c7924b6adcdc8bbe7c",
+    "included_in_game": false,
+    "finding": "MakeHuman-derived character evaluated; changing to this asset alone does not remove the current anatomical limitations."
+  }
+]
