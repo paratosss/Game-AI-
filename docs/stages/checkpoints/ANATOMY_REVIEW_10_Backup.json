@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-22",
+  "kind": "documentary_review_not_game_build",
+  "source_commit": "9805e4004ea19c77c6e30fdfea5e98076a2e9082",
+  "github_source_commit_verified": "9805e4004ea19c77c6e30fdfea5e98076a2e9082",
+  "runtime_baseline_commit": "53658abfba043414edb8a5cb2bbb705020b52d04",
+  "runtime_character_assets_unchanged": true,
+  "previous_full_game_checkpoint": "STAGE_02_09_Backup.json",
+  "archive": {
+    "file": "Shashlik_Anatomy_Review_10.zip",
+    "local_path": "/workspace/checkpoints/Shashlik_Anatomy_Review_10.zip",
+    "bytes": 8967006,
+    "sha256": "d6e6bf411cccb6deab75edb85e1050abd846fc3e6451efcd64b1b72c0f733e6b",
+    "crc": "PASS",
+    "files_matching_commit": 70
+  },
+  "fresh_extraction": "/workspace/checkpoints/verify-anatomy-review-10/Shashlik_Anatomy_Review_10",
+  "verified_snapshot_count": 44,
+  "all_snapshot_hashes_sizes_and_decode_verified": true,
+  "all_five_reference_hashes_verified": true,
+  "diagnostic_sources_match": true,
+  "renderer_exit_code": 0,
+  "renderer_marker": "ANATOMY_ORBIT_REVIEW_10_COMPLETE frames=44",
+  "renderer_errors": [],
+  "js_syntax_check": "PASS; interactive browser behavior not exercised",
+  "new_game_self_test_run": false,
+  "new_game_self_test_reason": "Runtime unchanged. This archive contains review documents, evidence and diagnostic tools, not a full game build.",
+  "quality_status": "REJECTED: neck self-intersection and anatomical transition defects remain in active model. Review did not fix assets.",
+  "archive_uploaded_to_github_release": false
+}

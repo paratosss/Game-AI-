@@ -509,8 +509,8 @@
       "object": "Сохранение",
       "requirement": "Отдельный файл и резервная версия каждого этапа",
       "status": "проверено",
-      "finding": "Итерация 09 сохранена отдельным отчётом, 17 снимками, GitHub-коммитом и Source/Review ZIP. CRC/SHA, свежая распаковка и девять проверок пройдены; ZIP локальные",
-      "evidence": "docs/stages/STAGE_02_Anatomy_09_RU.md; docs/stages/checkpoints/STAGE_02_09_Backup.json",
+      "finding": "Документальный разбор 10: отчёт, 44 кадра, исходники диагностик на GitHub; отдельный Review ZIP проверен по CRC/SHA и распаковке. Последняя полная игровая точка — 09",
+      "evidence": "docs/stages/ANATOMY_REVIEW_10_RU.md; docs/stages/checkpoints/ANATOMY_REVIEW_10_Backup.json; docs/stages/checkpoints/STAGE_02_09_Backup.json",
       "next_action": "Фиксировать и отправлять следующие отчёты и версии"
     }
   ],
