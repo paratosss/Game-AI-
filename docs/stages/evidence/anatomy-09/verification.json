@@ -1,0 +1,191 @@
+{
+  "date": "2026-10-22",
+  "captures": [
+    {
+      "file": "after-clay/neck-front.png",
+      "sha256": "21e789dbb0a980df034ce4e452f293996d96b005ccdcc83e4f0673184c9e301e",
+      "size": [
+        1280,
+        720
+      ],
+      "individually_visually_reviewed": true
+    },
+    {
+      "file": "after-clay/neck-side.png",
+      "sha256": "2a33d0733b8efc4a3bcc2836d3bf0b756ac530e2cace27b9d8912f90b79ca117",
+      "size": [
+        1280,
+        720
+      ],
+      "individually_visually_reviewed": true
+    },
+    {
+      "file": "after-clay/neutral-front.png",
+      "sha256": "42d4234aeb9a9131056d4ffcc8edfd50f839f299cc1fa4358b6b2fd1b07b5ab5",
+      "size": [
+        1280,
+        720
+      ],
+      "individually_visually_reviewed": true
+    },
+    {
+      "file": "after-clay/neutral-side.png",
+      "sha256": "33af4035c2203492584a89bf5a774eef93555e260086b5aee2090e963a75b4f1",
+      "size": [
+        1280,
+        720
+      ],
+      "individually_visually_reviewed": true
+    },
+    {
+      "file": "after-elbows/elbow-flex-back.png",
+      "sha256": "59818992114c513bc58bd2338925f4b03098260061656e36554ef81d82beb205",
+      "size": [
+        1280,
+        720
+      ],
+      "individually_visually_reviewed": true
+    },
+    {
+      "file": "after-elbows/elbow-flex-front.png",
+      "sha256": "38805e7127f38b268108172efc8bc5692d8aa6573dd5e6a794ba53f2db518d31",
+      "size": [
+        1280,
+        720
+      ],
+      "individually_visually_reviewed": true
+    },
+    {
+      "file": "before-clay/neck-front.png",
+      "sha256": "6f3ec175954ee6a21058081b90ec67093aed6f5df12f0a571d50988427f39e03",
+      "size": [
+        1280,
+        720
+      ],
+      "individually_visually_reviewed": true
+    },
+    {
+      "file": "before-clay/neck-side.png",
+      "sha256": "2d549d9fd99038008bf040b52af195b49c422404875ef421217e4ec6fc5a9cb6",
+      "size": [
+        1280,
+        720
+      ],
+      "individually_visually_reviewed": true
+    },
+    {
+      "file": "before-clay/neutral-front.png",
+      "sha256": "360951fc00181186762e5f4863398cbb10237b45d4c7ddc37a97fcc2a1eeb9e6",
+      "size": [
+        1280,
+        720
+      ],
+      "individually_visually_reviewed": true
+    },
+    {
+      "file": "before-clay/neutral-side.png",
+      "sha256": "8d932fe71ff7ec3761cc35e3f5cf0d094d2703eafb1cd02d5349059864688e9e",
+      "size": [
+        1280,
+        720
+      ],
+      "individually_visually_reviewed": true
+    },
+    {
+      "file": "before-elbows/elbow-flex-back.png",
+      "sha256": "88b30bfb5c7a885c60fce4bae308e04145b5b3ee00694643e28304fff2b76f8a",
+      "size": [
+        1280,
+        720
+      ],
+      "individually_visually_reviewed": true
+    },
+    {
+      "file": "before-elbows/elbow-flex-front.png",
+      "sha256": "6510c69997e1c61d75889a9bbc060aa2153fe260ce21a27709aa924177dac0b2",
+      "size": [
+        1280,
+        720
+      ],
+      "individually_visually_reviewed": true
+    },
+    {
+      "file": "world/guitar-hands.png",
+      "sha256": "398187450207dc5371b2f48ebcd04cfab531908ca053cac79c871296a3a1ed3e",
+      "size": [
+        1280,
+        720
+      ],
+      "individually_visually_reviewed": true
+    },
+    {
+      "file": "world/seated-face.png",
+      "sha256": "3d644dbe7abfdf72d6ea69dcc2586725fe1650e02cf31d0c0a6a5cf6ad026a2e",
+      "size": [
+        1280,
+        720
+      ],
+      "individually_visually_reviewed": true
+    },
+    {
+      "file": "world/seated-front.png",
+      "sha256": "08cdf6e31834cad58851883dfddd004513baa69f53491bc32b6f88545bf58105",
+      "size": [
+        1280,
+        720
+      ],
+      "individually_visually_reviewed": true
+    },
+    {
+      "file": "world/seated-side.png",
+      "sha256": "9dad1b19b75428a735c0c649b67fc8261f12d71b1a9b2585ef66b9fff11eea97",
+      "size": [
+        1280,
+        720
+      ],
+      "individually_visually_reviewed": true
+    },
+    {
+      "file": "world-1440/seated-front.png",
+      "sha256": "f4c7a4b868a8de0c562304b0808843b0c70ec4d73bc9c14fb1937463b4a31b0b",
+      "size": [
+        2560,
+        1440
+      ],
+      "individually_visually_reviewed": true
+    }
+  ],
+  "capture_dependencies_match_source": true,
+  "before_after_camera_records_match": true,
+  "before_after_camera_tolerance_m": 1e-06,
+  "world_cameras_match_iteration_08": true,
+  "render_runs": {
+    "before-clay": {
+      "exit_code": 0,
+      "errors": []
+    },
+    "after-clay": {
+      "exit_code": 0,
+      "errors": []
+    },
+    "before-elbows": {
+      "exit_code": 0,
+      "errors": []
+    },
+    "after-elbows": {
+      "exit_code": 0,
+      "errors": []
+    },
+    "world": {
+      "exit_code": 0,
+      "errors": []
+    },
+    "world-1440": {
+      "exit_code": 0,
+      "errors": []
+    }
+  },
+  "renderer": "Forward+ software Vulkan",
+  "review_method": "17 separate actual Godot snapshots, not video. Native 1440p file inspected through viewer resized to 2048x1152. Clay uses gray skin/clothing/shoes; hair/eyes keep their source material.",
+  "observations": "Modest full silhouette change; neck contour and elbow volume remain partial work. Shoulders/hands need further sculpting; pelvis/legs not reworked. No whole-body anatomical or motion acceptance."
+}

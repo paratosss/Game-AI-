@@ -1,0 +1,37 @@
+{
+  "source_sha256": {
+    "scripts/human_skin.gd": "13205a68a83a642739badd31d4416ce07230ada2a37fb68cda76b46d52a52d0d",
+    "scripts/alina_anatomy_revision.gd": "659fd20a1a9fa7c48860d6a17cb2c0e97f82f84096546db61600cd4d36011ea9",
+    "scripts/guitar_posture.gd": "51e86d6613158cc7fd058508e32523d4fb8f80940e24be88a9113920b47d8e12",
+    "tests/anatomy_review.gd": "320573a1c51430e1533a63df66d3ea5508e87446ad8f7b32c016c097085d880a",
+    "tests/graphics_benchmark.gd": "a14cdd517933c9332364d6cd8856430f4e64f085a13496d1dc2cd8a3e5c3f270",
+    "assets/characters/studies/AlinaAnatomy09.glb": "2db1ac961d16a6c5edf0f2b867a6b47ac357b301e91067a9088271cdcdc6c266",
+    "assets/characters/studies/AlinaAnatomy09.glb.import": "dbeeaa948c8c0ad8683c1610dbe87295665015950e993fef3cfae3f64d85fb80"
+  },
+  "runs": {
+    "before-clay": {
+      "exit_code": 0,
+      "errors": []
+    },
+    "after-clay": {
+      "exit_code": 0,
+      "errors": []
+    },
+    "before-elbows": {
+      "exit_code": 0,
+      "errors": []
+    },
+    "after-elbows": {
+      "exit_code": 0,
+      "errors": []
+    },
+    "world": {
+      "exit_code": 0,
+      "errors": []
+    },
+    "world-1440": {
+      "exit_code": 0,
+      "errors": []
+    }
+  }
+}

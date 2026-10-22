@@ -94,3 +94,10 @@ Wood Planks Grey, Wood Table 001 4K и Grass Ground получены для ис
 ## Тело Алины, итерация 06
 
 AlinaBody06.glb — производная от ранее сохранённого CC0 тела MakeHuman/MPFB: восстановление четырёхугольников, подразделение поверхности и перераспределение весов предплечья. Новые вспомогательные кости, runtime и генератор созданы для проекта. Сторонние новые меши, текстуры и платные ресурсы не добавлялись. Исходная голова Selunae и её атрибуция сохранены отдельно.
+
+
+## Анатомическая поверхность Алины, итерация 09
+
+`AlinaAnatomy09.glb` — производная геометрия прежних CC0 MakeHuman/MPFB и Selunae (Muhammed Ismayil), не новая полная модель. Изменены шея/руки/плечевая ткань и добавлены две формы локтя; исходные материалы/UV/клипы сохранены. Генератор `tools/authoring/build_alina_anatomy.py`, manifest `assets/characters/studies/ALINA_ANATOMY_09_MANIFEST.json`.
+
+Анатомическая схема OpenStax, Anatomy & Physiology, CC BY 4.0, включена только в документацию без изменений: https://commons.wikimedia.org/wiki/File:1105_Anterior_and_Posterior_Views_of_Muscles.jpg ; лицензия https://creativecommons.org/licenses/by/4.0/ . Остальные источники/авторы/лицензии исследования — `../docs/stages/evidence/anatomy-09/references.json`. Скачанные Female body reference (Rex Mun) и Stacey использованы только для оценки кандидатов и не включены в игру или исходный архив. Не приписывать им текущую игровую геометрию.

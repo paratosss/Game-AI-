@@ -1,0 +1,55 @@
+{
+  "anatomy_revision": true,
+  "captures": [
+    {
+      "camera": [
+        0.62629109621048,
+        0.889565110206604,
+        0.543870091438293
+      ],
+      "fov": 34.0,
+      "head_transform": "[X: (0.973468, -0.023024, -0.227661), Y: (0.100601, 0.936677, 0.335434), Z: (0.205522, -0.349437, 0.914141), O: (0.004914, 1.218597, 0.115198)]",
+      "height": 720,
+      "mouth_position": "(0.011522, 1.151905, 0.150198)",
+      "name": "elbow-flex-front",
+      "target": [
+        0.176291093230247,
+        0.809565126895905,
+        0.0638701096177101
+      ],
+      "width": 1280
+    },
+    {
+      "camera": [
+        0.596291065216064,
+        0.929565131664276,
+        -0.376129895448685
+      ],
+      "fov": 34.0,
+      "head_transform": "[X: (0.973468, -0.023024, -0.227661), Y: (0.100601, 0.936677, 0.335434), Z: (0.205522, -0.349437, 0.914141), O: (0.004914, 1.218597, 0.115198)]",
+      "height": 720,
+      "mouth_position": "(0.011522, 1.151905, 0.150198)",
+      "name": "elbow-flex-back",
+      "target": [
+        0.176291093230247,
+        0.809565126895905,
+        0.0638701096177101
+      ],
+      "width": 1280
+    }
+  ],
+  "clay_skin_and_clothes": true,
+  "dependencies_sha256": {
+    "res://assets/characters/studies/ALINA_ANATOMY_09_MANIFEST.json": "799e841fdf32a4ebc8b9cbea04491a4a8a30092777fcee93883158c5c504cef8",
+    "res://assets/characters/studies/AlinaAnatomy09.glb": "2db1ac961d16a6c5edf0f2b867a6b47ac357b301e91067a9088271cdcdc6c266",
+    "res://assets/characters/studies/AlinaAnatomy09.glb.import": "dbeeaa948c8c0ad8683c1610dbe87295665015950e993fef3cfae3f64d85fb80",
+    "res://assets/characters/studies/AlinaBody06.glb": "686b0bae92b6c4743bfe4664af55d777a102f08907bb99fd15c393ab9fc1dfb3",
+    "res://assets/characters/studies/AlinaRevision.glb": "53358b0f8daeb64b573579212eeca4b5edf0345e49df1fe5beb326528069102a",
+    "res://scripts/alina_anatomy_revision.gd": "659fd20a1a9fa7c48860d6a17cb2c0e97f82f84096546db61600cd4d36011ea9",
+    "res://scripts/alina_body_revision.gd": "ad83a63e52d9b5d9520fb6f42f01fc986f401a91f4929f69f8b9dbab58fee198",
+    "res://scripts/alina_revision_materials.gd": "302a2e6a998bdff6b508d24fdfb42d613adc241bfb603e9b886cf86d474637b5",
+    "res://scripts/human_skin.gd": "13205a68a83a642739badd31d4416ce07230ada2a37fb68cda76b46d52a52d0d",
+    "res://tests/anatomy_review.gd": "320573a1c51430e1533a63df66d3ea5508e87446ad8f7b32c016c097085d880a"
+  },
+  "renderer": "forward_plus"
+}
