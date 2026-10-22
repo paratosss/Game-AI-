@@ -1,5 +1,6 @@
 extends Node3D
 class_name DemoHumanSkin
+const GuitarPosture=preload("res://scripts/guitar_posture.gd")
 var skeleton:Skeleton3D
 var rest={}
 var indices={}
@@ -32,6 +33,9 @@ var foot_locked=[false,false]
 var foot_weights=[0.0,0.0]
 var revision_mouth_local=Vector3.ZERO
 var uses_revision=false
+var guitar_gaze=Vector2(.22,.40)
+var native_poses=[]
+var previous_upper_rotations={}
 func setup(who:String,col:Color)->Dictionary:
  name="RealCharacter"
  position.y=.012
@@ -71,6 +75,7 @@ func setup(who:String,col:Color)->Dictionary:
    for x in [sign*.007,sign*.058]:DemoVisual.box(glasses,Vector3(.003,.030,.004),Color("29333a"),Vector3(x,.001,0))
   DemoVisual.box(glasses,Vector3(.020,.003,.004),Color("29333a"),Vector3(0,.008,0))
  sit_weight=1 if who=="Алина" else 0
+ if revision:GuitarPosture.prepare(self)
  return {"visual":self,"hips":self,"torso":torso_anchor,"head":head_anchor,"legs":[],"knees":[],"arms":[],"elbows":[],"skin":self}
 func attachment(bone:String)->BoneAttachment3D:
  var node=BoneAttachment3D.new();skeleton.add_child(node);node.bone_name=bone;node.bone_idx=indices[bone];return node
@@ -92,7 +97,9 @@ func align_bone(bone:String,end:String,direction:Vector3):
  var source=(global_pose(end).origin-current.origin).normalized()
  var q=Quaternion(source,direction.normalized())
  set_bone_global_basis(bone,Basis(q)*current.basis)
-func solve_limb(a:String,b:String,c:String,target:Vector3,pole:Vector3):
+func solve_limb(a:String,b:String,c:String,target:Vector3,pole:Vector3,strength:float=1.0):
+ var initial_a=skeleton.get_bone_pose_rotation(indices[a])
+ var initial_b=skeleton.get_bone_pose_rotation(indices[b])
  var origin=global_pose(a).origin
  var upper=rest[a].origin.distance_to(rest[b].origin);var lower=rest[b].origin.distance_to(rest[c].origin)
  var d=target-origin;var length=clampf(d.length(),absf(upper-lower)+.002,upper+lower-.004);var direction=d.normalized()
@@ -103,6 +110,10 @@ func solve_limb(a:String,b:String,c:String,target:Vector3,pole:Vector3):
  align_bone(a,b,middle-origin)
  var current=global_pose(b).origin
  align_bone(b,c,target-current)
+ if strength<1.0:
+  var solved_a=skeleton.get_bone_pose_rotation(indices[a]);var solved_b=skeleton.get_bone_pose_rotation(indices[b])
+  skeleton.set_bone_pose_rotation(indices[a],initial_a.slerp(solved_a,strength))
+  skeleton.set_bone_pose_rotation(indices[b],initial_b.slerp(solved_b,strength))
 func fit_finger(finger:String,target:Vector3,suffix:String="_l",pole_hint:Vector3=Vector3.ZERO):
  # Three phalanges, fixed bone lengths. Keep the initial curved solution as a pole.
  var names=[finger+"_01"+suffix,finger+"_02"+suffix,finger+"_03"+suffix,finger+"_04_leaf"+suffix]
@@ -123,10 +134,52 @@ func fit_finger(finger:String,target:Vector3,suffix:String="_l",pole_hint:Vector
   points[0]=base
   for j in range(3):points[j+1]=points[j]+(points[j+1]-points[j]).normalized()*lengths[j]
  for j in range(3):align_bone(names[j],names[j+1],points[j+1]-points[j])
+func fit_playing_finger(finger:String,target:Vector3,suffix:String,pole_hint:Vector3):
+ # Planar PIP/DIP flexion with coupled distal flexion. Unlike unconstrained
+ # FABRIK this cannot fold one joint backwards or close the PIP beyond 110°.
+ var names=[finger+"_01"+suffix,finger+"_02"+suffix,finger+"_03"+suffix,finger+"_04_leaf"+suffix]
+ var lengths=[]
+ for j in range(3):lengths.append(rest[names[j]].origin.distance_to(rest[names[j+1]].origin))
+ var base=global_pose(names[0]).origin
+ var neutral_rotations=[]
+ for j in range(3):neutral_rotations.append(skeleton.get_bone_pose_rotation(indices[names[j]]))
+ var direction=(target-base).normalized()
+ var pole=(pole_hint-direction*pole_hint.dot(direction)).normalized()
+ var distance=base.distance_to(target)
+ var low=.08;var high=deg_to_rad(110)
+ for iteration in range(18):
+  var bend=(low+high)*.5
+  var along=lengths[0]+lengths[1]*cos(bend)+lengths[2]*cos(bend*1.65)
+  var across=lengths[1]*sin(bend)+lengths[2]*sin(bend*1.65)
+  if Vector2(along,across).length()>distance:low=bend
+  else:high=bend
+ var bend=(low+high)*.5
+ var along=lengths[0]+lengths[1]*cos(bend)+lengths[2]*cos(bend*1.65)
+ var across=lengths[1]*sin(bend)+lengths[2]*sin(bend*1.65)
+ var heading=atan2(across,along)
+ for j in range(3):
+  var angle=heading-([0.0,1.0,1.65][j])*bend
+  align_bone(names[j],names[j+1],direction*cos(angle)+pole*sin(angle))
+ for j in range(3):
+  var idx=indices[names[j]]
+  skeleton.set_bone_pose_rotation(idx,neutral_rotations[j].slerp(skeleton.get_bone_pose_rotation(idx),guitar_weight))
 func set_bone_origin(bone:String,origin:Vector3):
  var i=indices[bone];var parent=skeleton.get_bone_parent(i)
  var local=origin if parent<0 else skeleton.get_bone_global_pose(parent).affine_inverse()*origin
  skeleton.set_bone_pose_position(i,local)
+func blend_revision_transition(dt:float):
+ # Ease the upper body across action boundaries. Fade the filter out smoothly
+ # so settled guitar contacts remain exact and ordinary strums are unfiltered.
+ var amount=lerpf(1.0-exp(-dt*18.0),1.0,smoothstep(.20,.60,pose_elapsed))
+ for name in indices:
+  var idx=indices[name];var parent=idx;var upper=false
+  while parent>=0:
+   if skeleton.get_bone_name(parent)=="spine_01":upper=true;break
+   parent=skeleton.get_bone_parent(parent)
+  if not upper:continue
+  var q=skeleton.get_bone_pose_rotation(idx)
+  if previous_upper_rotations.has(name):q=previous_upper_rotations[name].slerp(q,amount)
+  skeleton.set_bone_pose_rotation(idx,q);previous_upper_rotations[name]=q
 func tick(dt:float,moving:bool,speed:float,pose:String,guitar:Node3D,look:Vector3,clip_time:float=0):
  motion_time+=dt
  if pose=="getup":getup_elapsed=(0.0 if previous_pose!="getup" else getup_elapsed)+dt
@@ -151,10 +204,19 @@ func tick(dt:float,moving:bool,speed:float,pose:String,guitar:Node3D,look:Vector
  walk_phase+=speed*dt/.92
  var cycle=walk_phase*TAU
  var clip="walk" if moving else ("sit_down" if seat_elapsed<.9 else "sit") if seated else pose if native_animation.has_animation(pose) else "idle"
+ # Animation blending must read its previous native pose, not last frame's
+ # procedural IK. Unkeyed finger/shoulder channels must not accumulate edits.
+ if uses_revision:
+  for i in range(native_poses.size()):
+   skeleton.set_bone_pose_position(i,native_poses[i].origin)
+   skeleton.set_bone_pose_rotation(i,native_poses[i].basis.get_rotation_quaternion())
  if clip!=current_native_clip:
   current_native_clip=clip;native_animation.play(clip,.22)
  native_animation.speed_scale=maxf(.15,speed/nominal_walk_speed) if moving else native_animation.get_animation("getup").length/.85 if clip=="getup" else 1.0
  native_animation.advance(dt)
+ if uses_revision:
+  native_poses.clear()
+  for i in range(skeleton.get_bone_count()):native_poses.append(skeleton.get_bone_pose(i))
  if uses_revision and indices.has("forearm_twist_mid_l"):
   for side in ["l","r"]:
    for level in ["mid","end"]:
@@ -169,15 +231,17 @@ func tick(dt:float,moving:bool,speed:float,pose:String,guitar:Node3D,look:Vector
   pelvis.y=lerpf(pelvis.y,.60,sit_weight)
   pelvis.z=lerpf(pelvis.z,rest.pelvis.origin.z,sit_weight);pelvis.x=lerpf(pelvis.x,0,sit_weight)
   set_bone_origin("pelvis",pelvis)
-  set_bone_global_basis("pelvis",rest.pelvis.basis)
+  if uses_revision:GuitarPosture.blend_basis(self,"pelvis",rest.pelvis.basis,sit_weight)
+  else:set_bone_global_basis("pelvis",rest.pelvis.basis)
  elif rising:
   pelvis.y=lerpf(.60,rest.pelvis.origin.y,rise)
   pelvis.z=rest.pelvis.origin.z+sin(rise*PI)*.10;pelvis.x=0
   set_bone_origin("pelvis",pelvis)
+ if uses_revision and guitar_weight>0:GuitarPosture.torso(self,guitar_weight)
  var gaze=to_local(look)-global_pose("Head").origin if look.length()>.1 else Vector3.ZERO
  var head_y=clampf(atan2(gaze.x,gaze.z),-.40,.40) if gaze.length()>.1 else sin(motion_time*.45)*.025
  rotate_world("neck_01",Vector3.UP,head_y*.3);rotate_world("Head",Vector3.UP,head_y*.7)
- if seated:rotate_world("Head",Vector3.RIGHT,.04)
+ if seated and not uses_revision:rotate_world("Head",Vector3.RIGHT,.04)
  if pose in ["gag","cough","spit"]:
   rotate_world("spine_02",Vector3.RIGHT,(.10+.025*sin(pose_elapsed*12))*reaction_weight);rotate_world("Head",Vector3.RIGHT,.04*reaction_weight)
  ground_feet.clear()
@@ -219,6 +283,9 @@ func tick(dt:float,moving:bool,speed:float,pose:String,guitar:Node3D,look:Vector
  else:
   foot_locked=[false,false];foot_weights=[0.0,0.0]
  for suffix in ["_l","_r"]:ground_feet.append(global_pose("foot"+suffix).origin)
+ if uses_revision and guitar and guitar_weight>0:
+  GuitarPosture.place(self,guitar,guitar_weight)
+  GuitarPosture.head(self,guitar_weight,look,dt)
  arm_error=0;guitar_elbows.clear()
  for i in range(2):
   var suffix="_l" if i==0 else "_r";var sign=1 if i==0 else -1
@@ -226,7 +293,7 @@ func tick(dt:float,moving:bool,speed:float,pose:String,guitar:Node3D,look:Vector
   var target=global_pose("hand"+suffix).origin
   if guitar and guitar_weight>0:
    var point=Vector3(.062,.586,.071) if i==0 else Vector3(-.015+sin(motion_time*5.5)*.030,.145+cos(motion_time*5.5)*.008,.087)
-   if uses_revision:point=Vector3(.062,.550,.022) if i==0 else Vector3(-.084+sin(motion_time*5.5)*.015,.106+cos(motion_time*5.5)*.003,.132)
+   if uses_revision:point=Vector3(.090,.510,.012) if i==0 else Vector3(-.084+sin(motion_time*5.5)*.015,.060+cos(motion_time*5.5)*.003,.105)
    var desired=to_local(guitar.to_global(point))
    target=target.lerp(desired,guitar_weight)
   if reaction_weight>0 and i==1:
@@ -236,7 +303,10 @@ func tick(dt:float,moving:bool,speed:float,pose:String,guitar:Node3D,look:Vector
   if pose in ["happy","wave"] and i==0:target=shoulder+Vector3(.21,.27,.10+sin(motion_time*8)*.06)
   var elbow_pole=Vector3(sign,.05,-.35)
   if guitar:elbow_pole=elbow_pole.lerp(Vector3(.25,-1,.25) if i==0 else Vector3(-.65,.10,-.10),guitar_weight)
-  if guitar_weight>0 or reaction_weight>0 or pose=="kick":solve_limb("upperarm"+suffix,"lowerarm"+suffix,"hand"+suffix,target,elbow_pole)
+  if uses_revision:elbow_pole=Vector3(sign,.05,-.35).lerp(Vector3(.25,-1,.35) if i==0 else Vector3(-.75,-.20,.10),guitar_weight)
+  if guitar_weight>0 or reaction_weight>0 or pose=="kick":
+   var strength=guitar_weight if uses_revision and reaction_weight==0 and pose!="kick" else 1.0
+   solve_limb("upperarm"+suffix,"lowerarm"+suffix,"hand"+suffix,target,elbow_pole,strength)
   if seated:guitar_elbows.append(global_pose("lowerarm"+suffix).origin)
   if guitar and guitar_weight>0:
    # Fingers cross the strings, while the palm faces the neck/soundboard.
@@ -252,8 +322,14 @@ func tick(dt:float,moving:bool,speed:float,pose:String,guitar:Node3D,look:Vector
    var desired_frame=Basis(palm_normal,direction,palm_normal.cross(direction)).orthonormalized()
    if uses_revision and i==0:
     var forward=(to_local(guitar.to_global(Vector3(0,0,1)))-to_local(guitar.global_position)).normalized()
-    direction=(-finger_direction*.55+forward*.84).normalized()
-    palm_normal=(-forward*.55-finger_direction*.84).normalized()
+    var neck_direction=(to_local(guitar.to_global(Vector3(0,1,0)))-to_local(guitar.global_position)).normalized()
+    direction=(-finger_direction*.45+neck_direction*.55+forward*.70).normalized()
+    palm_normal=(-forward-direction*(-forward).dot(direction)).normalized()
+    desired_frame=Basis(palm_normal,direction,palm_normal.cross(direction)).orthonormalized()
+   if uses_revision and i==1:
+    var neck_direction=(to_local(guitar.to_global(Vector3(0,1,0)))-to_local(guitar.global_position)).normalized()
+    direction=(finger_direction*.84+neck_direction*.54-palm_normal*.25).normalized()
+    palm_normal=(palm_normal-direction*palm_normal.dot(direction)).normalized()
     desired_frame=Basis(palm_normal,direction,palm_normal.cross(direction)).orthonormalized()
    var wrist_basis=desired_frame*source_frame.inverse()*rest["hand"+suffix].basis
    if i==1:wrist_basis=Basis(-palm_normal,-.045+sin(motion_time*5.5)*.04)*wrist_basis
@@ -298,17 +374,18 @@ func tick(dt:float,moving:bool,speed:float,pose:String,guitar:Node3D,look:Vector
  if guitar and guitar_weight>0 and uses_revision:
   var front=(to_local(guitar.to_global(Vector3(0,0,1)))-to_local(guitar.global_position)).normalized()
   # Two stopped strings form E minor; the remaining fingers are relaxed.
-  for entry in [["index",.0,.596,.087],["middle",-.010,.568,.064],["ring",-.003,.559,.064],["pinky",.014,.521,.093]]:
+  for entry in [["index",.010,.603,.089],["middle",-.010,.568,.064],["ring",-.003,.559,.064],["pinky",.002,.523,.100]]:
    var point=Vector3(entry[1],entry[2],entry[3])
    var bone=entry[0]+"_04_leaf_l"
-   fit_finger(entry[0],global_pose(bone).origin.lerp(to_local(guitar.to_global(point)),guitar_weight),"_l",front)
-  var thumb_target=to_local(guitar.to_global(Vector3(.003,.552,.024)))
+   var target=global_pose(bone).origin.lerp(to_local(guitar.to_global(point)),guitar_weight)
+   fit_playing_finger(entry[0],target,"_l",front)
+  var thumb_target=to_local(guitar.to_global(Vector3(.015,.552,.024)))
   var thumb_pole=(to_local(guitar.to_global(Vector3(.35,0,-1)))-to_local(guitar.global_position)).normalized()
   fit_finger("thumb",global_pose("thumb_04_leaf_l").origin.lerp(thumb_target,guitar_weight),"_l",thumb_pole)
   # The nail of the index finger sweeps the strings; no invisible pick is used.
   var stroke=sin(motion_time*5.5)
   var picking=to_local(guitar.to_global(Vector3(stroke*.024,.100,.062+pow(absf(stroke),6)*.007)))
-  fit_finger("index",global_pose("index_04_leaf_r").origin.lerp(picking,guitar_weight),"_r",front)
+  fit_playing_finger("index",global_pose("index_04_leaf_r").origin.lerp(picking,guitar_weight),"_r",front)
  if guitar and guitar_weight>0 and not uses_revision:
   # Distinct string contacts: fingertips form an arch rather than a closed fist.
   var fingers=["index","middle","ring","pinky"]
@@ -324,6 +401,7 @@ func tick(dt:float,moving:bool,speed:float,pose:String,guitar:Node3D,look:Vector
   var tip=to_local(guitar.to_global(Vector3(.027,.616,.018)))
   tip=global_pose("thumb_04_leaf_l").origin.lerp(tip,guitar_weight)
   align_bone("thumb_03_l","thumb_04_leaf_l",tip-global_pose("thumb_03_l").origin)
+ if uses_revision:blend_revision_transition(dt)
  skeleton.force_update_all_bone_transforms()
  var blink_phase=fposmod(motion_time,blink_period)
  var blink=sin(blink_phase/.17*PI) if blink_phase<.17 else 0.0
