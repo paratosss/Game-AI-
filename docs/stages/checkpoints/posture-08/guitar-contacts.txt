@@ -1,0 +1,14 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+{
+  "failures": [],
+  "max_finger_length_error_m": 0.0000000670552253723145,
+  "max_stopped_finger_to_string_distance_m": 0.0050051137804985,
+  "max_wrist_error_m": 0.000000127315573195119,
+  "right_hand_min_soundboard_z_m": 0.0620107129216194,
+  "right_hand_min_string_gap_m": 0.000500167900095251,
+  "sampled_hand_vertices": 28549,
+  "sampled_poses": 24,
+  "status": "PASS"
+}
+GUITAR_CONTACTS_05_PASS failures=0

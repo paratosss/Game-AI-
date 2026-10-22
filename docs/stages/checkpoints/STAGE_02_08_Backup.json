@@ -1,0 +1,260 @@
+{
+  "date": "2026-10-22",
+  "source_commit": "05c87b9171f1791e36ff7782a9edea5103c1830e",
+  "archives": [
+    {
+      "file": "Shashlik_Stage02_Posture_08_Source.zip",
+      "bytes": 759094590,
+      "sha256": "eb3f96c61d2b91242c746f5f19d42b2554814076c256ed3f293c5c8d592437ee",
+      "crc": "PASS",
+      "entries": 747
+    },
+    {
+      "file": "Shashlik_Stage02_Posture_08_Review.zip",
+      "bytes": 16127914,
+      "sha256": "db48b8a7f7c7d1237ef6a647ec93b6213eaee134a38da4c8cedcd576341252ba",
+      "crc": "PASS",
+      "entries": 32
+    }
+  ],
+  "extracted_root": "/workspace/checkpoints/verify-posture-08/Shashlik_Stage02_Posture_08",
+  "checks": {
+    "clean-import": {
+      "exit_code": 0,
+      "markers": [],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 97.1,
+      "log": "posture-08/clean-import.txt"
+    },
+    "hero-revision": {
+      "exit_code": 0,
+      "markers": [
+        "HERO_VALIDATION_04_PASS failures=0"
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 5.0,
+      "log": "posture-08/hero-revision.txt"
+    },
+    "hero-original": {
+      "exit_code": 0,
+      "markers": [
+        "HERO_VALIDATION_04_PASS failures=0"
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 3.1,
+      "log": "posture-08/hero-original.txt"
+    },
+    "guitar-contacts": {
+      "exit_code": 0,
+      "markers": [
+        "GUITAR_CONTACTS_05_PASS failures=0"
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 4.6,
+      "log": "posture-08/guitar-contacts.txt"
+    },
+    "posture-contacts": {
+      "exit_code": 0,
+      "markers": [
+        "POSTURE_CONTACTS_08_PASS"
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 5.9,
+      "log": "posture-08/posture-contacts.txt"
+    },
+    "body-deformation": {
+      "exit_code": 0,
+      "markers": [
+        "BODY_DEFORMATION_06_PASS failures=0"
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 3.2,
+      "log": "posture-08/body-deformation.txt"
+    },
+    "scene-self-test": {
+      "exit_code": 0,
+      "markers": [
+        "ALINA_REVISION_ACTOR_CONFIRMED shapes=63",
+        "GUITAR_REVISION_CONFIRMED geometry_version=5",
+        "ALINA_BODY_REVISION_CONFIRMED bones=67",
+        "SELF_TEST_04_PASS"
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 169.7,
+      "log": "posture-08/scene-self-test.txt"
+    }
+  },
+  "started_without_godot_cache": true,
+  "archives_uploaded_to_github_release": false,
+  "tracked_files_match_before_import": 684,
+  "cpu_verification_complete": true,
+  "capture_dependencies_match_archive": true,
+  "media": [
+    {
+      "file": "docs/stages/evidence/posture-08/transitions/standing.png",
+      "sha256": "c4536ab493dc719d39df616dea6f3aeaef4f20c5c083bf9246924831a2378be5",
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/posture-08/transitions/return-050.png",
+      "sha256": "f844f1043c519f51dde766831e214ffad2b6faa2810eb4b865b341fda85d2d0d",
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/posture-08/transitions/return-017.png",
+      "sha256": "5732fb6843264a7f874d704e47dad282cf2fc220d9ea15379aa2dc79f5e205ee",
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/posture-08/transitions/rise-017.png",
+      "sha256": "75e6b08f0182b56ac189faa52f071de53679e9e7aa16812d6987319ca9eff773",
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/posture-08/transitions/rise-085.png",
+      "sha256": "e0a1ec22da73bfa5e38f97931939587a3d199b66eef6554bef621eab21b5c7d5",
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/posture-08/transitions/return-150.png",
+      "sha256": "59694005052a361a19a2b859bb870c34dc1b7712949b3937956b8771a9ede1be",
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/posture-08/transitions/rise-050.png",
+      "sha256": "165466b8423805d0f04c68d2f3c2a9356d1ad1f91d210133de2aae05bb1f1339",
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/posture-08/world/seated-front.png",
+      "sha256": "33f3f14b0876be7fbfc13c9f713106640436e743adb162a1cae80e807138e98b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/posture-08/world/guitar-hands.png",
+      "sha256": "7fcf0e487dfbd5c81ecb0565f23233c845279baaa2ab49948426e7c03c58e643",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/posture-08/world/seated-face.png",
+      "sha256": "de040e85a480cdeac2df7eb9ea66509b676772af79665a4d1673e36e7ccdda35",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/posture-08/world/seated-side.png",
+      "sha256": "444f9ec9607312ba22c93c4d677fe85435a3387fb492c81c03332729c5f1c43a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/posture-08/world-1440/seated-front.png",
+      "sha256": "945251e27ab392448a9ba0e73c0e050a4f2480fac8562011103a222efab2ab8e",
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/posture-08/neutral/seated-neutral.png",
+      "sha256": "847270f5ef8d4858bf0f39506f2f02f5922605cf57287ab467d7ca8dc1b2d058",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/posture-08/neutral/head-three-quarter.png",
+      "sha256": "404e4e996ab14308e99b169b647efcbb57973a089a576a295fba5107813a068c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/posture-08/neutral/fretting-hand.png",
+      "sha256": "4348e884bdcd9289b8d5a89dc66b15658809aa72d7069472ad54cfaf733d69af",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/posture-08/neutral/support-side.png",
+      "sha256": "1e5ad4b39b7c4835a9f84e13d654af7337633657d60d3f3e831d9e3915162235",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/posture-08/neutral/seated-side.png",
+      "sha256": "6707839c505f68a7597478e973adffbe03caceabbaf5147f433e027de4a30424",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/posture-08/neutral/support-full.png",
+      "sha256": "5185abb60f13a1da34e4b373807422ff71d9bfee1b6a4f661ab1fd9022fac465",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/posture-08/neutral/strumming-hand.png",
+      "sha256": "39198faeef6d1f7fa74b33b6903c27939ca412153dd6b0ac8d02d585db22f390",
+      "size": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "unchanged_character_GLB_verified": true,
+  "all_verification_complete": true,
+  "github_source_commit_verified": "05c87b9171f1791e36ff7782a9edea5103c1830e",
+  "local_archive_directory": "/workspace/checkpoints",
+  "renderer": "Forward+ software Vulkan; user RTX 5080 performance not measured",
+  "scope": "Intermediate coordinated playing pose. Early return grip/foot support, anatomical neck/shoulder/hand shape and full motion remain open.",
+  "visual_review": "19 individually reviewed snapshots, not video. Transition sampling retains temporal history."
+}

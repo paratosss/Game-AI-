@@ -42,7 +42,9 @@
 
 ## Сохранение и повторение
 
-Промежуточный коммит `3c493f8033f0483f5649ea659faf2db894a1f66e` отправлен на GitHub, удалённый SHA подтверждён. Финальная source-версия, отдельные Source/Review ZIP, CRC/SHA и результаты свежей распаковки/импорта/запуска фиксируются последующим коммитом отчётности в `checkpoints/STAGE_02_08_Backup.json`. До появления записи архивная проверка не считается завершённой. Предыдущие точки 06/05/04 сохраняются.
+Промежуточный коммит `3c493f8033f0483f5649ea659faf2db894a1f66e` отправлен на GitHub, удалённый SHA подтверждён. Финальный source-коммит `05c87b9171f1791e36ff7782a9edea5103c1830e` подтверждён на GitHub. Source ZIP — 759,094,590 байт; Review ZIP — 16,127,914 байт. CRC/SHA и свежая распаковка проверены, все 684 исходных файла совпали до импорта. Чистый импорт, обе проверки героя, контакты кисти/опоры, деформация предплечий и игровой self-test `alina_preview.tscn` через Forward+ завершились с кодами 0, ошибок нет (семь процессов). Подтверждены 63 формы головы, 67 костей и новая гитара. SHA ресурсов всех 19 снимков совпадают с архивной версией; оба неизменённых GLB сверены с контрольными суммами итерации 06. [Точная запись и журналы](checkpoints/STAGE_02_08_Backup.json).
+
+Готовые файлы: `/workspace/checkpoints/Shashlik_Stage02_Posture_08_Source.zip` и `/workspace/checkpoints/Shashlik_Stage02_Posture_08_Review.zip`. ZIP локальные, в Release не публиковались; исходники/кадры отправлены на GitHub. Итоговая запись сохранения добавлена отдельным коммитом после проверки исходного архива; source-коммит ZIP не меняется. Предыдущие архивы не перезаписывались.
 
 Облачный запуск: `source /workspace/.cloud-tools/godot-env.sh`, затем `shashlik-forward-render res://alina_preview.tscn`. Проверки: `shashlik-godot --headless --script res://tests/posture_contacts.gd`, существующие `hero_validation.gd -- --alina-revision`, `guitar_contacts.gd`, `body_deformation.gd`. На Windows открыть `game/project.godot` в Godot 4.5.1 и запустить сцену `alina_preview.tscn` (F6).
 
