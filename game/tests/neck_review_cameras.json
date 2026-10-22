@@ -1,0 +1,15 @@
+{
+  "source": "Anatomy review 10, unchanged cameras for before/after comparisons.",
+  "targets": {
+    "neutral": [
+      1.34070687291357e-14,
+      1.4211813211441,
+      0.0396212786436081
+    ],
+    "guitar": [
+      0.00368994660675526,
+      1.20773184299469,
+      0.107963271439075
+    ]
+  }
+}

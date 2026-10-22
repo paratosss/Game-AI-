@@ -78,6 +78,8 @@ func save_metadata():
   if anatomy_revision:
    for path in ["res://scripts/alina_anatomy_revision.gd","res://assets/characters/studies/AlinaAnatomy09.glb","res://assets/characters/studies/AlinaAnatomy09.glb.import","res://assets/characters/studies/ALINA_ANATOMY_09_MANIFEST.json"]:dependencies[path]=FileAccess.get_sha256(path)
   dependencies["res://scripts/guitar_posture.gd"]=FileAccess.get_sha256("res://scripts/guitar_posture.gd")
+  for path in ["res://scripts/alina_neck_revision.gd","res://assets/characters/studies/AlinaNeck11.glb","res://assets/characters/studies/AlinaNeck11.glb.import","res://assets/characters/studies/ALINA_NECK_11_MANIFEST.json"]:
+   dependencies[path]=FileAccess.get_sha256(path)
   for path in ["res://scripts/alina_body_revision.gd","res://assets/characters/studies/AlinaBody06.glb","res://assets/characters/studies/AlinaBody06.glb.import","res://assets/characters/studies/ALINA_BODY_06_MANIFEST.json"]:
    dependencies[path]=FileAccess.get_sha256(path)
   for path in ["res://scripts/guitar_quality.gd","res://assets/shaders/instrument_wood.gdshader"]:

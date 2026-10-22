@@ -86,10 +86,16 @@ static func inside_body(point:Vector3,outline:PackedVector2Array)->bool:
 static func head(skin,weight:float,look:Vector3,dt:float):
  # Set global attitudes to remove the exaggerated native sit-neck bend; let
  # the gaze descend towards the playing area without collapsing the neck.
- var target=Vector2(.22,.40)
+ var target=Vector2(.16,.28) if skin.uses_neck else Vector2(.22,.40)
  if look.length()>.1:
   var direction:Vector3=skin.to_local(look)-skin.global_pose("Head").origin
   target=Vector2(clampf(atan2(direction.x,direction.z),-.40,.40),clampf(atan2(-direction.y,Vector2(direction.x,direction.z).length()),-.15,.45))
  skin.guitar_gaze=skin.guitar_gaze.lerp(target,1.0-exp(-dt*7.0))
- blend_basis(skin,"neck_01",Basis(Vector3.UP,skin.guitar_gaze.x*.25)*Basis(Vector3.RIGHT,skin.guitar_gaze.y*.1875)*skin.rest.neck_01.basis,weight)
+ if skin.uses_neck:
+  # The cervical chain continues the thorax instead of bending backwards from
+  # its 0.18-rad attitude and concentrating the whole gaze on the head joint.
+  var thoracic:Basis=skin.global_pose("spine_03").basis*skin.rest.spine_03.basis.inverse()*skin.rest.neck_01.basis
+  var aimed:Basis=Basis(Vector3.UP,skin.guitar_gaze.x*.4)*Basis(Vector3.RIGHT,skin.guitar_gaze.y)*skin.rest.neck_01.basis
+  blend_basis(skin,"neck_01",Basis(thoracic.get_rotation_quaternion().slerp(aimed.get_rotation_quaternion(),.45)),weight)
+ else:blend_basis(skin,"neck_01",Basis(Vector3.UP,skin.guitar_gaze.x*.25)*Basis(Vector3.RIGHT,skin.guitar_gaze.y*.1875)*skin.rest.neck_01.basis,weight)
  blend_basis(skin,"Head",Basis(Vector3.UP,skin.guitar_gaze.x)*Basis(Vector3.RIGHT,skin.guitar_gaze.y)*Basis(Vector3.FORWARD,.025)*skin.rest.Head.basis,weight)

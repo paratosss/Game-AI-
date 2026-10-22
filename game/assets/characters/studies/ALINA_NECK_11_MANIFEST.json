@@ -1,0 +1,22 @@
+{
+  "source_unfolded": "AlternativeHeadStudy.glb",
+  "source_unfolded_sha256": "d25b7b4a8c2eb8ff8f5c2245089afb63b235a8d022353ff5a7abbbdae5734436",
+  "previous_overlay": "AlinaAnatomy09.glb",
+  "previous_overlay_sha256": "2db1ac961d16a6c5edf0f2b867a6b47ac357b301e91067a9088271cdcdc6c266",
+  "file": "assets/characters/studies/AlinaNeck11.glb",
+  "bytes": 21592316,
+  "sha256": "00aac4a557108a74eef01fb6233770f7babac2dcb131e51843591cb1cf053371",
+  "bones": 67,
+  "facial_shapes": 63,
+  "changed_vertices": 3971,
+  "maximum_base_displacement_m": 0.0603848003483157,
+  "source_mapping_error_m": 1.2287812012345967e-07,
+  "fit": "Oblique lower bust boundary smoothly extended to 1.240 m, under the shirt; then whole horizontal sections translated by up to 48 mm, smooth height falloff 1.275..1.365 m. Both maps preserve orientation. Facial morph offsets retained.",
+  "lower_boundary_fit_coefficients": [
+    1.2653427827919042,
+    -0.3724392894583735,
+    0.05892711713922527
+  ],
+  "weights": "Head smoothstep 1.300..1.365 m; remaining influence smoothly shared neck/spine over 1.265..1.315 m. Separate eyes/mouth/hair remain rigid.",
+  "scope": "Cervical reconstruction and weights. Body/clothing from iteration 09 unchanged; full anatomy not certified."
+}

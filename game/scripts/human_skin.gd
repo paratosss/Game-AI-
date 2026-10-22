@@ -34,6 +34,7 @@ var foot_weights=[0.0,0.0]
 var revision_mouth_local=Vector3.ZERO
 var uses_revision=false
 var uses_anatomy=false
+var uses_neck=false
 var guitar_gaze=Vector2(.22,.40)
 var native_poses=[]
 var previous_upper_rotations={}
@@ -50,6 +51,8 @@ func setup(who:String,col:Color)->Dictionary:
   load("res://scripts/alina_revision_materials.gd").apply(native)
   uses_anatomy=get_parent().get_parent().get_meta("anatomy_revision",true)
   if uses_anatomy:load("res://scripts/alina_anatomy_revision.gd").apply(native)
+  uses_neck=uses_anatomy and get_parent().get_parent().get_meta("neck_revision",true)
+  if uses_neck:load("res://scripts/alina_neck_revision.gd").apply(native)
  skeleton=native.find_children("*","Skeleton3D",true,false)[0]
  native_animation=native.find_children("*","AnimationPlayer",true,false)[0]
  for m in native.find_children("*","MeshInstance3D",true,false):
