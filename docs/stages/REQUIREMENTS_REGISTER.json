@@ -9,8 +9,8 @@
       "object": "Все",
       "requirement": "Продолжать с последней восстановленной версии",
       "status": "проверено",
-      "finding": "Актуальная проверенная архивная основа — итерация 08, source 05c87b9; точки 06/05/04 и исходные архивы сохранены",
-      "evidence": "docs/LATEST_STATE_RU.md; docs/stages/checkpoints/STAGE_02_08_Backup.json",
+      "finding": "Актуальная проверенная архивная основа — итерация 09, source f882c48; точки 08/06/05/04 и исходные архивы сохранены",
+      "evidence": "docs/LATEST_STATE_RU.md; docs/stages/checkpoints/STAGE_02_09_Backup.json",
       "next_action": "Продолжать с новой проверенной точки, сохранять следующие итерации отдельно"
     },
     {
@@ -509,8 +509,8 @@
       "object": "Сохранение",
       "requirement": "Отдельный файл и резервная версия каждого этапа",
       "status": "проверено",
-      "finding": "Итерация 08 сохранена отдельным отчётом, 19 снимками, GitHub-коммитом и Source/Review ZIP. CRC/SHA, свежая распаковка/импорт/запуск пройдены; ZIP локальные",
-      "evidence": "docs/stages/STAGE_02_Posture_08_RU.md; docs/stages/checkpoints/STAGE_02_08_Backup.json",
+      "finding": "Итерация 09 сохранена отдельным отчётом, 17 снимками, GitHub-коммитом и Source/Review ZIP. CRC/SHA, свежая распаковка и девять проверок пройдены; ZIP локальные",
+      "evidence": "docs/stages/STAGE_02_Anatomy_09_RU.md; docs/stages/checkpoints/STAGE_02_09_Backup.json",
       "next_action": "Фиксировать и отправлять следующие отчёты и версии"
     }
   ],

@@ -1,0 +1,266 @@
+{
+  "date": "2026-10-22",
+  "source_commit": "f882c4856604906a49f6b5de3219896ac697bd2f",
+  "archives": [
+    {
+      "file": "Shashlik_Stage02_Anatomy_09_Source.zip",
+      "bytes": 789228822,
+      "sha256": "08062a38470bdbe3d224ea68ef9aa804a05a77ca94d0a4918108e2e24a7fe7e5",
+      "crc": "PASS",
+      "entries": 812
+    },
+    {
+      "file": "Shashlik_Stage02_Anatomy_09_Review.zip",
+      "bytes": 15979791,
+      "sha256": "47b3ac94369f9a68dd96b0973e71374a88d49e5f3cb6fd357f661b375ea4a56e",
+      "crc": "PASS",
+      "entries": 34
+    }
+  ],
+  "extracted_root": "/workspace/checkpoints/verify-anatomy-09/Shashlik_Stage02_Anatomy_09",
+  "checks": {
+    "clean-import": {
+      "exit_code": 0,
+      "markers": [],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 109.3,
+      "log": "anatomy-09/clean-import.txt"
+    },
+    "hero-revision": {
+      "exit_code": 0,
+      "markers": [
+        "HERO_VALIDATION_04_PASS failures=0"
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 5.2,
+      "log": "anatomy-09/hero-revision.txt"
+    },
+    "hero-original": {
+      "exit_code": 0,
+      "markers": [
+        "HERO_VALIDATION_04_PASS failures=0"
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 3.1,
+      "log": "anatomy-09/hero-original.txt"
+    },
+    "guitar-contacts": {
+      "exit_code": 0,
+      "markers": [
+        "GUITAR_CONTACTS_05_PASS failures=0"
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 4.6,
+      "log": "anatomy-09/guitar-contacts.txt"
+    },
+    "posture-contacts": {
+      "exit_code": 0,
+      "markers": [
+        "POSTURE_CONTACTS_08_PASS"
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 5.9,
+      "log": "anatomy-09/posture-contacts.txt"
+    },
+    "body-deformation": {
+      "exit_code": 0,
+      "markers": [
+        "BODY_DEFORMATION_06_PASS failures=0"
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 3.3,
+      "log": "anatomy-09/body-deformation.txt"
+    },
+    "anatomy-export-audit": {
+      "exit_code": 0,
+      "markers": [
+        "\"status\": \"PASS\""
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 0.3,
+      "log": "anatomy-09/anatomy-export-audit.txt"
+    },
+    "anatomy-deformation": {
+      "exit_code": 0,
+      "markers": [
+        "ANATOMY_DEFORMATION_09_PASS"
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 2.9,
+      "log": "anatomy-09/anatomy-deformation.txt"
+    },
+    "scene-self-test": {
+      "exit_code": 0,
+      "markers": [
+        "ALINA_REVISION_ACTOR_CONFIRMED shapes=63",
+        "GUITAR_REVISION_CONFIRMED geometry_version=5",
+        "ALINA_BODY_REVISION_CONFIRMED bones=67",
+        "ALINA_ANATOMY_REVISION_CONFIRMED shapes=7 bones=67",
+        "SELF_TEST_04_PASS"
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 177.0,
+      "log": "anatomy-09/scene-self-test.txt"
+    }
+  },
+  "started_without_godot_cache": true,
+  "archives_uploaded_to_github_release": false,
+  "tracked_files_match_before_import": 741,
+  "cpu_verification_complete": true,
+  "capture_dependencies_match_archive": true,
+  "media": [
+    {
+      "file": "docs/stages/evidence/anatomy-09/after-clay/neck-front.png",
+      "sha256": "21e789dbb0a980df034ce4e452f293996d96b005ccdcc83e4f0673184c9e301e",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/anatomy-09/after-clay/neutral-front.png",
+      "sha256": "42d4234aeb9a9131056d4ffcc8edfd50f839f299cc1fa4358b6b2fd1b07b5ab5",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/anatomy-09/after-clay/neck-side.png",
+      "sha256": "2a33d0733b8efc4a3bcc2836d3bf0b756ac530e2cace27b9d8912f90b79ca117",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/anatomy-09/after-clay/neutral-side.png",
+      "sha256": "33af4035c2203492584a89bf5a774eef93555e260086b5aee2090e963a75b4f1",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/anatomy-09/after-elbows/elbow-flex-front.png",
+      "sha256": "38805e7127f38b268108172efc8bc5692d8aa6573dd5e6a794ba53f2db518d31",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/anatomy-09/after-elbows/elbow-flex-back.png",
+      "sha256": "59818992114c513bc58bd2338925f4b03098260061656e36554ef81d82beb205",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/anatomy-09/world/seated-front.png",
+      "sha256": "08cdf6e31834cad58851883dfddd004513baa69f53491bc32b6f88545bf58105",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/anatomy-09/world/guitar-hands.png",
+      "sha256": "398187450207dc5371b2f48ebcd04cfab531908ca053cac79c871296a3a1ed3e",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/anatomy-09/world/seated-face.png",
+      "sha256": "3d644dbe7abfdf72d6ea69dcc2586725fe1650e02cf31d0c0a6a5cf6ad026a2e",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/anatomy-09/world/seated-side.png",
+      "sha256": "9dad1b19b75428a735c0c649b67fc8261f12d71b1a9b2585ef66b9fff11eea97",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/anatomy-09/before-elbows/elbow-flex-front.png",
+      "sha256": "6510c69997e1c61d75889a9bbc060aa2153fe260ce21a27709aa924177dac0b2",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/anatomy-09/before-elbows/elbow-flex-back.png",
+      "sha256": "88b30bfb5c7a885c60fce4bae308e04145b5b3ee00694643e28304fff2b76f8a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/anatomy-09/world-1440/seated-front.png",
+      "sha256": "f4c7a4b868a8de0c562304b0808843b0c70ec4d73bc9c14fb1937463b4a31b0b",
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/anatomy-09/before-clay/neck-front.png",
+      "sha256": "6f3ec175954ee6a21058081b90ec67093aed6f5df12f0a571d50988427f39e03",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/anatomy-09/before-clay/neutral-front.png",
+      "sha256": "360951fc00181186762e5f4863398cbb10237b45d4c7ddc37a97fcc2a1eeb9e6",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/anatomy-09/before-clay/neck-side.png",
+      "sha256": "2d549d9fd99038008bf040b52af195b49c422404875ef421217e4ec6fc5a9cb6",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/anatomy-09/before-clay/neutral-side.png",
+      "sha256": "8d932fe71ff7ec3761cc35e3f5cf0d094d2703eafb1cd02d5349059864688e9e",
+      "size": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "unchanged_character_GLB_verified": true,
+  "all_verification_complete": true,
+  "github_source_commit_verified": "f882c4856604906a49f6b5de3219896ac697bd2f",
+  "local_archive_directory": "/workspace/checkpoints",
+  "renderer": "Forward+ software Vulkan; user RTX 5080 performance not measured",
+  "scope": "Partial upper-body surface pass: cervical/arm shape, shoulder cloth, two elbow flexion correctives. Whole-body anatomy, skeletal proportions, shoulders/hands/clothing and full motion remain open. Pelvis and legs unchanged.",
+  "visual_review": "17 individually reviewed snapshots, not video. Baseline/after diagnostic cameras within 1 micrometer; four world cameras equal iteration 08. Native 1440p file viewed through resized viewer.",
+  "external_body_candidates_in_game": false
+}

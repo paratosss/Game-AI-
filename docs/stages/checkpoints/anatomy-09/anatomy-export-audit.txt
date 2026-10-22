@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "source_sha256": "2db1ac961d16a6c5edf0f2b867a6b47ac357b301e91067a9088271cdcdc6c266",
+  "checks": {
+    "anatomyElbowFlex_l": {
+      "affected_export_vertices": 975,
+      "maximum_delta_m": 0.001700810738839209,
+      "maximum_forearm_weight": 0.7992687225341797
+    },
+    "anatomyElbowFlex_r": {
+      "affected_export_vertices": 975,
+      "maximum_delta_m": 0.0017008038703352213,
+      "maximum_forearm_weight": 0.7992687821388245
+    },
+    "Human": {
+      "changed_export_vertices": 13588,
+      "maximum_base_delta_m": 0.004206573590636253,
+      "shape_count": 7,
+      "named_bindings": 67
+    },
+    "AlinaRevisionHead": {
+      "changed_export_vertices": 3090,
+      "maximum_base_delta_m": 0.016494598239660263,
+      "shape_count": 63,
+      "named_bindings": 67
+    },
+    "Human.female_casualsuit01": {
+      "changed_export_vertices": 1927,
+      "maximum_base_delta_m": 0.004995584487915039,
+      "shape_count": 0,
+      "named_bindings": 67
+    }
+  },
+  "limitations": "Export and selected geometric checks; not certification of whole-body anatomy or artistic acceptance."
+}

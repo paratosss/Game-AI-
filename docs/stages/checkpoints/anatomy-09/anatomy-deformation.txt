@@ -1,0 +1,22 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+{
+  "failures": [],
+  "inner_radial_change_m": -0.00124822149518877,
+  "jaw_expression_peak": 0.0688624158501625,
+  "limitation": "Selected elbow anchors and exported integrity; no certification of whole-body anatomy or full surface contact.",
+  "maximum_corrective_displacement_m": 0.00145804963540286,
+  "maximum_corrective_weights": [
+    0.9930499792099,
+    0.998385787010193
+  ],
+  "maximum_mapping_error_m": 0.0,
+  "minimum_corrective_weights": [
+    0.00412047700956464,
+    0.017665995284915
+  ],
+  "outer_radial_change_m": 0.00145804323256016,
+  "probe_samples": 768,
+  "status": "PASS"
+}
+ANATOMY_DEFORMATION_09_PASS
