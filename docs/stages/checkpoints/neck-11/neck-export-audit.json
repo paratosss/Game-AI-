@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "source_sha256": "00aac4a557108a74eef01fb6233770f7babac2dcb131e51843591cb1cf053371",
+  "bones": 67,
+  "facial_channels": 63,
+  "unchanged_topology_uv_and_morph_deltas": true,
+  "maximum_morph_delta_error_m": 7.450580596923828e-09,
+  "maximum_protected_face_hair_error_m": 1.212866607147589e-07,
+  "changed_export_vertices": 3970,
+  "maximum_displacement_m": 0.06038479879498482,
+  "static_neck_intersections": {
+    "pairs": 0,
+    "tested_pairs": 1121,
+    "examples": []
+  },
+  "maximum_adjacent_head_weight_jump_anterior_roi": 0.10184842348098755,
+  "lower_open_boundary_vertices": 68,
+  "lower_boundary_height_range_m": [
+    1.2374614477157593,
+    1.2430472373962402
+  ],
+  "limitation": "Localized geometry and compatibility checks. Not full character anatomical acceptance."
+}

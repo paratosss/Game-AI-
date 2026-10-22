@@ -1,0 +1,760 @@
+{
+  "date": "2026-10-22",
+  "source_commit": "2fbd62bc0f839ef1f7dc1953b8e668a5d86375de",
+  "archives": [
+    {
+      "file": "Shashlik_Stage02_Neck_11_Source.zip",
+      "bytes": 827560996,
+      "sha256": "69587b6eb402a583894a41d9bcf5d414703b8b8ba1d0a67e3429f2c4b69a4f50",
+      "crc": "PASS",
+      "entries": 999
+    },
+    {
+      "file": "Shashlik_Stage02_Neck_11_Review.zip",
+      "bytes": 21370062,
+      "sha256": "b335cff15894fe40734d65630aef9e73ab92ae96a826eefb580a92c8f8af794b",
+      "crc": "PASS",
+      "entries": 88
+    }
+  ],
+  "extracted_root": "/workspace/checkpoints/verify-neck-11/Shashlik_Stage02_Neck_11",
+  "checks": {
+    "clean-import": {
+      "exit_code": 0,
+      "markers": [],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 129.9,
+      "log": "neck-11/clean-import.txt"
+    },
+    "hero-revision": {
+      "exit_code": 0,
+      "markers": [
+        "HERO_VALIDATION_04_PASS failures=0"
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 5.7,
+      "log": "neck-11/hero-revision.txt"
+    },
+    "hero-original": {
+      "exit_code": 0,
+      "markers": [
+        "HERO_VALIDATION_04_PASS failures=0"
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 3.4,
+      "log": "neck-11/hero-original.txt"
+    },
+    "guitar-contacts": {
+      "exit_code": 0,
+      "markers": [
+        "GUITAR_CONTACTS_05_PASS failures=0"
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 5.3,
+      "log": "neck-11/guitar-contacts.txt"
+    },
+    "posture-contacts": {
+      "exit_code": 0,
+      "markers": [
+        "POSTURE_CONTACTS_08_PASS"
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 6.5,
+      "log": "neck-11/posture-contacts.txt"
+    },
+    "body-deformation": {
+      "exit_code": 0,
+      "markers": [
+        "BODY_DEFORMATION_06_PASS failures=0"
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 3.7,
+      "log": "neck-11/body-deformation.txt"
+    },
+    "anatomy-deformation": {
+      "exit_code": 0,
+      "markers": [
+        "ANATOMY_DEFORMATION_09_PASS"
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 3.1,
+      "log": "neck-11/anatomy-deformation.txt"
+    },
+    "neck-export-audit": {
+      "exit_code": 0,
+      "markers": [
+        "NECK_EXPORT_AUDIT_11_PASS"
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 4.5,
+      "log": "neck-11/neck-export-audit.txt"
+    },
+    "neck-live-poses": {
+      "exit_code": 0,
+      "markers": [
+        "NECK_LIVE_POSES_11_COMPLETE cases=11 bones=67 facial_shapes=63"
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 4.3,
+      "log": "neck-11/neck-live-poses.txt"
+    },
+    "neck-deformation": {
+      "exit_code": 0,
+      "markers": [
+        "NECK_DEFORMATION_11_PASS"
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 46.8,
+      "log": "neck-11/neck-deformation.txt"
+    },
+    "scene-self-test": {
+      "exit_code": 0,
+      "markers": [
+        "ALINA_REVISION_ACTOR_CONFIRMED shapes=63",
+        "GUITAR_REVISION_CONFIRMED geometry_version=5",
+        "ALINA_BODY_REVISION_CONFIRMED bones=67",
+        "ALINA_ANATOMY_REVISION_CONFIRMED shapes=7 bones=67",
+        "ALINA_NECK_REVISION_CONFIRMED version=11 shapes=63",
+        "SELF_TEST_04_PASS"
+      ],
+      "all_markers_found": true,
+      "errors": [],
+      "elapsed_s": 179.5,
+      "log": "neck-11/scene-self-test.txt"
+    }
+  },
+  "started_without_godot_cache": true,
+  "archives_uploaded_to_github_release": false,
+  "tracked_files_match_before_import": 920,
+  "cpu_verification_complete": true,
+  "new_capture_dependencies_match_archive": true,
+  "historical_capture_dependencies_match_historical_git": true,
+  "media": [
+    {
+      "file": "docs/stages/evidence/neck-11/world/seated-front.png",
+      "sha256": "75750e27933f3bd1a0b6772df34f15cf4ae605589b741d65a5be94a77b1b15c7",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/world/guitar-hands.png",
+      "sha256": "5f7662d5607ab9aa50c9616f2cef012036cfa21ad080ba2885745699eb65e3a6",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/world/seated-face.png",
+      "sha256": "f1e4f8b8f889832a04b512b99f3ab0343b784b7c7786cd2ff9d582cad0eb8f88",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/world/seated-side.png",
+      "sha256": "810c3c03d8c3db99bf01cf3f8db1fbfe5ad838b2115f739c6d102db13510882a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/guitar-neck-315.png",
+      "sha256": "8da1b98d4fe2520cabd83fb52bf841518d0c101888a7cd086363207a2b3eedec",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/guitar-neck-000.png",
+      "sha256": "55caa53a2490ed3fd49453c57809175a7cbe0e98204a15b552bb28aa6bd74643",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/neutral-neck-elevation--25.png",
+      "sha256": "af2884fa343d3d7303d9d1712e329ea62b0f158b866d286242a2b3d1276bf10b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/guitar-neck-090.png",
+      "sha256": "ccfe67741133665384ea1747778c4e49126748236d54ad9f746189d8618bea18",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/stress-up-090.png",
+      "sha256": "e24e1cda6d16f1e7717d38ba2650873d0cb0d8efffaca7dd852fe3999d2521fb",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/neutral-neck-exposed-000.png",
+      "sha256": "1db41367a88cf4b3732ddf5a11bbd7f9451bc9139e1e314b81b6c6270db10f5b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/neutral-neck-270.png",
+      "sha256": "ce351c1b088f1c349abe73009c57b0c20fc969ac1b60a522284005a4392ad894",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/neutral-neck-090.png",
+      "sha256": "6fe084d92dd32da418aebb6247741362dc30a05e9f37af9c876aeace028d86cf",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/neutral-neck-exposed-180.png",
+      "sha256": "ec33040f04e7a41260bff64000145601b36efe2551448b2e6d52f1df64ff83b8",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/stress-right-000.png",
+      "sha256": "4afd8c6fc9d2f80632f8d8d45cd711c79aca73d52fa4d13976df8ba095435492",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/stress-up-270.png",
+      "sha256": "11db7b7d5f1aea157b555d575b40c700ddbf05076eb470f542484bde5302a55f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/stress-left-270.png",
+      "sha256": "4bd6daffa6c8dda91dddad4c1ff8042d07d00b1dd1437bffd4e576b1e38d54ae",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/guitar-neck-elevation-25.png",
+      "sha256": "317a54b511614cf939f0ced6449a98b4282f4aa213218a860f1301081bcafe1b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/neutral-neck-135.png",
+      "sha256": "1dcbbd70f7dc2478223cdd9bd0c6b704f1100e9eaa2e246271f95b80c54ebc08",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/guitar-neck-exposed-000.png",
+      "sha256": "b9e869e2cb6240ca7eda5ccfed07eca7bff6164856219bb74d5fd3f4f93d5379",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/neutral-neck-315.png",
+      "sha256": "1094ae5c3831abb9bdc0c7ce160b34e61c2886dd9e8ad9fd7f8b2a5f28ad77f1",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/stress-diagonal-000.png",
+      "sha256": "9822678c4893b0ce695f1d6d55cf768258e1e082d06a92293958373cfb3e2a8f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/stress-diagonal-090.png",
+      "sha256": "37d0a95a126c1fb3a9145ca17b642063e965ac3f795cbc39c8b466341b83988b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/neutral-neck-elevation-25.png",
+      "sha256": "315b70f651e6000d6941d36aa417419d42683dcff8f3a17b6ee673fe4595ec56",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/guitar-neck-180.png",
+      "sha256": "584e724129fa30dfb355d68373e29b98a8b0bbc355cb5143cfda2efea176995b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/stress-up-000.png",
+      "sha256": "2c714ac98e25b7294660bfb3854c9a27a6eb26cfb96dbdb0179e2a2c35ff47ce",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/neutral-neck-045.png",
+      "sha256": "092bfbcdf85cd8e8cf9777939ddce8d3a4c60ce0594f70900ae68c37510eed06",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/guitar-neck-exposed-180.png",
+      "sha256": "b24aa01d30ccc49c195beea1cd5f61f76a606d712acaca703cbe3fcb3e7dc999",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/stress-right-090.png",
+      "sha256": "a38515890e7579e2e94924045b8a4aa3ae50ad25e29ed0b22b206b3bc427bf8c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/neutral-neck-180.png",
+      "sha256": "c8562dc166468f94605f73dfb763273220ce1f67994f9a90e7cbba19b0db6daa",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/stress-diagonal-270.png",
+      "sha256": "399d2a5d4fb2fbf73942ab04cdc15c1951fac7fc69eccbfb206d2825f7a99016",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/guitar-neck-045.png",
+      "sha256": "efb90aba7a4ef29646b419ca2c20a3424a72e573b23e60d153de61cfb0f701a7",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/stress-right-270.png",
+      "sha256": "29d20534cd2c0fcd7293f92438fd5d8530743acf4b28bbeffc6c77a8f0d294d5",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/stress-down-090.png",
+      "sha256": "a4fbfa3f73c4ec531c86afeac4db3abb998ff19b37ea3483f41a8c58b1e1ff76",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/neutral-neck-225.png",
+      "sha256": "18e5dc71f32c246786c89524eda04f05e3e39c02d95a728c7a2da34dea41b5ad",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/stress-down-270.png",
+      "sha256": "849b2786dae68767b636cc81e6097d55ddd4d4c175acaf6e5dab3ddcd9ff326f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/guitar-neck-135.png",
+      "sha256": "7e153929a4f6818cc37ea04d1093178270dd6f3c7072c5885dd59365e9dba8ad",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/neutral-neck-000.png",
+      "sha256": "6af75fd6a75762ab3c099c6f150c62a668b9247da7ec73d5efe2918dfdf2e718",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/guitar-neck-exposed-090.png",
+      "sha256": "d4b2bdfe04bfd407f500b12052d704fed77b2d241bf79515c1e95d49e81b3361",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/guitar-neck-elevation--25.png",
+      "sha256": "7574d88c9576f7c8d377ea6eae6f58057cd34856ac2e20740f16abf6a165a5b3",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/stress-left-090.png",
+      "sha256": "4f371e88ee622079244ff769d0d96e94090b642d86017d264236d7942c4ff804",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/guitar-neck-exposed-270.png",
+      "sha256": "19c870380ff2b2ab27d7bea34677e54c1f25fa00cd73d5083dcd1df681c65b3c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/guitar-neck-270.png",
+      "sha256": "9423aa423ffead5c12f18d1d43503c1e10e49fc93154289732cd4c695ced3640",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/stress-left-000.png",
+      "sha256": "dc7585d4e0e03e349d8f3567bd341ea114e3bd54de9837a74f1976af819659c5",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/neutral-neck-exposed-270.png",
+      "sha256": "959f8715d4604465c3efdfee5a62339fbffd7adc0f2cd5ff25fc5b17c9d20019",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/guitar-neck-225.png",
+      "sha256": "9eea299af312d557d650d3cfe77ef598b026072dcb4f933386c7a61cf842aa9a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/stress-down-000.png",
+      "sha256": "741aa6ec58d69527fa4973035bc40ea67fecf21e623ec764f793662f2e9e2704",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/after/neutral-neck-exposed-090.png",
+      "sha256": "67f45ec8c3c1df0f79adc75610d943521c8acb62c12a078abe604fba1d753ae1",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/guitar-neck-315.png",
+      "sha256": "62edb36e0078651bc0fe58be41f7e4b1562826bb218e0fddf893bca6755213de",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/guitar-neck-000.png",
+      "sha256": "d675e0085a9981b3c837deb3bacdb056b00b2c8ac8a7535ff79aa91e1d6ed6bc",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/neutral-neck-elevation--25.png",
+      "sha256": "8580dfb6ed613a8d933bae0ca18cc7c8998007743d7d0a8e0310a3e6bcbe9f76",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/guitar-neck-090.png",
+      "sha256": "40f44fced4386ec54807713818edb16f742761c1df79a610ef96f96efc600dcb",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/neutral-neck-exposed-000.png",
+      "sha256": "b9d0f808ce14d1be786860cc1bbd66e0536c8d1324cfeb7bbc1da9f9895a5f8e",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/neutral-neck-270.png",
+      "sha256": "ccc36b671ba17f890f3ed2ce5b297171e4b9b8acd9bb1a637a342b6b0358b12b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/neutral-neck-090.png",
+      "sha256": "7656e2e2f999be027b9cad5d096fab38bdd72da1effba158d54b23708696b63b",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/neutral-neck-exposed-180.png",
+      "sha256": "87b8d19310a8da585772fc6b33c55f00f057afc3b6f3e69ed1e6f7ef5050fe8e",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/guitar-neck-elevation-25.png",
+      "sha256": "ab5184338c22a475532b0cf14e9b738a9b38864a2a50cfccb0bf57bf5361cd73",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/neutral-neck-135.png",
+      "sha256": "62af34736fcde5ec0c384c9d3817bf06551300468497fcdf8f35e8241208894d",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/guitar-neck-exposed-000.png",
+      "sha256": "bfa076c244c5df5930226cdf9069a7bdca668af89ba5c5061ad410f2b0a87b2f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/neutral-neck-315.png",
+      "sha256": "5677f019677db4c3d1d1d8f67aeb91ca9ddef40594783bfe493872675afcfb4f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/neutral-neck-elevation-25.png",
+      "sha256": "88c4f22a75e32fd00d72e8cc9d3dfebfd66cf801fab71646392bc5881f252c71",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/guitar-neck-180.png",
+      "sha256": "80ed8943078d52f1402c5adbe81ba093a49e3974e7f85e09092697efe8fec6bc",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/neutral-neck-045.png",
+      "sha256": "79219b8e3d5c4f1b74619c6727931591ef20a01203ce2d355d2d69740649bb84",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/guitar-neck-exposed-180.png",
+      "sha256": "8c544c73af47c549c2f831baae8c0b6d5ab787778f86ce263dd3b53c9e5724b5",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/neutral-neck-180.png",
+      "sha256": "cf4d768336377bb2dbf4cde51dd917552c997820a9c86f64c8c12ec3f2af332a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/guitar-neck-045.png",
+      "sha256": "3b8b8b3ef2cd885014d1c882616c54533f965ac9bdaeba8eb4274af5af07d127",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/neutral-neck-225.png",
+      "sha256": "502282a257f924aa15e8e635cbca5a3528c55a6885358f01a799239f70b4cebd",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/guitar-neck-135.png",
+      "sha256": "bb455e6a931b6579ced40f778e5cc65b010cb710f0ebcd980a16dca8eb31571c",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/neutral-neck-000.png",
+      "sha256": "8b238c861c9a5c5aa503b2ea7da947e44643d3d55e7da1b848fbf399ca0557ea",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/guitar-neck-exposed-090.png",
+      "sha256": "50f272e329959c59adb5fc9f6b19dee1c75dfd8d118307e816774b60e30f0d1f",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/guitar-neck-elevation--25.png",
+      "sha256": "e14d1494d80869a3c8eb0ccb1bf51968d4a9759f8ba30000b0dd7c1fd5112a47",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/guitar-neck-exposed-270.png",
+      "sha256": "156d2fbf23ced47a80949c1f775affd0f7d2628d992c2726467a1e0414af3d73",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/guitar-neck-270.png",
+      "sha256": "142d2a29c9d949dca63fcff77fdd9cd0fb3a56003e1c122e5d22d72e13dfb042",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/neutral-neck-exposed-270.png",
+      "sha256": "05a62a4751de3f87eee34649f5f0802667667ee9f1de1ae0aaed5bd27784874a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/guitar-neck-225.png",
+      "sha256": "d4b8333aaa0ce141229427d81703589ec7bbaf1dec1938330bf96924e498287a",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/before/neutral-neck-exposed-090.png",
+      "sha256": "3849c3de1346ce9112c832ffe520b7bf13ce04c71498d5992e788a7f17cf1b47",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "file": "docs/stages/evidence/neck-11/world-1440/seated-front.png",
+      "sha256": "45d13f163686d8735738a060f71486e3f1d8e5c73f9d6fb4e32ace2cdca0d3b0",
+      "size": [
+        2560,
+        1440
+      ]
+    }
+  ],
+  "unchanged_character_GLB_verified": true,
+  "all_verification_complete": true,
+  "github_source_commit_verified": "2fbd62bc0f839ef1f7dc1953b8e668a5d86375de",
+  "local_archive_directory": "/workspace/checkpoints",
+  "renderer": "Forward+ software Vulkan; user RTX 5080 performance not measured",
+  "scope": "Fix of folded cervical geometry, exposed lower bust boundary, cervical weights and coordinated seated gaze. Not whole-body/AAA anatomical or full motion acceptance.",
+  "visual_review": "48 individually viewed new snapshots, 28 historical snapshots already viewed in review 10 and copied unchanged. Not video. All 28 before/after cameras matched within 1 micrometer. Four world cameras unchanged. Native 1440p viewed resized to 2048x1152.",
+  "viewer_validation": "JavaScript syntax and referenced image paths checked; interactive browser behavior not exercised."
+}

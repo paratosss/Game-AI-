@@ -9,8 +9,8 @@
       "object": "Все",
       "requirement": "Продолжать с последней восстановленной версии",
       "status": "проверено",
-      "finding": "Актуальная проверенная архивная основа — итерация 09, source f882c48; точки 08/06/05/04 и исходные архивы сохранены",
-      "evidence": "docs/LATEST_STATE_RU.md; docs/stages/checkpoints/STAGE_02_09_Backup.json",
+      "finding": "Актуальная проверенная игровая архивная основа — итерация 11, source 2fbd62b; прежние точки и исходные архивы сохранены",
+      "evidence": "docs/LATEST_STATE_RU.md; docs/stages/checkpoints/STAGE_02_11_Backup.json",
       "next_action": "Продолжать с новой проверенной точки, сохранять следующие итерации отдельно"
     },
     {
@@ -509,8 +509,8 @@
       "object": "Сохранение",
       "requirement": "Отдельный файл и резервная версия каждого этапа",
       "status": "проверено",
-      "finding": "Документальный разбор 10: отчёт, 44 кадра, исходники диагностик на GitHub; отдельный Review ZIP проверен по CRC/SHA и распаковке. Последняя полная игровая точка — 09",
-      "evidence": "docs/stages/ANATOMY_REVIEW_10_RU.md; docs/stages/checkpoints/ANATOMY_REVIEW_10_Backup.json; docs/stages/checkpoints/STAGE_02_09_Backup.json",
+      "finding": "Итерация 11: отчёт, 48 новых кадров и 28 исторических до, source на GitHub, Source/Review ZIP. CRC/SHA, свежая распаковка и 11 проверок пройдены; ZIP локальные",
+      "evidence": "docs/stages/STAGE_02_Neck_11_RU.md; docs/stages/checkpoints/STAGE_02_11_Backup.json",
       "next_action": "Фиксировать и отправлять следующие отчёты и версии"
     }
   ],
