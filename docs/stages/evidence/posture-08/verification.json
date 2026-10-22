@@ -1,0 +1,183 @@
+{
+  "date": "2026-10-22",
+  "images": [
+    {
+      "file": "transitions/standing.png",
+      "sha256": "c4536ab493dc719d39df616dea6f3aeaef4f20c5c083bf9246924831a2378be5",
+      "dimensions": [
+        960,
+        540
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "file": "transitions/return-050.png",
+      "sha256": "f844f1043c519f51dde766831e214ffad2b6faa2810eb4b865b341fda85d2d0d",
+      "dimensions": [
+        960,
+        540
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "file": "transitions/return-017.png",
+      "sha256": "5732fb6843264a7f874d704e47dad282cf2fc220d9ea15379aa2dc79f5e205ee",
+      "dimensions": [
+        960,
+        540
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "file": "transitions/rise-017.png",
+      "sha256": "75e6b08f0182b56ac189faa52f071de53679e9e7aa16812d6987319ca9eff773",
+      "dimensions": [
+        960,
+        540
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "file": "transitions/rise-085.png",
+      "sha256": "e0a1ec22da73bfa5e38f97931939587a3d199b66eef6554bef621eab21b5c7d5",
+      "dimensions": [
+        960,
+        540
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "file": "transitions/return-150.png",
+      "sha256": "59694005052a361a19a2b859bb870c34dc1b7712949b3937956b8771a9ede1be",
+      "dimensions": [
+        960,
+        540
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "file": "transitions/rise-050.png",
+      "sha256": "165466b8423805d0f04c68d2f3c2a9356d1ad1f91d210133de2aae05bb1f1339",
+      "dimensions": [
+        960,
+        540
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "file": "world/seated-front.png",
+      "sha256": "33f3f14b0876be7fbfc13c9f713106640436e743adb162a1cae80e807138e98b",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "file": "world/guitar-hands.png",
+      "sha256": "7fcf0e487dfbd5c81ecb0565f23233c845279baaa2ab49948426e7c03c58e643",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "file": "world/seated-face.png",
+      "sha256": "de040e85a480cdeac2df7eb9ea66509b676772af79665a4d1673e36e7ccdda35",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "file": "world/seated-side.png",
+      "sha256": "444f9ec9607312ba22c93c4d677fe85435a3387fb492c81c03332729c5f1c43a",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "file": "world-1440/seated-front.png",
+      "sha256": "945251e27ab392448a9ba0e73c0e050a4f2480fac8562011103a222efab2ab8e",
+      "dimensions": [
+        2560,
+        1440
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "file": "neutral/seated-neutral.png",
+      "sha256": "847270f5ef8d4858bf0f39506f2f02f5922605cf57287ab467d7ca8dc1b2d058",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "file": "neutral/head-three-quarter.png",
+      "sha256": "404e4e996ab14308e99b169b647efcbb57973a089a576a295fba5107813a068c",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "file": "neutral/fretting-hand.png",
+      "sha256": "4348e884bdcd9289b8d5a89dc66b15658809aa72d7069472ad54cfaf733d69af",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "file": "neutral/support-side.png",
+      "sha256": "1e5ad4b39b7c4835a9f84e13d654af7337633657d60d3f3e831d9e3915162235",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "file": "neutral/seated-side.png",
+      "sha256": "6707839c505f68a7597478e973adffbe03caceabbaf5147f433e027de4a30424",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "file": "neutral/support-full.png",
+      "sha256": "5185abb60f13a1da34e4b373807422ff71d9bfee1b6a4f661ab1fd9022fac465",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "file": "neutral/strumming-hand.png",
+      "sha256": "39198faeef6d1f7fa74b33b6903c27939ca412153dd6b0ac8d02d585db22f390",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "visually_reviewed": true
+    }
+  ],
+  "world_cameras_match_iteration_06": true,
+  "review_method": "Individual Godot-rendered snapshots, not video; native 2560x1440 source stored unchanged; image viewer may display it scaled.",
+  "limitations": [
+    "Early return has instrument before a settled grip and incomplete foot support.",
+    "Selected-phase transition captures retain temporal history; ghosting in these abrupt sampling steps is not a real-time animation review."
+  ],
+  "captures_not_retouches": true
+}

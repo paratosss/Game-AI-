@@ -1,0 +1,26 @@
+{
+  "source_sha256": {
+    "scripts/human_skin.gd": "0759877fc16a52f4bb0448c90ca1e7f0a61b719c7512edfe8fcb13fabff52135",
+    "scripts/guitar_posture.gd": "51e86d6613158cc7fd058508e32523d4fb8f80940e24be88a9113920b47d8e12",
+    "tests/posture_review.gd": "a620beb4e68c7c0b94ca23551f37d418f5106f0047212673c0696cc524a43ecd",
+    "tests/graphics_benchmark.gd": "9c6f8add23c88a8ce7a223b8e8d67c405508a6bdaed2e6377c6ae3b61e1ab4da"
+  },
+  "runs": {
+    "neutral": {
+      "exit_code": 0,
+      "errors": []
+    },
+    "world": {
+      "exit_code": 0,
+      "errors": []
+    },
+    "transitions": {
+      "exit_code": 0,
+      "errors": []
+    },
+    "world-1440": {
+      "exit_code": 0,
+      "errors": []
+    }
+  }
+}

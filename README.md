@@ -2,6 +2,7 @@
 
 Разработка продолжается в ветке `codex/graphics-rework`. Полная переработка графики и анимаций ещё не завершена.
 
+- [Поза с гитарой, голова и шея — итерация 08](docs/stages/STAGE_02_Posture_08_RU.md).
 - [Сетка тела и предплечья — итерация 06](docs/stages/STAGE_02_Body_06_RU.md).
 - [Новая гитара и хват — итерация 05](docs/stages/STAGE_02_Guitar_05_RU.md).
 - [Новая сборка Алины с гитарой — итерация 04](docs/stages/STAGE_02_Alina_Integration_04_RU.md).

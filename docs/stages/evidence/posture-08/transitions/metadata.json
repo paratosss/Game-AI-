@@ -1,0 +1,103 @@
+{
+  "captures": [
+    {
+      "actor_transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0), O: (0.0, 0.0, 0.0)]",
+      "camera": "(1.75, 1.05, 2.3)",
+      "fov": 40.0,
+      "guitar_transform": "[X: (0.460247, -0.887426, -0.025428), Y: (0.887672, 0.459528, 0.029542), Z: (-0.014532, -0.036168, 0.99924), O: (-0.175714, 0.805459, 0.21682)]",
+      "height": 540,
+      "motion_time": 2.16666666666666,
+      "name": "rise-017",
+      "pose": "getup",
+      "target": "(0.0, 0.76, 0.06)",
+      "width": 960
+    },
+    {
+      "actor_transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0), O: (0.0, 0.0, 0.220158)]",
+      "camera": "(1.75, 1.05, 2.3)",
+      "fov": 40.0,
+      "guitar_transform": "[X: (0.507788, -0.859418, 0.059599), Y: (0.861482, 0.506571, -0.035129), Z: (0.0, 0.069181, 0.997604), O: (-0.105, 1.112, 0.425158)]",
+      "height": 540,
+      "motion_time": 2.5,
+      "name": "rise-050",
+      "pose": "getup",
+      "target": "(0.0, 0.76, 0.06)",
+      "width": 960
+    },
+    {
+      "actor_transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0), O: (0.0, 0.0, 0.42)]",
+      "camera": "(1.75, 1.05, 2.3)",
+      "fov": 40.0,
+      "guitar_transform": "[X: (0.507529, -0.859526, 0.060254), Y: (0.861635, 0.506286, -0.035491), Z: (0.0, 0.06993, 0.997552), O: (-0.105, 1.112, 0.625)]",
+      "height": 540,
+      "motion_time": 2.84999999999999,
+      "name": "rise-085",
+      "pose": "getup",
+      "target": "(0.0, 0.76, 0.06)",
+      "width": 960
+    },
+    {
+      "actor_transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0), O: (0.0, 0.0, 0.42)]",
+      "camera": "(1.75, 1.05, 2.3)",
+      "fov": 40.0,
+      "guitar_transform": "[X: (0.506988, -0.859779, 0.061177), Y: (0.861953, 0.50571, -0.035983), Z: (0.0, 0.070974, 0.997478), O: (-0.105, 1.112, 0.625)]",
+      "height": 540,
+      "motion_time": 3.34999999999999,
+      "name": "standing",
+      "pose": "idle",
+      "target": "(0.0, 0.76, 0.06)",
+      "width": 960
+    },
+    {
+      "actor_transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0), O: (0.0, 0.0, 0.0)]",
+      "camera": "(1.75, 1.05, 2.3)",
+      "fov": 40.0,
+      "guitar_transform": "[X: (0.459647, -0.887771, -0.024242), Y: (0.887983, 0.458967, 0.028901), Z: (-0.014531, -0.034811, 0.999288), O: (-0.168095, 0.897108, 0.18943)]",
+      "height": 540,
+      "motion_time": 3.51666666666666,
+      "name": "return-017",
+      "pose": "guitar",
+      "target": "(0.0, 0.76, 0.06)",
+      "width": 960
+    },
+    {
+      "actor_transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0), O: (0.0, 0.0, 0.0)]",
+      "camera": "(1.75, 1.05, 2.3)",
+      "fov": 40.0,
+      "guitar_transform": "[X: (0.412694, -0.903833, -0.112998), Y: (0.91021, 0.404491, 0.088907), Z: (-0.03465, -0.139543, 0.98961), O: (-0.247059, 0.703663, 0.203127)]",
+      "height": 540,
+      "motion_time": 3.84999999999999,
+      "name": "return-050",
+      "pose": "guitar",
+      "target": "(0.0, 0.76, 0.06)",
+      "width": 960
+    },
+    {
+      "actor_transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0), O: (0.0, 0.0, 0.0)]",
+      "camera": "(1.75, 1.05, 2.3)",
+      "fov": 40.0,
+      "guitar_transform": "[X: (0.412694, -0.903833, -0.112998), Y: (0.91021, 0.404491, 0.088907), Z: (-0.03465, -0.139543, 0.98961), O: (-0.242874, 0.713338, 0.204589)]",
+      "height": 540,
+      "motion_time": 4.84999999999999,
+      "name": "return-150",
+      "pose": "guitar",
+      "target": "(0.0, 0.76, 0.06)",
+      "width": 960
+    }
+  ],
+  "dependencies_sha256": {
+    "res://assets/characters/studies/ALINA_BODY_06_MANIFEST.json": "dfe203330cedcb5bf41699fa88b5ad9c5566fd9dfeb0303ef70b5bcad0ad5998",
+    "res://assets/characters/studies/AlinaBody06.glb": "686b0bae92b6c4743bfe4664af55d777a102f08907bb99fd15c393ab9fc1dfb3",
+    "res://assets/characters/studies/AlinaBody06.glb.import": "31fc61a2053635da3ca49613fb43b020be40d3e8cd4c10e537047c844cdbfb19",
+    "res://assets/characters/studies/AlinaRevision.glb": "53358b0f8daeb64b573579212eeca4b5edf0345e49df1fe5beb326528069102a",
+    "res://assets/shaders/instrument_wood.gdshader": "391ff481cc4e7e0c5c0585b445090d66a8fb7c5d388b852d19070314655113b2",
+    "res://scripts/alina_body_revision.gd": "ad83a63e52d9b5d9520fb6f42f01fc986f401a91f4929f69f8b9dbab58fee198",
+    "res://scripts/alina_revision_materials.gd": "302a2e6a998bdff6b508d24fdfb42d613adc241bfb603e9b886cf86d474637b5",
+    "res://scripts/guitar_posture.gd": "51e86d6613158cc7fd058508e32523d4fb8f80940e24be88a9113920b47d8e12",
+    "res://scripts/guitar_quality.gd": "4122c6eac6cd56ffa72566a2a36450d294637c192a54d4486e10923c458a1858",
+    "res://scripts/human_skin.gd": "0759877fc16a52f4bb0448c90ca1e7f0a61b719c7512edfe8fcb13fabff52135",
+    "res://tests/posture_review.gd": "a620beb4e68c7c0b94ca23551f37d418f5106f0047212673c0696cc524a43ecd"
+  },
+  "renderer": "forward_plus",
+  "taa": true
+}

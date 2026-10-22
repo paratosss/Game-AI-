@@ -48,7 +48,8 @@ func run():
  prepare()
  check(groups.thigh.size()>100 and groups.forearm.size()>100,"Actual skinned thigh and forearm must be sampled")
  for i in range(120):skin.tick(1./60,false,0,"guitar",guitar,Vector3.ZERO)
- var penetration_detail={};var min_garment=INF;var max_support_gap=0.0;var max_arm_gap=0.0;var wrist=[0.0,0.0];var max_pip=0.0;var max_dip=0.0
+ check(guitar.get_meta("posture_version",0)==8,"The revised posture driver actually ran")
+ var penetration_detail={};var min_forearm=INF;var min_garment=INF;var max_support_gap=0.0;var max_arm_gap=0.0;var wrist=[0.0,0.0];var max_pip=0.0;var max_dip=0.0
  for frame in range(120):
   skin.tick(1./60,false,0,"guitar",guitar,Vector3.ZERO)
   for side in ["_l","_r"]:
@@ -75,10 +76,12 @@ func run():
      min_garment=distance
      penetration_detail={"point":str(point),"influences":influences.map(func(v):return [skin.skeleton.get_bone_name(v[0]),v[2]])}
     if name=="thigh":support_gap=minf(support_gap,absf(distance))
-    if name=="forearm":arm_gap=minf(arm_gap,absf(distance))
+    if name=="forearm":
+     arm_gap=minf(arm_gap,absf(distance));min_forearm=minf(min_forearm,distance)
   max_support_gap=maxf(max_support_gap,support_gap);max_arm_gap=maxf(max_arm_gap,arm_gap)
  check(min_garment>=-.003,"Garment avoids penetration deeper than 3 mm into the instrument envelope")
  check(max_support_gap<.006,"Skinned thigh reaches the instrument envelope within 6 mm")
+ check(min_forearm>=-.003,"Right forearm avoids penetration deeper than 3 mm")
  check(max_arm_gap<.015,"Right forearm reaches the instrument within 15 mm")
  check(wrist[0]<60 and wrist[1]<40,"Wrist bends stay within a moderate working range")
  check(max_pip<115 and max_dip<85,"Playing fingers avoid extreme interphalangeal folds")
@@ -106,7 +109,7 @@ func run():
   var head_now=skin.global_pose("Head").basis.get_rotation_quaternion()
   look_step=maxf(look_step,head_last.angle_to(head_now));head_last=head_now
  check(head_before.angle_to(head_last)>.15 and look_step<.12,"Head follows a supplied gaze target without an instant turn")
- var report={"status":"PASS" if failures.is_empty() else "FAIL","failures":failures,"sample_counts":{},"minimum_garment_envelope_distance_m":min_garment,"penetration_detail":penetration_detail,"worst_turn":worst_angle,"maximum_thigh_support_gap_m":max_support_gap,"maximum_forearm_contact_gap_m":max_arm_gap,"maximum_wrist_bends_deg":wrist,"maximum_PIP_deg":max_pip,"maximum_DIP_deg":max_dip,"maximum_transition_step_m":max_step,"worst_transition":worst,"maximum_transition_turn_rad":max_angle,"maximum_gaze_step_rad":look_step}
+ var report={"status":"PASS" if failures.is_empty() else "FAIL","failures":failures,"sample_counts":{},"minimum_garment_envelope_distance_m":min_garment,"penetration_detail":penetration_detail,"worst_turn":worst_angle,"maximum_thigh_support_gap_m":max_support_gap,"maximum_forearm_contact_gap_m":max_arm_gap,"minimum_forearm_envelope_distance_m":min_forearm,"maximum_wrist_bends_deg":wrist,"maximum_PIP_deg":max_pip,"maximum_DIP_deg":max_dip,"maximum_transition_step_m":max_step,"worst_transition":worst,"maximum_transition_turn_rad":max_angle,"maximum_gaze_step_rad":look_step}
  for name in groups:report.sample_counts[name]=groups[name].size()
  print(JSON.stringify(report,"  "))
  var path=OS.get_environment("SHASHLIK_POSTURE_REPORT")

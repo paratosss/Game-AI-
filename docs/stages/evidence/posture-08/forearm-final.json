@@ -1,0 +1,37 @@
+{
+  "failures": [],
+  "maximum_DIP_deg": 52.4058011994601,
+  "maximum_PIP_deg": 80.6242496421259,
+  "maximum_forearm_contact_gap_m": 0.0143608953803778,
+  "maximum_gaze_step_rad": 0.0849443674087524,
+  "maximum_thigh_support_gap_m": 0.000139435913297348,
+  "maximum_transition_step_m": 0.0546075738966465,
+  "maximum_transition_turn_rad": 0.436631143093109,
+  "maximum_wrist_bends_deg": [
+    24.8767322874601,
+    31.3077327589788
+  ],
+  "minimum_forearm_envelope_distance_m": -0.00144591508433223,
+  "minimum_garment_envelope_distance_m": 0.000139435913297348,
+  "penetration_detail": {
+    "influences": [
+      [
+        "thigh_r",
+        0.983428716659546
+      ],
+      [
+        "pelvis",
+        0.0165560394525528
+      ]
+    ],
+    "point": "(0.140867, 0.004461, -0.037967)"
+  },
+  "sample_counts": {
+    "forearm": 3012,
+    "garment": 17968,
+    "thigh": 1106
+  },
+  "status": "PASS",
+  "worst_transition": "walk/hand_r/5",
+  "worst_turn": "getup/index_03_l/36"
+}

@@ -303,7 +303,7 @@ func tick(dt:float,moving:bool,speed:float,pose:String,guitar:Node3D,look:Vector
   if pose in ["happy","wave"] and i==0:target=shoulder+Vector3(.21,.27,.10+sin(motion_time*8)*.06)
   var elbow_pole=Vector3(sign,.05,-.35)
   if guitar:elbow_pole=elbow_pole.lerp(Vector3(.25,-1,.25) if i==0 else Vector3(-.65,.10,-.10),guitar_weight)
-  if uses_revision:elbow_pole=Vector3(sign,.05,-.35).lerp(Vector3(.25,-1,.35) if i==0 else Vector3(-.75,-.20,.10),guitar_weight)
+  if uses_revision:elbow_pole=Vector3(sign,.05,-.35).lerp(Vector3(.25,-1,.35) if i==0 else Vector3(-.75,-.20,.50),guitar_weight)
   if guitar_weight>0 or reaction_weight>0 or pose=="kick":
    var strength=guitar_weight if uses_revision and reaction_weight==0 and pose!="kick" else 1.0
    solve_limb("upperarm"+suffix,"lowerarm"+suffix,"hand"+suffix,target,elbow_pole,strength)

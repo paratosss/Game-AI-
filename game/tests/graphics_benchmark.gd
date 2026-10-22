@@ -74,6 +74,7 @@ func save_metadata():
   for path in ["res://scripts/lakeside_quality.gd","res://scripts/lakeside_terrain.gd","res://assets/shaders/pond_depth.gdshader","res://assets/shaders/birch_scan.gdshader","res://assets/shaders/birch_leaf.gdshader","res://assets/textures/birch_scan/RESOURCE_MANIFEST.json","res://assets/nature/BIRCH_MANIFEST.json"]:
    dependencies[path]=FileAccess.get_sha256(path)
  if alina_revision:
+  dependencies["res://scripts/guitar_posture.gd"]=FileAccess.get_sha256("res://scripts/guitar_posture.gd")
   for path in ["res://scripts/alina_body_revision.gd","res://assets/characters/studies/AlinaBody06.glb","res://assets/characters/studies/AlinaBody06.glb.import","res://assets/characters/studies/ALINA_BODY_06_MANIFEST.json"]:
    dependencies[path]=FileAccess.get_sha256(path)
   for path in ["res://scripts/guitar_quality.gd","res://assets/shaders/instrument_wood.gdshader"]:

@@ -14,7 +14,7 @@ func capture(label:String,position:Vector3,target:Vector3,fov:float):
   RenderingServer.force_draw()
  var path=output.path_join(label+".png")
  if root.get_texture().get_image().save_png(path)!=OK:push_error("Guitar capture failed");quit(1);return
- metadata.captures.append({"name":label,"camera":str(position),"target":str(target),"fov":fov,"width":root.size.x,"height":root.size.y,"motion_time":skin.motion_time,"guitar_transform":str(guitar.global_transform)})
+ metadata.captures.append({"name":label,"camera":str(position),"target":str(target),"fov":fov,"width":root.size.x,"height":root.size.y,"pose":skin.previous_pose,"actor_transform":str(skin.get_parent().global_transform),"motion_time":skin.motion_time,"guitar_transform":str(guitar.global_transform)})
  print("GUITAR_REVIEW_FRAME ",label)
 func run():
  output=OS.get_environment("SHASHLIK_CAPTURE_DIR")
@@ -38,10 +38,28 @@ func run():
  for path in ["res://tests/posture_review.gd","res://scripts/guitar_posture.gd","res://scripts/human_skin.gd","res://scripts/guitar_quality.gd","res://assets/shaders/instrument_wood.gdshader","res://scripts/alina_revision_materials.gd","res://assets/characters/studies/AlinaRevision.glb"]:
   metadata.dependencies_sha256[path]=FileAccess.get_sha256(path)
  for i in range(120):skin.tick(1.0/60.0,false,0.0,"guitar",guitar,Vector3.ZERO)
+ if "--transitions-only" in OS.get_cmdline_user_args():
+  DemoWorld.bench(stage,Vector3.ZERO)
+  DemoVisual.box(stage,Vector3(3,.02,3),Color("666b70"),Vector3(0,-.02,0))
+  for entry in [["getup",10,"rise-017"],["getup",20,"rise-050"],["getup",21,"rise-085"],["idle",30,"standing"],["guitar",10,"return-017"],["guitar",20,"return-050"],["guitar",60,"return-150"]]:
+   # Two separate exercises: actual get-up root travel, then a fresh seated
+   # return at the bench. These snapshots do not depict the intervening walk.
+   if entry[2]=="return-017":actor.position=Vector3.ZERO
+   for i in range(entry[1]):
+    skin.tick(1.0/60.0,false,0.0,entry[0],guitar,Vector3.ZERO)
+    if entry[0]=="getup":actor.position.z+=skin.frame_root_delta
+   guitar.visible=entry[0]=="guitar"
+   await capture(entry[2],Vector3(1.75,1.05,2.30),Vector3(0,.76,.06),40)
+  FileAccess.open(output.path_join("metadata.json"),FileAccess.WRITE).store_string(JSON.stringify(metadata,"  "))
+  print("POSTURE_TRANSITIONS_08_COMPLETE");quit();return
  await capture("seated-neutral",Vector3(.15,1.12,1.9),Vector3(.03,.87,.12),40)
  await capture("seated-side",Vector3(1.80,1.04,.10),Vector3(0,.80,.08),40)
  await capture("head-three-quarter",Vector3(.57,1.30,.90),skin.to_global(skin.global_pose("Head").origin),35)
  await capture("fretting-hand",guitar.to_global(Vector3(.13,.55,.42)),guitar.to_global(Vector3(.02,.55,.055)),40)
  await capture("strumming-hand",guitar.to_global(Vector3(-.07,.11,.44)),guitar.to_global(Vector3(-.02,.10,.065)),40)
+ DemoWorld.bench(stage,Vector3.ZERO)
+ DemoVisual.box(stage,Vector3(3,.02,3),Color("666b70"),Vector3(0,-.02,0))
+ await capture("support-full",Vector3(1.75,1.05,2.30),Vector3(0,.70,.06),40)
+ await capture("support-side",Vector3(-1.4,.85,.40),Vector3(-.12,.64,.12),33)
  var file=FileAccess.open(output.path_join("metadata.json"),FileAccess.WRITE);file.store_string(JSON.stringify(metadata,"  "))
  print("POSTURE_REVIEW_08_COMPLETE");quit()
