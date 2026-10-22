@@ -8,6 +8,7 @@ root=Path(__file__).resolve().parents[1]
 cli=argparse.ArgumentParser();cli.add_argument('--poses',type=Path,required=True);cli.add_argument('--output',type=Path,required=True);args=cli.parse_args()
 data=json.loads(args.poses.read_text());g=GLB(root/'game/assets/characters/studies/AlinaNeck11.glb')
 assert hashlib.sha256(g.raw).hexdigest()==data['source_sha256']
+for resource,digest in data.get('dependencies_sha256',{}).items():assert hashlib.sha256((root/'game'/resource.removeprefix('res://')).read_bytes()).hexdigest()==digest
 assert data['bone_count']==67 and data['shape_count']==63
 ni,node=g.node('AlinaRevisionHead');mesh=g.mesh('AlinaRevisionHead');primitive=mesh['primitives'][0];names=mesh['extras']['targetNames']
 base=g.array(primitive['attributes']['POSITION']).astype(float);faces=g.array(primitive['indices']).reshape(-1,3)

@@ -67,3 +67,10 @@ python3 tools/audit_alina_anatomy.py --output game/assets/characters/studies/ANA
 ```
 
 Из корня репозитория. Генератор проверяет оба прежних GLB по SHA, создает отдельный AlinaAnatomy09.glb и manifest. Изменены поверхность шеи/рук и плечевая ткань; добавлены две локальные формы сгиба локтя. Все новые формы копируются из изменённого Basis до коррекции, иначе старая mesh-база отменяет скульптуру. Материалы-заглушки overlay не содержат новых текстур; runtime сохраняет оригинальные материалы и 67 bind-матриц. Не включать автоматические LOD. Независимый аудит читает экспорт и записывает фактические контрольные вершины; anatomy_deformation.gd проверяет их на живом скелете. После генерации нужны импорт и визуальная оценка. Это частичный проход, не замена анатомии всей фигуры.
+
+
+## Восстановление шеи — итерация 11
+
+Из корня репозитория: `blender-4.5.3 --background --disable-autoexec --python game/tools/authoring/build_alina_neck.py`. Генератор проверяет SHA исходного бюста/overlay09, сопоставляет исходные UV/индексы и восстанавливает шею без прежнего сгиба. Косой нижний край плавно продлевается под одежду; затем полные сечения смещаются по высоте. Веса головы/шеи/груди пересоздаются, мимические дельты сохраняются. Выход — отдельный AlinaNeck11.glb и manifest; старые GLB не меняются. Авто-LOD выключен, named skins включены.
+
+Независимый экспортный аудит: `python3 tools/audit_alina_neck.py`. Живые состояния: `SHASHLIK_NECK_POSES=/tmp/neck-poses.json shashlik-godot --headless --audio-driver Dummy --script res://tests/neck_deformation.gd`, затем `python3 tools/verify_neck_deformation.py --poses /tmp/neck-poses.json --output /tmp/neck-check.json`. Для снимков — neck_review.gd с `--neck-only --stress`; `--previous` отключает новое исправление. Численный PASS не заменяет осмотр всех ракурсов. Полная анатомия тела не объявляется готовой.

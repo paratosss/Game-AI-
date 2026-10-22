@@ -35,6 +35,8 @@ func run():
   for frame in range(120):skin.tick(1./60.,false,0.,"guitar",guitar,value[1])
   snapshot(value[0])
  var result={"source_sha256":FileAccess.get_sha256("res://assets/characters/studies/AlinaNeck11.glb"),"bone_count":skin.skeleton.get_bone_count(),"shape_count":head.mesh.get_blend_shape_count(),"cases":cases,"limitation":"Selected settled native actions and gaze limits, not a full motion or anatomical acceptance."}
+ result.dependencies_sha256={}
+ for resource in ["res://scripts/human_skin.gd","res://scripts/guitar_posture.gd","res://scripts/alina_neck_revision.gd","res://tests/neck_deformation.gd"]:result.dependencies_sha256[resource]=FileAccess.get_sha256(resource)
  FileAccess.open(path,FileAccess.WRITE).store_string(JSON.stringify(result,"  "))
  print("NECK_LIVE_POSES_11_COMPLETE cases=",cases.size()," bones=",skin.skeleton.get_bone_count()," facial_shapes=",head.mesh.get_blend_shape_count())
  quit()

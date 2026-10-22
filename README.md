@@ -2,6 +2,8 @@
 
 Разработка продолжается в ветке `codex/graphics-rework`. Полная переработка графики и анимаций ещё не завершена.
 
+- [Исправление шеи — итерация 11](docs/stages/STAGE_02_Neck_11_RU.md).
+- [До/после и проверка поворотов головы](docs/stages/evidence/neck-11/index.html).
 - [Разбор дефекта шеи и анатомии — исследование 10](docs/stages/ANATOMY_REVIEW_10_RU.md).
 - [Просмотр 44 диагностических кадров с переключением ракурсов](docs/stages/evidence/anatomy-review-10/index.html).
 - [Первый проход по анатомии верхней части тела — итерация 09](docs/stages/STAGE_02_Anatomy_09_RU.md).

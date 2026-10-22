@@ -1,0 +1,30 @@
+{
+  "source_sha256": {
+    "scripts/human_skin.gd": "0f186ceecb03db01edc568e0be4fb5778904dd39861352f6d9136d743afcf044",
+    "scripts/alina_anatomy_revision.gd": "659fd20a1a9fa7c48860d6a17cb2c0e97f82f84096546db61600cd4d36011ea9",
+    "scripts/guitar_posture.gd": "7e1b5068cccf784153814a53fb682b358b55abc78e144acaac15afc3c8dc765e",
+    "tests/neck_review.gd": "e4f104a541a43d39a61040a985a7be07dd77a5d39b0dec70768b9535c66370b5",
+    "tests/neck_review_cameras.json": "449afca76b57fd93f6bc6baade5271a1c189d40708fbfcdcc571e40b65f0f3af",
+    "scripts/alina_neck_revision.gd": "813f5258ca0dfdac1ac236d59264ce6070bfd368c76cdd03dda08246bd6383ef",
+    "assets/characters/studies/AlinaNeck11.glb": "00aac4a557108a74eef01fb6233770f7babac2dcb131e51843591cb1cf053371",
+    "assets/characters/studies/AlinaNeck11.glb.import": "2180b545fc36e7a655727b2f3d8a141041cdf75294f1876f21fd3f1e3ec8b7d1",
+    "assets/characters/studies/ALINA_NECK_11_MANIFEST.json": "8ac37cb810e07d4518514899d10728fd14ce3271426b92b0b660d0b439d342a6",
+    "tests/graphics_benchmark.gd": "51756a2893defa7844cc392da385d1357c2389d561fa872395dcf7e2b07d3d87",
+    "assets/characters/studies/AlinaAnatomy09.glb": "2db1ac961d16a6c5edf0f2b867a6b47ac357b301e91067a9088271cdcdc6c266",
+    "assets/characters/studies/AlinaAnatomy09.glb.import": "dbeeaa948c8c0ad8683c1610dbe87295665015950e993fef3cfae3f64d85fb80"
+  },
+  "runs": {
+    "after": {
+      "exit_code": 0,
+      "errors": []
+    },
+    "world": {
+      "exit_code": 0,
+      "errors": []
+    },
+    "world-1440": {
+      "exit_code": 0,
+      "errors": []
+    }
+  }
+}

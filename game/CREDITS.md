@@ -106,3 +106,8 @@ AlinaBody06.glb — производная от ранее сохранённо�
 ## Документальная анатомическая диагностика 10
 
 Четыре схемы OpenStax/OpenStax College сохранены без изменений только в `../docs/stages/evidence/anatomy-review-10/`: 1110 Muscle of the Anterior Neck и 1117 Muscles of the Neck and Back — CC BY 4.0; 1117 Muscles of the Neck Left Lateral и 1117 Muscles of the Neck Upper Back — CC BY 3.0. Точные ссылки, авторы, лицензии и SHA приведены в `references.json` этой папки. В игру схемы не включены. Полная ранее сохранённая схема мышц 1105 используется как дополнительный референс с прежней атрибуцией.
+
+
+## Восстановленная шея Алины, итерация 11
+
+`AlinaNeck11.glb` — производная геометрия прежних CC0 ресурсов MakeHuman/MPFB и головы Selunae (Muhammed Ismayil). Шея восстановлена из сохранённого AlternativeHeadStudy, задняя граница продлена под одежду, привязка пересоздана; материалы/UV и дельты 63 facial-каналов сохранены. Это исправление участка существующей головы, не новая полная анатомическая модель. Генератор tools/authoring/build_alina_neck.py; ALINA_NECK_11_MANIFEST.json содержит SHA и параметры. Новые сторонние ассеты этим исправлением не вводились.
