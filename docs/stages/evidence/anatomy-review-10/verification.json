@@ -1,0 +1,417 @@
+{
+  "date": "2026-10-22",
+  "runtime_baseline_commit": "53658abfba043414edb8a5cb2bbb705020b52d04",
+  "runtime_files_unchanged": true,
+  "diagnostic_renderer_exit_code": 0,
+  "diagnostic_renderer_complete_marker": "ANATOMY_ORBIT_REVIEW_10_COMPLETE frames=44",
+  "frame_count": 44,
+  "frames": [
+    {
+      "file": "orbit/guitar-full-000.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "d23268e424f3ffbb5432b1af7b3c8055ab479b7be2faa84a7394655db9cad035",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/guitar-full-045.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "8339bd595dc9efa22cb234b490d7556e63402c7b7b0215a2fef3288ef9bb18d1",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/guitar-full-090.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "b0b6ec8ded6f0ab6eb394ec16b53f45652054402fa6e7b7c8bfa568a5238a354",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/guitar-full-135.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "d3a56f7e2b38ff646cb894099e1956508ca6f9632462972826752652624a4650",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/guitar-full-180.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "ce660c4dd5fcf87c37d93f4048bd1c45555cc4ca647250b8679687fca986ed95",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/guitar-full-225.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "088ec7ba0437d946c1045dc4569712ea988a8b7b2407441a4d5770d56500c5a0",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/guitar-full-270.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "bb09735959e22f6c829a5463cb2671992458de90299f81cee4627b81a0e27806",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/guitar-full-315.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "a35937ce89fbd84932d1be1a48b8fc092c0d13b5cd5739c8101d8565d0d872c8",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/guitar-neck-000.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "d675e0085a9981b3c837deb3bacdb056b00b2c8ac8a7535ff79aa91e1d6ed6bc",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/guitar-neck-045.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "3b8b8b3ef2cd885014d1c882616c54533f965ac9bdaeba8eb4274af5af07d127",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/guitar-neck-090.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "40f44fced4386ec54807713818edb16f742761c1df79a610ef96f96efc600dcb",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/guitar-neck-135.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "bb455e6a931b6579ced40f778e5cc65b010cb710f0ebcd980a16dca8eb31571c",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/guitar-neck-180.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "80ed8943078d52f1402c5adbe81ba093a49e3974e7f85e09092697efe8fec6bc",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/guitar-neck-225.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "d4b8333aaa0ce141229427d81703589ec7bbaf1dec1938330bf96924e498287a",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/guitar-neck-270.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "142d2a29c9d949dca63fcff77fdd9cd0fb3a56003e1c122e5d22d72e13dfb042",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/guitar-neck-315.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "62edb36e0078651bc0fe58be41f7e4b1562826bb218e0fddf893bca6755213de",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/guitar-neck-elevation--25.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "e14d1494d80869a3c8eb0ccb1bf51968d4a9759f8ba30000b0dd7c1fd5112a47",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/guitar-neck-elevation-25.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "ab5184338c22a475532b0cf14e9b738a9b38864a2a50cfccb0bf57bf5361cd73",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/guitar-neck-exposed-000.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "bfa076c244c5df5930226cdf9069a7bdca668af89ba5c5061ad410f2b0a87b2f",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/guitar-neck-exposed-090.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "50f272e329959c59adb5fc9f6b19dee1c75dfd8d118307e816774b60e30f0d1f",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/guitar-neck-exposed-180.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "8c544c73af47c549c2f831baae8c0b6d5ab787778f86ce263dd3b53c9e5724b5",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/guitar-neck-exposed-270.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "156d2fbf23ced47a80949c1f775affd0f7d2628d992c2726467a1e0414af3d73",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/neutral-full-000.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "b03eb4de5b1423cb565e66f17993e98d206fc6f0287d4a667b197301830d6829",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/neutral-full-045.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "ec3ac5a38fe47aaa8c8869a4239bc202ec99f8c7cc350b3ca7bfd1416c71a908",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/neutral-full-090.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "d025292b6536d4cde0bcc113f03c0fecfa11f67494b07bd5202771262efdcb62",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/neutral-full-135.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "919fd40e169a9d17795202519b098050682e958366950003b4a30d24ea0f56e3",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/neutral-full-180.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "8d4edce96238cb93b5dedf810b870f9a8ba5859a04dc1d50a68b9034c8cf0c16",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/neutral-full-225.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "0f155db042dfac04a15b2c5c5626adb1174d69886d893bd327e116353448d6ed",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/neutral-full-270.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "e213fd3c8d3269d81178cd533728369f0712f61adff36afdae57ddcd2b79a62b",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/neutral-full-315.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "8c00dc74c432c6fbe56b6dcc0ac4e31f5a1e8c168a2088d7ba2b51bda22a613c",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/neutral-neck-000.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "8b238c861c9a5c5aa503b2ea7da947e44643d3d55e7da1b848fbf399ca0557ea",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/neutral-neck-045.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "79219b8e3d5c4f1b74619c6727931591ef20a01203ce2d355d2d69740649bb84",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/neutral-neck-090.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "7656e2e2f999be027b9cad5d096fab38bdd72da1effba158d54b23708696b63b",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/neutral-neck-135.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "62af34736fcde5ec0c384c9d3817bf06551300468497fcdf8f35e8241208894d",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/neutral-neck-180.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "cf4d768336377bb2dbf4cde51dd917552c997820a9c86f64c8c12ec3f2af332a",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/neutral-neck-225.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "502282a257f924aa15e8e635cbca5a3528c55a6885358f01a799239f70b4cebd",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/neutral-neck-270.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "ccc36b671ba17f890f3ed2ce5b297171e4b9b8acd9bb1a637a342b6b0358b12b",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/neutral-neck-315.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "5677f019677db4c3d1d1d8f67aeb91ca9ddef40594783bfe493872675afcfb4f",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/neutral-neck-elevation--25.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "8580dfb6ed613a8d933bae0ca18cc7c8998007743d7d0a8e0310a3e6bcbe9f76",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/neutral-neck-elevation-25.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "88c4f22a75e32fd00d72e8cc9d3dfebfd66cf801fab71646392bc5881f252c71",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/neutral-neck-exposed-000.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "b9d0f808ce14d1be786860cc1bbd66e0536c8d1324cfeb7bbc1da9f9895a5f8e",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/neutral-neck-exposed-090.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "3849c3de1346ce9112c832ffe520b7bf13ce04c71498d5992e788a7f17cf1b47",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/neutral-neck-exposed-180.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "87b8d19310a8da585772fc6b33c55f00f057afc3b6f3e69ed1e6f7ef5050fe8e",
+      "individually_viewed": true
+    },
+    {
+      "file": "orbit/neutral-neck-exposed-270.png",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "05a62a4751de3f87eee34649f5f0802667667ee9f1de1ae0aaed5bd27784874a",
+      "individually_viewed": true
+    }
+  ],
+  "capture_dependency_sha256_match": true,
+  "review_method": "44 individually viewed actual Godot snapshots, 8 azimuths in neutral and guitar poses for full figure/neck, 4 elevated views, 8 hair-hidden views. Not video; no bench/ground in this diagnostic stage.",
+  "references_reviewed": 5,
+  "geometry_intersection_controls": "Crossing, disjoint, outside segment, coplanar controls behaved as specified. Coplanar-only/edge-only intersections excluded.",
+  "anatomy_quality_status": "REJECTED: localized neck self-intersection exists in base geometry. No character asset corrected in this review.",
+  "render_errors": [],
+  "offline_diagnostic_tools": {
+    "tools/glb_geometry_review.py": "b238e7433c99191f6c8df19d0d27fb4d5e1bfdc99204123d4cabeb3586706eb4",
+    "tools/review_neck_sections.py": "c1ccdf7e098c1418b4f4533a4eb2f7c6b510d3198ad0147937a079d4df27d749",
+    "tools/review_neck_intersections.py": "1db6ae4d5141da5fea519fd9bc3441d0bd7901c080ef1f17a80c321c8eac4d18"
+  }
+}

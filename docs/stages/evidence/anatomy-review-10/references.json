@@ -1,0 +1,55 @@
+[
+  {
+    "title": "File:1110 Muscle of the Anterior Neck.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:1110_Muscle_of_the_Anterior_Neck.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/1110_Muscle_of_the_Anterior_Neck.jpg",
+    "author": "OpenStax",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "sha256": "589f1cd9ae10eaa9a86c11131ebff4fb1c7953d851941f97f02a9d9de298139c",
+    "local_file": "1110_Muscle_of_the_Anterior_Neck.jpg",
+    "included_in_game": false
+  },
+  {
+    "title": "File:1117 Muscles of the Neck Left Lateral.png",
+    "source": "https://commons.wikimedia.org/wiki/File:1117_Muscles_of_the_Neck_Left_Lateral.png",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/1117_Muscles_of_the_Neck_Left_Lateral.png",
+    "author": "OpenStax College",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "sha256": "76dfe56f89af0b1363e6d90ddb01cc00640e079255deb2f9fef87df9ab37c932",
+    "local_file": "1117_Muscles_of_the_Neck_Left_Lateral.png",
+    "included_in_game": false
+  },
+  {
+    "title": "File:1117 Muscles of the Neck Upper Back.png",
+    "source": "https://commons.wikimedia.org/wiki/File:1117_Muscles_of_the_Neck_Upper_Back.png",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/1117_Muscles_of_the_Neck_Upper_Back.png",
+    "author": "OpenStax College",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "sha256": "fbf6fb9d881fd3072008ae38b7891a606ffb4bf89050301c0f28bf3c2820051f",
+    "local_file": "1117_Muscles_of_the_Neck_Upper_Back.png",
+    "included_in_game": false
+  },
+  {
+    "title": "File:1117 Muscles of the Neck and Back.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:1117_Muscles_of_the_Neck_and_Back.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/1117_Muscles_of_the_Neck_and_Back.jpg/1920px-1117_Muscles_of_the_Neck_and_Back.jpg",
+    "author": "OpenStax",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "sha256": "ce88f81b46e37dad718eeebbb44c1cbdd3a9979b55797c5676f8b769870f0b1e",
+    "local_file": "1117_Muscles_of_the_Neck_and_Back.jpg",
+    "included_in_game": false
+  },
+  {
+    "source": "https://commons.wikimedia.org/wiki/File:1105_Anterior_and_Posterior_Views_of_Muscles.jpg",
+    "author": "OpenStax",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "local_file": "../anatomy-09/openstax-muscle-landmarks.jpg",
+    "included_in_game": false,
+    "sha256": "a11ddefe42a0429624ce21181bbb99c880ea2a1eb613acf1009c0459c4c341de"
+  }
+]
